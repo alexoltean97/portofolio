@@ -2,14 +2,15 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import LocalImage from '../../assets/images/placeholder-image-card.png';
-import "./Card.css";
-const CardModel = (identifier,width, title, content) => {
+import './CardModel.css';
+
+const CardModel = (props) => {
   return (
     <React.Fragment>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={LocalImage}/>
+  <Card style={{ width: '18rem' }} className="scale-efect">
+      <Card.Img variant="top" src={LocalImage} />
       <Card.Body>
-        <Card.Title>Scale Effect</Card.Title>
+        <Card.Title>Card Title</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
@@ -22,5 +23,4 @@ const CardModel = (identifier,width, title, content) => {
   );
 }
 
-export default CardModel;  git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
+export default CardModel;  

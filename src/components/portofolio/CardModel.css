@@ -1,17 +1,17 @@
 
 /* Scale */
 
-#root > div > div {
+ .scale-efect {
     transition: transform 0.3s ease;
   }
   
-  #root > div > div:hover {
+  .scale-efect:hover {
     transform: scale(1.1); 
-  }
+  } 
 
   /* Shadow */
 
- #root > div > div:nth-child(5) {
+ /* #root > div > div:nth-child(5) {
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -19,4 +19,4 @@
 #root > div > div:nth-child(5):hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 15px rgba(0,0,0,0.2);
-}
+} */

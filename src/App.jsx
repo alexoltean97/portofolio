@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './components/portofolio/Navigation';
-import CardModel from './components/portofolio/CardModel';
+import CardModel from './components/portofolio/CardModel'
 import './App.css'
+
 
 function App() {
 

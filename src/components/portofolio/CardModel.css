@@ -1,22 +1,43 @@
 
 /* Scale */
 
- .scale-efect {
+.effect button{
+  background-color: #6a5acd;
+  border:#6a5acd;
+}
+
+.effect button:hover{
+  background-color: #6a5acd;
+  border:#6a5acd;
+}
+
+ .scale-effect {
     transition: transform 0.3s ease;
   }
   
-  .scale-efect:hover {
+  .scale-effect:hover {
     transform: scale(1.1); 
   } 
 
   /* Shadow */
 
- /* #root > div > div:nth-child(5) {
+  .shadow-effect {
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-#root > div > div:nth-child(5):hover {
+.shadow-effect:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 15px rgba(0,0,0,0.2);
-} */
+} 
+
+/* Color */
+
+.visibility-effect {
+  transition: opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+.visibility-effect:hover {
+  opacity: 1;
+}

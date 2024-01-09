@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './components/portofolio/Navigation';
-import CardModel from './components/portofolio/CardModel'
+import CardGrid from './layout/CardGrid';
 import './App.css'
 
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <div class="container">
       <Navigation />
-      <CardModel />
+     <CardGrid />
     </div>
    
   )

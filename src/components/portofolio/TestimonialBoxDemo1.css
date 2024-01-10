@@ -1,0 +1,27 @@
+.testimonial-box-demo-1{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    
+    border-radius: 5px;
+    margin: 0 20px;
+}
+
+.testimonial-box-text-1{
+    text-align: center;
+    
+}
+
+.testimonial-box-headline-1{
+    background-color: var(--main-color);
+}
+
+.testimonial-box-headline-1 img {
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.testimonial-box-headline-1 h3, 
+.testimonial-box-headline-1 span{
+    display: block;
+    text-align: center;
+}

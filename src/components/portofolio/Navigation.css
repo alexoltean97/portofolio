@@ -60,7 +60,7 @@ li:last-child{
     background-color: #6a5acd;
 } 
 
-svg{
+.portfolio-navbar svg{
     position: relative;
     left: 5px;
 }

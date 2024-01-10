@@ -1,6 +1,12 @@
 :root{
-    --main-color:#6a5acd;
+    --main-color:#940642;
+    --secondary-color: #6a5acd;
     --plain-white: #fff;
+    --main-color2:#6a5acd;
+}
+
+#root {
+    padding: 20px 0;
 }
 
 /* Single Product */

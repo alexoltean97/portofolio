@@ -35,7 +35,7 @@ li a{
 }
 
 .active-parent{
-    background-color: #6a5acd;
+    background-color: var(--main-color);
 }
 
 li .active {
@@ -57,7 +57,7 @@ li:last-child{
 } 
 
  li:hover{
-    background-color: #6a5acd;
+    background-color: var(--main-color);
 } 
 
 .portfolio-navbar svg{

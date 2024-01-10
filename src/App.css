@@ -1,8 +1,16 @@
 :root{
+     /** Colors  **/
     --main-color:#940642;
     --secondary-color: #6a5acd;
     --plain-white: #fff;
     --main-color2:#6a5acd;
+
+    /** Fonts **/
+    --main-font: 'Teko', sans-serif;
+    --second-font: 'Titillium', sans-serif;
+    /** Sizes **/
+    --h1-size: 88px;
+    --p-size: 22px;
 }
 
 #root {

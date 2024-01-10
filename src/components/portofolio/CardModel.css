@@ -2,13 +2,13 @@
 /* Scale */
 
 .effect button{
-  background-color: #6a5acd;
-  border:#6a5acd;
+  background-color: var(--main-color);
+  border:var(--main-color);
 }
 
 .effect button:hover{
-  background-color: #6a5acd;
-  border:#6a5acd;
+  background-color: var(--main-color);
+  border:var(--main-color);
 }
 
  .scale-effect {

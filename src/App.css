@@ -1,7 +1,15 @@
-#root > div > div > div > button{
-    
-    background-color: #6a5acd;
-    border-color: #6a5acd;
+:root{
+    --main-color:#6a5acd;
+    --plain-white: #fff;
 }
 
+/* Single Product */
 
+.product-filters {
+    margin-left: 100px;
+}
+
+.image-grid img{
+    border:1px solid black;
+    margin: 0 5px;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import PlaceholderPortrait from "../../assets/images/placeholder-oa.png";
+import { Link } from "react-router-dom";
 
 const Oa = () => {
   return (
@@ -16,7 +17,7 @@ const Oa = () => {
 
             <div className="company-contact">
               <a href="#">Contact Me</a>
-              <a href="#">Portofolio</a>
+              <Link to="/portofolio">Portofolio</Link>
             </div>
           </div>
 

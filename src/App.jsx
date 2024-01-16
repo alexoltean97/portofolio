@@ -1,20 +1,15 @@
 import React from 'react';
-import HomePageLayout from './layout/HomePageLayout';
-import PortofolioPageLayout from './layout/PortofolioPageLayout';
-import Footer from './layout/globals/Footer';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './routes/AppRoutes';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.scss'
+import "./App.scss";
 
-function App() {
-
-
+const App = () => {
   return (
-   <React.Fragment>
-      <PortofolioPageLayout />
-      <HomePageLayout />
-      <Footer />
-   </React.Fragment>
+    <Router>
+      <AppRoutes />
+    </Router>
   );
-}
+};
 
-export default App
+export default App;

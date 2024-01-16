@@ -285,8 +285,9 @@ const HomePageLayout = () => {
                 <div className="col-lg-6 col-sm-12">
                     <div className="social-media">
                         <ul>
-                           <li><a href="#">test</a></li>
-                        
+                           <li><a href="#"><i class="fab fa-github"></i></a></li>
+                           <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>

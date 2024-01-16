@@ -22,7 +22,6 @@ function App() {
       <SingleProduct />
       <TestimonialGrid1 />
       <TestimonialBox2 /> */}
-      <Navigation />
       <HomePageLayout />
    </React.Fragment>
    

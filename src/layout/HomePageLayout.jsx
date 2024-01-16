@@ -1,8 +1,6 @@
 import React from "react";
 import PlaceholderPortrait from "../assets/images/placeholder-oa.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-solid-svg-icons";
 import "./HomePageLayout.css";
 
 const HomePageLayout = () => {
@@ -287,7 +285,7 @@ const HomePageLayout = () => {
                 <div className="col-lg-6 col-sm-12">
                     <div className="social-media">
                         <ul>
-                           <li><a href="#"><FontAwesomeIcon icon={faGithub}/></a></li>
+                           <li><a href="#">test</a></li>
                         
                         </ul>
                     </div>

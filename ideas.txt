@@ -1,0 +1,14 @@
+ A color switcher component for all components. 
+
+bottom-left component
+
+1 square with a toothbrush icon 
+
+opens squares with hex values. 
+
+Changes the main-color variable.  
+
+
+https://www.hostinger.com/website-templates/15?ppc_campaign=google_search_generic_hosting_all&bidkw=defaultkeyword&lo=1011806&gad_source=1&gclid=Cj0KCQiAnfmsBhDfARIsAM7MKi2PC4OA5OCGru2TtrnNPPYS0b-ZAjhtXy0BkQhx1rX9oQKFRgP_37EaAt0bEALw_wcB
+
+https://www.hostinger.com/website-templates/preview/laurent?returnPath=%2Fwebsite-templates%2F15&defaultTemplateId=laurent

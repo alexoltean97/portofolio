@@ -1,0 +1,22 @@
+@import "../globals/variables";
+.certificates {
+	padding: 150px 0;
+	h2 {
+		padding-bottom: 50px;
+		font-size: $h2-size;
+		font-family: $main-font;
+	}
+	.certificates-box {
+		padding-bottom: 30px;
+		h5 {
+			color: $main-color;
+			font-family: $main-font;
+			font-size: $h5-size;
+			text-transform: uppercase;
+			font-weight: 400;
+		}
+		strong {
+			font-family: $third-font;
+		}
+	}
+}

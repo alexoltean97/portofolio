@@ -2,7 +2,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import LocalImage from "../../assets/images/placeholder-image-card.png";
-import "./CardModel.css";
+
 
 const CardModel = (props) => {
   return (

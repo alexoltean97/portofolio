@@ -1,7 +1,7 @@
 import React from "react";
 import PlaceholderPortrait from "../assets/images/placeholder-oa.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./HomePageLayout.css";
+
 
 const HomePageLayout = () => {
 
@@ -285,8 +285,9 @@ const HomePageLayout = () => {
                 <div className="col-lg-6 col-sm-12">
                     <div className="social-media">
                         <ul>
-                           <li><a href="#">test</a></li>
-                        
+                           <li><a href="#"><i className="fab fa-github"></i></a></li>
+                           <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
+                           <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>

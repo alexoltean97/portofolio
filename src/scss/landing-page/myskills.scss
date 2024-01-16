@@ -1,0 +1,50 @@
+@import "../globals/variables";
+.my-skills {
+	h2 {
+		font-family: $main-font;
+		font-size: $h2-size;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 0.91;
+		letter-spacing: normal;
+	}
+	.skill-row {
+		margin: 50px 0 0 0;
+		.skills-box {
+			margin: 0 0 40px 0;
+			h5 {
+				font-family: $main-font;
+				font-size: $h5-size;
+				color: $main-color;
+				text-transform: uppercase;
+				font-weight: 400;
+			}
+		}
+	}
+}
+  
+  @media screen and (min-width: 1000px) {
+    .my-skills .skill-row .skills-box p {
+      width: 400px;
+    }
+  }
+  
+  @media screen and (max-width: 440px) {
+    .my-skills h2 {
+      font-size: $h2-mobile;
+      text-align: center;
+    }
+  
+    .my-skills .skills-box {
+      padding: 15px 0 15px 0;
+      text-align: center;
+    }
+  
+    .my-skills .skills-box h5 {
+      font-size: $h5-mobile;
+    }
+  
+    .my-skills .skills-box p {
+      font-size: $p-mobile;
+    }
+  }

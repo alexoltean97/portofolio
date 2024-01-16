@@ -1,0 +1,20 @@
+@import "../globals/variables";
+.pagination-grid {
+	.active-page {
+		background-color: $main-color;
+		color: $plain-white;
+		opacity: 1 !important;
+		transition: 0.25s ease-in-out;
+	}
+}
+.pagination-box {
+	padding: 10px 20px;
+	background-color: $main-color;
+	color: $plain-white;
+	border: 1px solid $plain-white;
+	opacity: 0.8;
+	&:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+}

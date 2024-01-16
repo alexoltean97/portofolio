@@ -1,0 +1,67 @@
+@import "../globals/variables";
+.product-filters {
+    margin-left: 100px;
+  }
+  
+  .image-grid img {
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    box-shadow:  $single-product-shadow;
+  }
+  
+  .image-grid img:hover {
+    transform: translateY(-5px);
+    box-shadow: $single-product-shadow-hover;
+    cursor: pointer;
+  }
+  
+  .size-selector {
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid $light-gray;
+    background-color: $plain-white;
+    box-shadow: $size-selector-shadow;
+    font-size: $small-p-size;
+    color: $plain-dark;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .size-selector:hover {
+    border-color: $light-blue;
+  }
+  
+  .size-selector:focus {
+    /* box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); */
+    border-color: $light-blue;
+    outline: none;
+  }
+  
+  .size-selector option {
+    padding: 10px;
+    color: $plain-dark;
+    background-color: $plain-white;
+  }
+  
+  .btn-cart {
+    width: 90%;
+    background-color: $main-color;
+    color: $plain-white;
+  }
+  
+  .btn-liked {
+    width: 10%;
+    background-color: $main-color;
+    color: $plain-white;
+    text-align: center;
+  }
+  
+  .buttons-container .btn {
+    border-radius: 2px;
+  }
+  
+  .buttons-container .btn:hover {
+    background-color: $main-color;
+    color: $plain-white;
+  }

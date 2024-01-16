@@ -5,7 +5,7 @@ import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
 import { faCookie } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import "./Navigation.css";
+
 
 const Navigation = () => {
   const [activeLink, setActiveLink] = useState("Home");

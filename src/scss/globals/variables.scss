@@ -1,0 +1,71 @@
+:root {
+    /** Colors  **/
+    --main-color: #940642;
+    --secondary-color: #6a5acd;
+    --plain-white: #fff;
+    --plain-dark: #333;
+    --main-color2: #6a5acd;
+    --gray: rgb(240,240,244);
+    --light-gray: #ccc;
+    --light-blue: #007bff;
+    --navbar-black: #384a4f;
+  
+    /** Fonts **/
+    --main-font: "Teko", sans-serif;
+    --second-font: "Titillium", sans-serif;
+    --third-font: "Titillium Web", sans-serif;
+    --roboto-font: "Roboto", sans-serif
+    /** Sizes **/
+    --h1-size: 88px;
+    --h2-size: 68px;
+    --h5-size: 30px;
+    --p-size: 22px;
+    --small-p-size: 16px;
+    --icon-size: 18px;
+  
+    /** Mobile **/
+    --h1-mobile: 28px;
+    --h2-mobile: 26px;
+    --h5-mobile: 20px;
+    --p-mobile: 16px;
+    --a-mobile: 14px;
+
+    /** Shadows **/
+    --single-product-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --size-selector-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --single-product-shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.2)
+  }
+
+
+  $main-color: var(--main-color);
+  $secondary-color: var(--secondary-color);
+  $plain-white: var(--plain-white);
+  $plain-dark: var(--plain-dark);
+  $main-color-2: var(--main-color2);
+  $gray: var(--gray);
+  $light-gray: var(--light-gray);
+  $light-blue: var(---light-blue);
+  $navbar-black: var(--navbar-black);
+
+
+  $main-font: var(--main-font);
+  $second-font: var(--second-font);
+  $third-font: var(--third-font);
+  $roboto-font: var(--roboto-font);
+
+  $h1-size: var(--h1-size);
+  $h2-size: var(--h2-size);
+  $h5-size: var(--h5-size);
+  $p-size: var(--p-size);
+  $small-p-size: var(--small-p-size);
+  $icon-size: var(--icon-size);
+
+  $h1-mobile: var(--h1-mobile);
+  $h2-mobile: var(--h2-mobile);
+  $h5-mobile: var(--h5-mobile);
+  $p-mobile: var(--p-mobile);
+  $a-mobile: var(--a-mobile);
+
+  $single-product-shadow: var(--single-product-shadow);
+  $size-selector-shadow: var(--size-selector-shadow);
+  $single-product-shadow-hover: var(--single-product-shadow-hover);

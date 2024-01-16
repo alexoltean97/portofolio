@@ -1,0 +1,14 @@
+@import "../globals/variables";
+.main-footer {
+    padding: 50px 0;
+ }
+ 
+ .main-footer ul li{
+     margin: 0 10px;
+     display: inline;
+     font-size: var(--icon-size);
+ }
+ 
+ .main-footer ul li i {
+     color: black;
+ }

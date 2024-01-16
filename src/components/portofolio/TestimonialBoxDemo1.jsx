@@ -1,5 +1,4 @@
 import React from "react";
-import "./TestimonialBoxDemo1.css";
 import Desk from "../../assets/images/portrait.png";
 const TestimonialBoxDemo1 = () => {
   return (

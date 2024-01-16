@@ -1,0 +1,32 @@
+@import "../globals/variables";
+.effect {
+	button {
+		background-color: $main-color;
+		border: $main-color;
+		&:hover {
+			background-color: $main-color;
+			border: $main-color;
+		}
+	}
+}
+.scale-effect {
+	transition: transform 0.3s ease;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+.shadow-effect {
+	transition: all 0.3s ease;
+	box-shadow: $single-product-shadow;
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: $single-product-shadow-hover;
+	}
+}
+.visibility-effect {
+	transition: opacity 0.3s ease;
+	opacity: 0.8;
+	&:hover {
+		opacity: 1;
+	}
+}

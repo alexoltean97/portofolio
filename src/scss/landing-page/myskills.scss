@@ -1,27 +1,27 @@
-.my-skills h2 {
-    font-family: var(--main-font);
-    font-size: var(--h2-size);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 0.91;
-    letter-spacing: normal;
-  }
-  
-  .my-skills .skill-row {
-    margin: 50px 0 0 0;
-  }
-  
-  .my-skills .skill-row .skills-box {
-    margin: 0 0 40px 0;
-  }
-  
-  .my-skills .skill-row .skills-box h5 {
-    font-family: var(--main-font);
-    font-size: var(--h5-size);
-    color: var(--main-color);
-    text-transform: uppercase;
-    font-weight: 400;
-  }
+@import "../globals/variables";
+.my-skills {
+	h2 {
+		font-family: $main-font;
+		font-size: $h2-size;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 0.91;
+		letter-spacing: normal;
+	}
+	.skill-row {
+		margin: 50px 0 0 0;
+		.skills-box {
+			margin: 0 0 40px 0;
+			h5 {
+				font-family: $main-font;
+				font-size: $h5-size;
+				color: $main-color;
+				text-transform: uppercase;
+				font-weight: 400;
+			}
+		}
+	}
+}
   
   @media screen and (min-width: 1000px) {
     .my-skills .skill-row .skills-box p {
@@ -31,7 +31,7 @@
   
   @media screen and (max-width: 440px) {
     .my-skills h2 {
-      font-size: var(--h2-mobile);
+      font-size: $h2-mobile;
       text-align: center;
     }
   
@@ -41,10 +41,10 @@
     }
   
     .my-skills .skills-box h5 {
-      font-size: var(--h5-mobile);
+      font-size: $h5-mobile;
     }
   
     .my-skills .skills-box p {
-      font-size: var(--p-mobile);
+      font-size: $p-mobile;
     }
   }

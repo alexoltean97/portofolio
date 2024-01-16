@@ -1,63 +1,55 @@
+@import "../globals/variables";
 .portfolio-navbar {
-    margin-top: 10px;
-  }
-  
-  .portfolio-navbar ul {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    padding: 0 0;
-    border-radius: 100px;
-    width: 100%;
-  }
-  
-  .portfolio-navbar li {
-    position: relative;
-    padding: 16px 0;
-    box-sizing: border-box;
-    display: inline-block;
-    background-color: #384a4f;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    width: 26%;
-    text-align: center;
-    overflow: hidden;
-    transition: 0.25s ease-in-out;
-  }
-  
-  .portfolio-navbar li a {
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-    padding-bottom: 2.5px;
-  }
-  
-  .portfolio-navbar .active-parent {
-    background-color: var(--main-color);
-  }
-  
-  .portfolio-navbar li .active {
-    border-bottom: 2px solid #fff;
-  }
-  
-  .portfolio-navbar .active li {
-    border-bottom: 2px solid #fff;
-  }
-  
-  .portfolio-navbar li:first-child {
-    border-radius: 100px 0 0 100px;
-  }
-  
-  .portfolio-navbar li:last-child {
-    border-radius: 0 100px 100px 0;
-  }
-  
-  .portfolio-navbar li:hover {
-    background-color: var(--main-color);
-  }
-  
-  .portfolio-navbar svg {
-    position: relative;
-    left: 5px;
-  }
-  
+	margin-top: 10px;
+	ul {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: nowrap;
+		padding: 0 0;
+		border-radius: 100px;
+		width: 100%;
+	}
+	li {
+		position: relative;
+		padding: 16px 0;
+		box-sizing: border-box;
+		display: inline-block;
+		background-color: $navbar-black;
+		color: $plain-white;
+		font-family: $roboto-font;
+		width: 26%;
+		text-align: center;
+		overflow: hidden;
+		transition: 0.25s ease-in-out;
+		a {
+			position: relative;
+			color: $plain-white;
+			text-decoration: none;
+			padding-bottom: 2.5px;
+		}
+		.active {
+			border-bottom: 2px solid $plain-white;
+		}
+		&:first-child {
+			border-radius: 100px 0 0 100px;
+		}
+		&:last-child {
+			border-radius: 0 100px 100px 0;
+		}
+		&:hover {
+			background-color: $main-color;
+		}
+	}
+	.active-parent {
+		background-color: $main-color;
+	}
+	.active {
+		li {
+			border-bottom: 2px solid $plain-white;
+		}
+	}
+	svg {
+		position: relative;
+		left: 5px;
+	}
+}

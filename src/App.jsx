@@ -16,17 +16,14 @@ function App() {
 
   return (
    <React.Fragment>
-     {/* <Navigation />
-      <CardGrid />
-      <Pagination />
-      <SingleProduct />
-      <TestimonialGrid1 />
-      <TestimonialBox2 /> */}
+      {/* <Navigation />
+        <CardGrid />
+        <Pagination />
+        <SingleProduct />
+        <TestimonialGrid1 />
+        <TestimonialBox2 /> */}
       <HomePageLayout />
    </React.Fragment>
-   
-
-   
   );
 }
 

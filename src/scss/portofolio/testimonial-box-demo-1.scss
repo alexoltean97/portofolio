@@ -1,3 +1,4 @@
+@import "../globals/variables";
 .testimonial-box {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -5,22 +6,22 @@
   }
   
   .testimonial-text {
-    font-family: "Roboto", sans-serif;
+    font-family: $roboto-font;
     padding: 20px;
     text-align: center;
   }
   
   .testimonial-headlines {
     padding: 50px 0 30px 0;
-    background-color: var(--main-color);
-    color: #fff;
+    background-color: $main-color;
+    color: $plain-white;
     position: relative;
     z-index: 1;
     margin-top: -25px;
   }
   
   .testimonial-box img {
-    border: 2px solid #fff;
+    border: 2px solid $plain-white;
     border-radius: 100%;
     display: block;
     margin: 0 auto;
@@ -30,7 +31,7 @@
   
   .testimonial-headlines h3,
   .testimonial-headlines span {
-    font-family: "Roboto", sans-serif;
+    font-family: $roboto-font;
     display: block;
     text-align: center;
   }

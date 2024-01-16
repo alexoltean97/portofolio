@@ -1,0 +1,36 @@
+.work-experience {
+    padding: 150px 0;
+    background-color: var(--gray);
+}
+
+.work-experience h2 {
+    padding-bottom: 50px;
+    font-size: var(--h2-size);
+    font-family: var(--main-font);
+}
+
+.work-experience .work-box {
+    padding-bottom: 30px;
+}
+
+.work-experience .work-box h5 {
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: var(--h5-size);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.work-experience .work-box strong {
+    font-family: var(--third-font);
+}
+
+.work-experience .work-box p {
+    padding: 15px 0;
+    font-family: var(--third-font);
+}
+
+.work-experience .work-box a {
+    color: var(--main-color);
+    text-decoration: none;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./Pagination.css";
+
 
 const Pagination = () => {
   const pages = ["1", "2", "3", "4"];

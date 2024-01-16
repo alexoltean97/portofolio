@@ -8,8 +8,8 @@ import TestimonialBox2 from './components/portofolio/TestimonialBox2';
 import HomePageLayout from './layout/HomePageLayout';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
-
+//import './App.css'
+import './App.scss'
 
 function App() {
 

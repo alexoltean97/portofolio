@@ -1,0 +1,27 @@
+.certificates {
+    padding: 150px 0;
+}
+
+.certificates h2 {
+    padding-bottom: 50px;
+    font-size: var(--h2-size);
+    font-family: var(--main-font);
+}
+
+
+.certificates .certificates-box {
+    padding-bottom: 30px;
+}
+
+.certificates .certificates-box h5 {
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: var(--h5-size);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
+.certificates .certificates-box  strong {
+    font-family: var(--third-font);
+}

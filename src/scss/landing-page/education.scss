@@ -1,0 +1,28 @@
+.education {
+    padding: 150px 0;
+    background-color: var(--gray);
+}
+
+.education h2 {
+    padding-bottom: 50px;
+    font-size: var(--h2-size);
+    font-family: var(--main-font);
+}
+
+
+.education .education-box {
+    padding-bottom: 30px;
+}
+
+.education .education-box h5 {
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: var(--h5-size);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
+.education .education-box  strong {
+    font-family: var(--third-font);
+}

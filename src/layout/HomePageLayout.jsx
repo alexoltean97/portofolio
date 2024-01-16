@@ -1,8 +1,14 @@
 import React from "react";
 import PlaceholderPortrait from "../assets/images/placeholder-oa.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-solid-svg-icons";
 import "./HomePageLayout.css";
 
 const HomePageLayout = () => {
+
+
+
   return (
     <React.Fragment>
       <div className="oa">
@@ -121,9 +127,174 @@ const HomePageLayout = () => {
                 </p>
               </div>
             </div>
+            <div className="col-lg-6">&nbsp;</div>
+
+            <div className="col-lg-6">
+              <div className="work-box">
+                <h5>Freelancer</h5>
+                <span>
+                  <strong>Upwork / Dec 2019 - Feb 2021</strong>
+                </span>
+                <p>
+                  Product lead for the Digital New Card Application across 7
+                  countries. Partnered with GFK Market Research to conduct
+                  international user studies to determine core MVP features,
+                  plus long-term optimizations... <a href="#">Read More</a>
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-6">&nbsp;</div>
+
+            <div className="col-lg-6">
+              <div className="work-box">
+                <h5>Front-end Engineer</h5>
+                <span>
+                  <strong>123FormBuilder / Aug 2018 - Dec 2019</strong>
+                </span>
+                <p>
+                  Product lead for the Digital New Card Application across 7
+                  countries. Partnered with GFK Market Research to conduct
+                  international user studies to determine core MVP features,
+                  plus long-term optimizations... <a href="#">Read More</a>
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-6">&nbsp;</div>
+            <div className="col-lg-6">
+              <div className="work-box">
+                <h5>Front-end Engineer</h5>
+                <span>
+                  <strong>BlueMatrix / Apr 2018 - Aug 2018</strong>
+                </span>
+                <p>
+                  Product lead for the Digital New Card Application across 7
+                  countries. Partnered with GFK Market Research to conduct
+                  international user studies to determine core MVP features,
+                  plus long-term optimizations... <a href="#">Read More</a>
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-6">&nbsp;</div>
+
+            <div className="col-lg-6">
+              <div className="work-box">
+                <h5>Front-end Engineer</h5>
+                <span>
+                  <strong>
+                    Junior Web Developer / Junior QA Engineer / Dec 2016 - Mar
+                    2018
+                  </strong>
+                </span>
+                <p>
+                  Product lead for the Digital New Card Application across 7
+                  countries. Partnered with GFK Market Research to conduct
+                  international user studies to determine core MVP features,
+                  plus long-term optimizations... <a href="#">Read More</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <div className="certificates">
+        <div className="container">
+          <h2 className="h2-theme">Certificates</h2>
+
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="certificates-box">
+                <h5>Scrum: The Basics</h5>
+                <span>
+                  <strong>Scrum Basics Linkedin Certificate</strong>
+                </span>
+              </div>
+            </div>
+            <div className="col-lg-6">&nbsp;</div>
+
+            <div className="col-lg-6">
+              <div className="certificates-box">
+                <h5>Agile Product Owner Role:Foundations</h5>
+                <span>
+                  <strong>Agile LinkedIn Certificate</strong>
+                </span>
+              </div>
+            </div>
+
+            <div className="col-lg-6">&nbsp;</div>
+
+            <div className="col-lg-6">
+              <div className="certificates-box">
+                <h5>ETC Training Center Agile Methodologies</h5>
+                <span>
+                  <strong>
+                    Certified in Agile Methodologies after finishing the
+                    training at ETC Timisoara underthe trainer Daniel Bako.
+                  </strong>
+                </span>
+              </div>
+            </div>
+
+            <div className="col-lg-6">&nbsp;</div>
+            <div className="col-lg-6">
+              <div className="certificates-box">
+                <h5>IT School PHP&MYSQL Course</h5>
+                <span>
+                  <strong>PHP and MySql at IT SCHOOL TIMISOARA</strong>
+                </span>
+              </div>
+            </div>
+
+            <div className="col-lg-6">&nbsp;</div>
+
+            <div className="col-lg-6">
+              <div className="certificates-box">
+                <h5>Cambridge FCE</h5>
+                <strong>
+                  Took my Cambridge FCE diploma in high school. I was awarded
+                  level B at the FCE exam
+                </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="education">
+        <div className="container">
+          <h2 className="h2-theme">Education</h2>
+
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="education-box">
+                <h5>Bachelor's degree - Universitatea Aurel Vlaicu</h5>
+                <span>
+                  <strong>Computer Science | Arad 2020 - 2023</strong>
+                </span>
+              </div>
+            </div>
+            <div className="col-lg-6">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+
+      <footer className="main-footer">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-6 col-sm-12">
+                    <div className="social-media">
+                        <ul>
+                           <li><a href="#"><FontAwesomeIcon icon={faGithub}/></a></li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </footer>
     </React.Fragment>
   );
 };

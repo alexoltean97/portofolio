@@ -35,7 +35,9 @@
     .theme-menu-header{
         display: flex;
         justify-content: space-between;
-
+        h5{
+            font-family: $main-font;
+        }
         p{
             &:hover{
                 cursor: pointer;
@@ -84,5 +86,4 @@
           }  
         }
     }
-    
 }

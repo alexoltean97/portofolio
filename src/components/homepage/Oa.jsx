@@ -16,7 +16,7 @@ const Oa = () => {
             </div>
 
             <div className="company-contact">
-              <a href="#">Contact Me</a>
+            <a href="#">Contact Me</a>
               <Link to="/portofolio">Portofolio</Link>
             </div>
           </div>

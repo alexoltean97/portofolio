@@ -26,8 +26,8 @@
     margin: 0 20px;
     padding: 20px;
     position: fixed;
-    bottom: 100px;
-    right: 40px;
+    bottom: 20px;
+    right: 20px;
     background-color: $plain-white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -35,6 +35,12 @@
     .theme-menu-header{
         display: flex;
         justify-content: space-between;
+
+        p{
+            &:hover{
+                cursor: pointer;
+            }
+        }
     }
     
     .main-color {

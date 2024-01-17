@@ -19,7 +19,6 @@ const HomePageLayout = () => {
       <Certificates />
       <Education />
       <ThemeMenu />
-      <ThemePicker/>
       <Footer />
     </React.Fragment>
   );

@@ -1,0 +1,82 @@
+@import "variables";
+@import "mixins";
+
+.theme-picker {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: $main-color;
+    color: $plain-white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $settings-shadow;
+    transition: 0.25s ease-in-out;
+    animation-duration: 4s;
+    &:hover{
+        cursor: pointer;
+        transform: rotate(180deg);
+    }
+}
+
+.theme-menu {
+    margin: 0 20px;
+    padding: 20px;
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    background-color: $plain-white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+   
+    .theme-menu-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main-color {
+        @include circle(#940642);
+    }
+
+    .active-color{
+            transform: scale(1.1);
+    }
+
+    .secondary-color {
+        @include circle($secondary-color);
+    }
+
+    .third-color {
+        @include circle($dark-emerald-green);
+    }
+
+    .fourth-color {
+        @include circle($jewel-toned-emerald);
+    }
+
+    .fifth-color {
+        @include circle($saphire-blue);
+    }
+    .sixth-color {
+        @include circle($teal-blue);
+    }
+    .seventh-color {
+        @include circle($navy-blue);
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        li{
+            margin: 0 2px;
+            list-style-type: none;
+            display: inline-block;
+          &:hover{
+            cursor: pointer;
+          }  
+        }
+    }
+    
+}

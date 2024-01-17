@@ -2,11 +2,17 @@
     /** Colors  **/
     --main-color: #940642;
     --secondary-color: #6a5acd;
+    --dark-emarald-green: #004D40;
+    --jewel-toned-emerald: #009B77;
+    --saphire-blue: #0F52BA;
+    --teal-blue: #008080;
+    --navy-blue: #000080;
     --plain-white: #fff;
     --plain-dark: #333;
     --main-color2: #6a5acd;
     --gray: rgb(240,240,244);
     --light-gray: #ccc;
+    --strong-gray: #f0f0f0;
     --light-blue: #007bff;
     --navbar-black: #384a4f;
   
@@ -34,16 +40,23 @@
     --single-product-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     --size-selector-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     --single-product-shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.2)
+    --settings-shadow:  0 2px 4px rgba(0,0,0,0.2);
   }
 
 
   $main-color: var(--main-color);
   $secondary-color: var(--secondary-color);
+  $dark-emerald-green: var(--dark-emarald-green);
+  $jewel-toned-emerald: var(--jewel-toned-emerald);
+  $saphire-blue: var(--saphire-blue);
+  $teal-blue: var(--teal-blue);
+  $navy-blue: var(--navy-blue);
   $plain-white: var(--plain-white);
   $plain-dark: var(--plain-dark);
   $main-color-2: var(--main-color2);
   $gray: var(--gray);
   $light-gray: var(--light-gray);
+  $strong-gray: var(--strong-gray);
   $light-blue: var(---light-blue);
   $navbar-black: var(--navbar-black);
 
@@ -69,3 +82,4 @@
   $single-product-shadow: var(--single-product-shadow);
   $size-selector-shadow: var(--size-selector-shadow);
   $single-product-shadow-hover: var(--single-product-shadow-hover);
+  $settings-shadow: var(--settings-shadow);

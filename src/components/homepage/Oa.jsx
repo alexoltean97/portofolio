@@ -1,8 +1,10 @@
 import React from "react";
 import PlaceholderPortrait from "../../assets/images/placeholder-oa.png";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Oa = () => {
+  const { t } = useTranslation()
   return (
     <div className="oa">
       <div className="container">
@@ -12,7 +14,7 @@ const Oa = () => {
               <h1>
                 Oltean <span>Alexandru</span>
               </h1>
-              <p>Proficient web developer for your projects.</p>
+              <p>{t('Iam')}</p>
             </div>
 
             <div className="company-contact">

@@ -5,10 +5,19 @@ import { useTranslation } from "react-i18next";
 
 const LanguagePicker = () => {
 
-
-useEffect(() => {
-  getLanguageFromCookie();
-},[])
+  const { i18n } = useTranslation();
+  useEffect(() => {
+    const language = getLanguageFromCookie();
+    if (language) {
+      i18n.changeLanguage(language);
+    } else {
+      
+      const browserLang = navigator.language.split('-')[0]; 
+      i18n.changeLanguage(browserLang);
+      setLanguageCookie(browserLang); 
+    }
+    
+  }, [i18n]);
   
   const [menuToggle, setMenuToggle] = useState(false);
 
@@ -21,7 +30,6 @@ useEffect(() => {
     de: { nativeName: "Deutsch" },
   };
 
-  const { i18n } = useTranslation();
 
   const setLanguageCookie = (language) => {
     const daysToExpire = 30;

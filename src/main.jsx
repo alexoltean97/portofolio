@@ -9,3 +9,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
+
+document.addEventListener('DOMContentLoaded', () => {
+  let userLang = navigator.language || navigator.userLanguage; 
+  userLang = userLang.split('-')[0]; 
+
+  console.log('Browser language:', userLang);
+});

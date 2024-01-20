@@ -1,4 +1,5 @@
 @import "../globals/variables";
+@import "../globals/mixins.scss";
 .oa {
     padding-bottom: 50px;
   }
@@ -33,24 +34,10 @@
       display: block;
     }
   }
+
   .company-contact {
     a {
-      font-family: $third-font;
-      background-color: $main-color;
-      font-size: $p-size;
-      color: $plain-white;
-      border: 1px solid $main-color;
-      text-decoration: none;
-      margin-right: 10px;
-      padding: 10px 35px;
-      border-radius: 2px;
-      font-weight: 400;
-      transition: 0.25s ease-in-out;
-      &:hover {
-        background-color: $plain-white;
-        color: $main-color;
-        border: 1px solid $main-color;
-      }
+      @include buttons();
     }
   }
   

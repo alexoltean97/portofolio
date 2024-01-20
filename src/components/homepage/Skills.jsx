@@ -1,48 +1,46 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const {t} = useTranslation()
   return (
     <div className="my-skills">
       <div className="container">
-        <h2 className="h2-theme">My skills</h2>
+        <h2 className="h2-theme">{t('mySkills')}</h2>
 
         <div className="row skill-row">
           <div className="col-lg-6 col-sm-12">
             <div className="skills-box">
-              <h5>Front-end Development</h5>
+              <h5>{t('feDev')}</h5>
               <p>
-                In business and engineering, new product development covers the
-                complete process of bringing a new product to market.
+                {t('feDevDesc')}
               </p>
             </div>
           </div>
 
           <div className="col-lg-6 col-sm-12">
             <div className="skills-box">
-              <h5>Quality assurance</h5>
+              <h5>{t('qualityAssurance')}</h5>
               <p>
-                In business and engineering, new product development covers the
-                complete process of bringing a new product to market.
+               {t('qualityDescription')}
               </p>
             </div>
           </div>
 
           <div className="col-lg-6 col-sm-12">
             <div className="skills-box">
-              <h5>Product Management</h5>
+              <h5>{t('productManagement')}</h5>
               <p>
-                In business and engineering, new product development covers the
-                complete process of bringing a new product to market.
+               {t('productDesc')}
               </p>
             </div>
           </div>
 
           <div className="col-lg-6 col-sm-12">
             <div className="skills-box">
-              <h5>Agile workflow assurance</h5>
+              <h5>{t('agileWorkflow')}</h5>
               <p>
-                In business and engineering, new product development covers the
-                complete process of bringing a new product to market.
+                {t('agileDesc')}
               </p>
             </div>
           </div>

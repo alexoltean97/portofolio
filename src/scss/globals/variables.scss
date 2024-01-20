@@ -9,6 +9,7 @@
     --navy-blue: #000080;
     --plain-white: #fff;
     --plain-dark: #333;
+    --title-dark: #222529;
     --main-color2: #6a5acd;
     --gray: rgb(240,240,244);
     --light-gray: #ccc;
@@ -26,6 +27,7 @@
     --h2-size: 68px;
     --h5-size: 30px;
     --p-size: 22px;
+    --lang-span:20px;
     --small-p-size: 16px;
     --icon-size: 18px;
   
@@ -52,6 +54,7 @@
   $teal-blue: var(--teal-blue);
   $navy-blue: var(--navy-blue);
   $plain-white: var(--plain-white);
+  $title-dark: var(--title-dark);
   $plain-dark: var(--plain-dark);
   $main-color-2: var(--main-color2);
   $gray: var(--gray);
@@ -70,6 +73,7 @@
   $h2-size: var(--h2-size);
   $h5-size: var(--h5-size);
   $p-size: var(--p-size);
+  $lang-span: var(--lang-span);
   $small-p-size: var(--small-p-size);
   $icon-size: var(--icon-size);
 

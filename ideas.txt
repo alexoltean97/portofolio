@@ -8,6 +8,13 @@ opens squares with hex values.
 
 Changes the main-color variable.  
 
+Create some components with plain js
+
+Tabs for Basic Web Components and E-commerce:
+
+
+
+
 
 https://www.hostinger.com/website-templates/15?ppc_campaign=google_search_generic_hosting_all&bidkw=defaultkeyword&lo=1011806&gad_source=1&gclid=Cj0KCQiAnfmsBhDfARIsAM7MKi2PC4OA5OCGru2TtrnNPPYS0b-ZAjhtXy0BkQhx1rX9oQKFRgP_37EaAt0bEALw_wcB
 

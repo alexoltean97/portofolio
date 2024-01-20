@@ -15,40 +15,38 @@ const LanguagePicker = () => {
     de: { nativeName: "Deutsch" },
   };
 
-  const {t, i18n } = useTranslation()
+  const { i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setMenuToggle(false);
+  };
+
   return (
     <React.Fragment>
       <div className="language-parent dropdown">
         <a className="dropdown-toggle" onClick={openLangMenu}>
-          <FontAwesomeIcon icon={faFlag} /> <span>EN</span>
+          <FontAwesomeIcon icon={faFlag} />{" "}
+          <span>{i18n.resolvedLanguage.toUpperCase()}</span>
         </a>
 
         <div
           className={`dropdown-menu-custom ${menuToggle ? "active-menu" : ""}`}
         >
-          <a className="dropdown-toggle">
-            <span>RO</span>
-          </a>
-          <a className="dropdown-toggle">
-            <span>DE</span>
-          </a>
-          <a className="dropdown-toggle">
-            <span>EN</span>
-          </a>
+          {Object.keys(lngs).map((lng) => (
+            <a
+              key={lng}
+              className="dropdown-toggle"
+              onClick={() => changeLanguage(lng)}
+            >
+              <span>{lng.toUpperCase()}</span>
+            </a>
+          ))}
         </div>
       </div>
 
       <div>
-        {Object.keys(lngs).map((lng) => (
-          <button
-            type="submit"
-            key={lng}
-            onClick={() => i18n.changeLanguage(lng)}
-            disabled={i18n.resolvedLanguage === lng}
-          >
-            {lngs[lng].nativeName}
-          </button>
-        ))}
+   
       </div>
     </React.Fragment>
   );

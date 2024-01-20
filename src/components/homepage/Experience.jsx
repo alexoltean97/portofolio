@@ -1,23 +1,22 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Experience = () => {
+  const { t } = useTranslation();
   return (
     <div className="work-experience">
       <div className="container">
-        <h2 className="h2-theme">Work Experience</h2>
+        <h2 className="h2-theme">{t("workExperience")}</h2>
 
         <div className="row">
           <div className="col-lg-6">
             <div className="work-box">
-              <h5>Front-end Engineer</h5>
+              <h5>{t("expTitlePlenty")}</h5>
               <span>
-                <strong>Plenty Markets / Feb 20 - Present</strong>
+                <strong>{t("expDatePlenty")}</strong>
               </span>
               <p>
-                Product lead for the Digital New Card Application across 7
-                countries. Partnered with GFK Market Research to conduct
-                international user studies to determine core MVP features, plus
-                long-term optimizations... <a href="#">Read More</a>
+                {t("expDescPlenty")} <a href="#">{t("readMore")}</a>
               </p>
             </div>
           </div>
@@ -25,15 +24,13 @@ const Experience = () => {
 
           <div className="col-lg-6">
             <div className="work-box">
-              <h5>Freelancer</h5>
+              <h5>{t("expTitleUpwork")}</h5>
               <span>
-                <strong>Upwork / Dec 2019 - Feb 2021</strong>
+                <strong>{t("expDateUpwork")}</strong>
               </span>
               <p>
-                Product lead for the Digital New Card Application across 7
-                countries. Partnered with GFK Market Research to conduct
-                international user studies to determine core MVP features, plus
-                long-term optimizations... <a href="#">Read More</a>
+                {t("expDescUpwork")}
+                <a href="#">{t("readMore")}</a>
               </p>
             </div>
           </div>
@@ -42,15 +39,12 @@ const Experience = () => {
 
           <div className="col-lg-6">
             <div className="work-box">
-              <h5>Front-end Engineer</h5>
+              <h5>{t("expTitle123")}</h5>
               <span>
-                <strong>123FormBuilder / Aug 2018 - Dec 2019</strong>
+                <strong>{t("expDate123")}</strong>
               </span>
               <p>
-                Product lead for the Digital New Card Application across 7
-                countries. Partnered with GFK Market Research to conduct
-                international user studies to determine core MVP features, plus
-                long-term optimizations... <a href="#">Read More</a>
+                {t("expDesc123")} <a href="#">{t("readMore")}</a>
               </p>
             </div>
           </div>
@@ -58,15 +52,12 @@ const Experience = () => {
           <div className="col-lg-6">&nbsp;</div>
           <div className="col-lg-6">
             <div className="work-box">
-              <h5>Front-end Engineer</h5>
+              <h5>{t("expTitleBm")}</h5>
               <span>
-                <strong>BlueMatrix / Apr 2018 - Aug 2018</strong>
+                <strong>{t("expDateBm")}</strong>
               </span>
               <p>
-                Product lead for the Digital New Card Application across 7
-                countries. Partnered with GFK Market Research to conduct
-                international user studies to determine core MVP features, plus
-                long-term optimizations... <a href="#">Read More</a>
+                {t("expDescBm")} <a href="#">{t("readMore")}</a>
               </p>
             </div>
           </div>
@@ -75,18 +66,12 @@ const Experience = () => {
 
           <div className="col-lg-6">
             <div className="work-box">
-              <h5>Front-end Engineer</h5>
+              <h5>{t("expTitleDigital")}</h5>
               <span>
-                <strong>
-                  Junior Web Developer / Junior QA Engineer / Dec 2016 - Mar
-                  2018
-                </strong>
+                <strong>{t("expTitleDigital")}</strong>
               </span>
               <p>
-                Product lead for the Digital New Card Application across 7
-                countries. Partnered with GFK Market Research to conduct
-                international user studies to determine core MVP features, plus
-                long-term optimizations... <a href="#">Read More</a>
+                {t("expDescDigital")} <a href="#">{t("readMore")}</a>
               </p>
             </div>
           </div>

@@ -18,8 +18,8 @@ const Oa = () => {
             </div>
 
             <div className="company-contact">
-            <a href="#">Contact Me</a>
-              <Link to="/portofolio">Portofolio</Link>
+            <a href="#">{t("contactBtn")}</a>
+              <Link to="/portofolio">{t('portofolioBtn')}</Link>
             </div>
           </div>
 

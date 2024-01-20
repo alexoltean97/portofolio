@@ -1,17 +1,19 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Certificates = () => {
+  const { t } = useTranslation();
   return (
     <div className="certificates">
       <div className="container">
-        <h2 className="h2-theme">Certificates</h2>
+        <h2 className="h2-theme">{t("certificates")}</h2>
 
         <div className="row">
           <div className="col-lg-6">
             <div className="certificates-box">
-              <h5>Scrum: The Basics</h5>
+              <h5>{t("scrum")}</h5>
               <span>
-                <strong>Scrum Basics Linkedin Certificate</strong>
+                <strong>{t("scrumLk")}</strong>
               </span>
             </div>
           </div>

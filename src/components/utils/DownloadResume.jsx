@@ -3,11 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import cvPath from "../../assets/cv/CV_Oltean_Alexandru_en.pdf";
 
-const DownloadResume = () => {
+const DownloadResume = (props) => {
   return (
    
-      <a href={cvPath} download="CV_Oltean_Alexandru_en.pdf">
+      <a className="resume" href={cvPath} download="CV_Oltean_Alexandru_en.pdf">
         <FontAwesomeIcon icon={faDownload} />
+          {props.children}
       </a>
  
   );

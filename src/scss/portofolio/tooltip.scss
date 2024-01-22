@@ -1,36 +1,63 @@
 @import "../globals/variables.scss";
 
 .tooltip {
-    position: absolute;
-    padding: 5px;
-    font-family: $main-font;
-    background-color: $main-color;
-    color: $plain-white;
-    height: 100%;
-    opacity: 1;
-    box-shadow: $size-selector-shadow;
+  position: absolute;
+  padding: 5px;
+  font-family: $main-font;
+  background-color: $main-color;
+  color: $plain-white;
+  height: 100%;
+  opacity: 1;
+  box-shadow: $size-selector-shadow;
 
-    p{
-        font-size: $small-p-size;
-    }
+  p {
+    font-size: $small-p-size;
+  }
 }
 
-.tooltip-arrow-left-top{}
-
-
-.tooltop-arrow-left-total{}
-
-.tooltip::before { 
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 20%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent $main-color transparent;
+.tooltip-arrow-left-top {
+    visibility: hidden;
 }
-// .tooltip::before { 
+
+.tooltip-arrow-left-total {
+  visibility: hidden;
+  left: 16%;
+  bottom: 0;
+}
+
+.tooltip-arrow-left-total::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent $main-color transparent transparent;
+}
+
+.tooltip-arrow-left-top::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 15%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent $main-color transparent;
+}
+
+// .tooltip::before {
+//     content: "";
+//     position: absolute;
+//     bottom: 100%;
+//     left: 20%;
+//     margin-left: -5px;
+//     border-width: 5px;
+//     border-style: solid;
+//     border-color: transparent transparent $main-color transparent;
+// }
+// .tooltip::before {
 //     content:"\A";
 //     border-style: solid;
 //     border-width: 10px 15px 10px 0;

@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-
 const Header = () => {
   return (
     <header className="main-header sticky-top">
@@ -17,12 +16,18 @@ const Header = () => {
               <Link to="/">
                 <FontAwesomeIcon icon={faHouse} />
               </Link>
-              <DownloadResume />
+              <DownloadResume>
+                <Tooltip
+                  title="Download Resume"
+                  arrow="tooltip-arrow-left-top"
+                />
+              </DownloadResume>
               <LanguagePicker>
-              <Tooltip title="Choose Language" />  
+                <Tooltip
+                  title="Choose Language"
+                  arrow="tooltip-arrow-left-total"
+                />
               </LanguagePicker>
-
-              
             </div>
           </div>
         </div>

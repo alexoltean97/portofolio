@@ -5,6 +5,9 @@ const LanguagePicker = (props) => {
 
   const { i18n } = useTranslation();
   useEffect(() => {
+
+  
+
     const language = getLanguageFromCookie();
     if (language) {
       i18n.changeLanguage(language);
@@ -62,15 +65,14 @@ const LanguagePicker = (props) => {
 
   return (
     <React.Fragment>
-      <div className="language-parent">
-        <div className="tooltip-parent">
+      <div className="language-parent dropdown">
+     
         <a className="dropdown-toggle" onClick={openLangMenu}>
           <span>{i18n.resolvedLanguage.toUpperCase()}</span>
+          {props.children}
         </a>
-        {props.children}
-        </div>
-   
-
+        
+     
         <div
           className={`dropdown-menu-custom ${menuToggle ? "active-menu" : ""}`}
         >

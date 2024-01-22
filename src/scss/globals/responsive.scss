@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 @media screen and (min-width: 1000px) {
   .about-me .p-holder {
@@ -8,6 +9,20 @@
   .my-skills .skill-row .skills-box p {
     width: 400px;
   }
+
+  .work-experience .work-box p {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:821px) {
+    .company-name{
+        margin-top: 0;
+    }
+
+    .image{
+        margin-top: 60px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -24,14 +39,12 @@
     .company-name {
       margin-top: 0;
       h1 {
-        font-size: $h1-mobile;
-        text-align: center;
+        @include mobileTextSize($h1-mobile);
       }
 
       p {
         padding: 5px 0;
-        text-align: center;
-        font-size: $p-mobile;
+        @include mobileTextSize($p-mobile);
       }
     }
 
@@ -45,46 +58,114 @@
 
     .image {
       img {
-        display: block;
-        margin: 0 auto;
-        width: 290px;
+        @include mobileImage();
       }
     }
   }
-  .about-me h2,
-  .my-skills h2 {
-    font-size: $h2-mobile;
-    text-align: center;
+  .about-me {
+    h2 {
+      @include mobileTextSize($h2-mobile);
+    }
+
+    .p-holder {
+      padding: 10px 0 10px 0;
+      p {
+        @include mobileTextSize($p-mobile);
+      }
+    }
+
+    .btn-holder {
+      text-align: center;
+      a {
+        @include mobileTextSize($a-mobile);
+      }
+    }
   }
 
-  .about-me p {
-    font-size: $p-mobile;
-    text-align: center;
+  .my-skills {
+    h2 {
+      @include mobileTextSize($h2-mobile);
+    }
+
+    .skill-row {
+      margin: 10px 0 0 0;
+    }
+    .skills-box {
+      margin: 0 0 0 0 !important;
+      padding: 15px 0 15px 0;
+      text-align: center;
+
+      h5 {
+        font-size: $h5-mobile !important;
+      }
+
+      p {
+        font-size: $p-mobile;
+      }
+    }
   }
 
-  .about-me a {
-    font-size: $a-mobile;
-    text-align: center;
+  .work-experience {
+    padding: 50px 0;
+    h2 {
+      @include mobileTextSize($h2-mobile);
+      padding-bottom: 0;
+    }
+
+    .work-box {
+      text-align: center;
+      padding-top: 8px;
+      padding-bottom: 0;
+
+      h5 {
+        @include mobileTextSize($h5-mobile);
+      }
+
+      p {
+        margin-bottom: 0;
+        @include mobileTextSize($p-mobile);
+      }
+    }
   }
 
-  .about-me .p-holder {
-    padding: 10px 0 10px 0;
+  .certificates {
+    padding: 50px 0;
+    h2 {
+      @include mobileTextSize($h2-mobile);
+      padding-bottom: 10px;
+    }
+
+    .certificates-box {
+      text-align: center;
+      padding-bottom: 10px;
+
+      h5 {
+        @include mobileTextSize($h5-mobile);
+      }
+
+      span {
+        @include mobileTextSize($p-mobile);
+      }
+    }
   }
 
-  .about-me .btn-holder {
-    text-align: center;
-  }
+  .education {
+    padding: 50px 0;
+    h2 {
+      @include mobileTextSize($h2-mobile);
+      padding-bottom: 10px;
+    }
 
-  .my-skills .skills-box {
-    padding: 15px 0 15px 0;
-    text-align: center;
-  }
+    .education-box {
+      padding-bottom: 0;
+      text-align: center;
+      h5 {
+        @include mobileTextSize($h5-mobile);
+      }
 
-  .my-skills .skills-box h5 {
-    font-size: $h5-mobile;
-  }
-
-  .my-skills .skills-box p {
-    font-size: $p-mobile;
+      span {
+        @include mobileTextSize($p-mobile);
+      }
+    }
   }
 }

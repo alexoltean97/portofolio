@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-const LanguagePicker = () => {
+const LanguagePicker = (props) => {
 
   const { i18n } = useTranslation();
   useEffect(() => {
@@ -62,11 +62,14 @@ const LanguagePicker = () => {
 
   return (
     <React.Fragment>
-      <div className="language-parent dropdown">
+      <div className="language-parent">
+        <div className="tooltip-parent">
         <a className="dropdown-toggle" onClick={openLangMenu}>
-         
           <span>{i18n.resolvedLanguage.toUpperCase()}</span>
         </a>
+        {props.children}
+        </div>
+   
 
         <div
           className={`dropdown-menu-custom ${menuToggle ? "active-menu" : ""}`}
@@ -83,9 +86,6 @@ const LanguagePicker = () => {
         </div>
       </div>
 
-      <div>
-   
-      </div>
     </React.Fragment>
   );
 };

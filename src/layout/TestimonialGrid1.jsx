@@ -6,11 +6,13 @@ const TestimonialGrid1 = () => {
 
   return (
     <React.Fragment>
-      <h2>Testimonial Boxes</h2>
-      <div className="testimonial-container d-flex flex-row">
-        {nrOfDivs.map((div, index) => (
-          <TestimonialBoxDemo1 key={index} />
-        ))}
+      <div className="container">
+        <h2>Testimonial Boxes</h2>
+        <div className="testimonial-container d-flex flex-row">
+          {nrOfDivs.map((div, index) => (
+            <TestimonialBoxDemo1 key={index} />
+          ))}
+        </div>
       </div>
     </React.Fragment>
   );

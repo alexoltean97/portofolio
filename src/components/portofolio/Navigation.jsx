@@ -23,6 +23,8 @@ const Navigation = () => {
 
   return (
     <React.Fragment>
+
+      <div className="container">
       <h2>Simple navigation bar</h2>
       <p>To return for animations</p>
       <nav className="portfolio-navbar">
@@ -43,6 +45,7 @@ const Navigation = () => {
           ))}
         </ul>
       </nav>
+      </div>
     </React.Fragment>
   );
 };

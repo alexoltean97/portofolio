@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFlag } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 
 const LanguagePicker = () => {
@@ -66,7 +64,7 @@ const LanguagePicker = () => {
     <React.Fragment>
       <div className="language-parent dropdown">
         <a className="dropdown-toggle" onClick={openLangMenu}>
-          <FontAwesomeIcon icon={faFlag} />{" "}
+         
           <span>{i18n.resolvedLanguage.toUpperCase()}</span>
         </a>
 
@@ -76,7 +74,7 @@ const LanguagePicker = () => {
           {Object.keys(lngs).map((lng) => (
             <a
               key={lng}
-              className="dropdown-toggle"
+              className="dropdown-option"
               onClick={() => changeLanguage(lng)}
             >
               <span>{lng.toUpperCase()}</span>

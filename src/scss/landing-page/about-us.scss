@@ -36,38 +36,3 @@
 		}
 	}
 }
-  @media screen and (min-width: 1000px) {
-    .about-me .p-holder {
-      width: 600px;
-    }
-  }
-  
-  
-  @media screen and (max-width: 440px) {
-    .about-me {
-      padding: 50px 0 50px 0;
-    }
-  
-    .about-me h2 {
-      font-size: $h2-mobile;
-      text-align: center;
-    }
-  
-    .about-me p {
-      font-size: $p-mobile;
-      text-align: center;
-    }
-  
-    .about-me a {
-      font-size: $a-mobile;
-      text-align: center;
-    }
-  
-    .about-me .p-holder {
-      padding: 10px 0 10px 0;
-    }
-  
-    .about-me .btn-holder {
-      text-align: center;
-    }
-  }

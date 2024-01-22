@@ -23,28 +23,3 @@
 	}
 }
   
-  @media screen and (min-width: 1000px) {
-    .my-skills .skill-row .skills-box p {
-      width: 400px;
-    }
-  }
-  
-  @media screen and (max-width: 440px) {
-    .my-skills h2 {
-      font-size: $h2-mobile;
-      text-align: center;
-    }
-  
-    .my-skills .skills-box {
-      padding: 15px 0 15px 0;
-      text-align: center;
-    }
-  
-    .my-skills .skills-box h5 {
-      font-size: $h5-mobile;
-    }
-  
-    .my-skills .skills-box p {
-      font-size: $p-mobile;
-    }
-  }

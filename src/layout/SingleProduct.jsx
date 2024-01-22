@@ -44,6 +44,9 @@ const SingleProduct = () => {
 
   return (
     <React.Fragment>
+
+
+      <div className="container">
       <h2>Single Product</h2>
       <div className="single-product-row d-flex flex-row">
         <div className="product-image-container">
@@ -97,6 +100,8 @@ const SingleProduct = () => {
           </div>
         </div>
       </div>
+      </div>
+
     </React.Fragment>
   );
 };

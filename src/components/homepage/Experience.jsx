@@ -20,7 +20,7 @@ const Experience = () => {
               </p>
             </div>
           </div>
-          <div className="col-lg-6">&nbsp;</div>
+       
 
           <div className="col-lg-6">
             <div className="work-box">
@@ -35,7 +35,7 @@ const Experience = () => {
             </div>
           </div>
 
-          <div className="col-lg-6">&nbsp;</div>
+          
 
           <div className="col-lg-6">
             <div className="work-box">
@@ -49,7 +49,7 @@ const Experience = () => {
             </div>
           </div>
 
-          <div className="col-lg-6">&nbsp;</div>
+        
           <div className="col-lg-6">
             <div className="work-box">
               <h5>{t("expTitleBm")}</h5>
@@ -62,7 +62,7 @@ const Experience = () => {
             </div>
           </div>
 
-          <div className="col-lg-6">&nbsp;</div>
+        
 
           <div className="col-lg-6">
             <div className="work-box">

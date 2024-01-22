@@ -50,7 +50,7 @@ i18next
             "Product lead for the Digital New Card Application across 7 countries. Partnered with GFK Market Research to conduct international user studies to determine core MVP features, plus long-term optimizations...",
           expTitleDigital: "FRONT-END ENGINEER, QA Engineer",
           expTitleDigital:
-            "Junior Web Developer / Junior QA Engineer / Dec 2016 - Mar 2018",
+            "Junior Web Developer / Junior QA Engineer",
           expDescDigital:
             "Product lead for the Digital New Card Application across 7 countries. Partnered with GFK Market Research to conduct international user studies to determine core MVP features, plus long-term optimizations...",
           certificates: "Certificates",
@@ -118,7 +118,7 @@ i18next
             "Produktleiter für die digitale neue Kartenanwendung in 7 Ländern. Partnerschaft mit GFK Market Research zur Durchführung internationaler Benutzerstudien zur Ermittlung der wichtigsten MVP-Funktionen sowie langfristiger Optimierungen...",
           expTitleDigital: "FRONT-END-INGENIEUR, QA-Ingenieur",
           expTitleDigital:
-            "Junior Front-End-Entwickler / Junior QA-Ingenieur / Dec 2016 - Mar 2018",
+            "Junior Front-End-Entwickler / Junior QA-Ingenieur",
           expDescDigital:
             "Produktleiter für die digitale neue Kartenanwendung in 7 Ländern. Partnerschaft mit GFK Market Research zur Durchführung internationaler Benutzerstudien zur Ermittlung der wichtigsten MVP-Funktionen sowie langfristiger Optimierungen",
           certificates: "Zertifikate",

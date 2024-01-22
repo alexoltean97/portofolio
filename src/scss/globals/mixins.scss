@@ -26,8 +26,19 @@
 }
 
 @mixin header() {
-  padding:20px 0;
+  padding:4px 0;
   margin-bottom: 100px;
   backdrop-filter: blur(10px);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@mixin mobileTextSize($fontSize) {
+  font-size: $fontSize;
+  text-align: center;
+}
+
+@mixin mobileImage() {
+  display: block;
+  margin: 0 auto;
+  width: 290px;
 }

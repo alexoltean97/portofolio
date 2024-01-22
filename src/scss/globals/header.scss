@@ -6,30 +6,55 @@ ul {
   margin: 0;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .main-header {
   @include header();
   .language-parent {
+    position: static;
     font-family: $main-font;
+
     .dropdown-toggle {
       text-decoration: none;
       color: $main-color;
       transition: 0.25s ease-in-out;
+
       &::after {
         display: none;
       }
+
       &:hover {
         cursor: pointer;
-        background-color: $light-gray;
-        border-radius: 5px;
+        .tooltip-arrow-left-total {
+          visibility: visible;
+        }
       }
 
       span {
+        position: relative;
+        top: 2px;
         padding-left: 4px;
         font-size: $lang-span;
       }
 
       svg {
         font-size: $small-p-size;
+      }
+    }
+
+    .dropdown-option {
+      padding: 2px;
+      text-decoration: none;
+      color: $main-color;
+      font-size: $lang-span;
+      transition: 0.25s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        background-color: $light-gray;
+        border-radius: 5px;
       }
     }
 
@@ -48,7 +73,36 @@ ul {
       display: block;
       position: absolute;
       z-index: 100;
-      background: #fff;
+      background: $plain-white;
     }
+  }
+
+  .left-side-content {
+    position: relative;
+    top: 2px;
+    a {
+      margin: 0 2px;
+      svg {
+        color: $main-color;
+        border: 1px solid;
+        padding: 7px;
+        border-radius: 100px;
+        font-size: 12px;
+        transition: 0.25s ease-in-out;
+        &:hover {
+          background-color: $main-color;
+          color: $plain-white;
+        }
+      }
+    }
+
+    .resume{
+      &:hover{
+        .tooltip-arrow-left-top{
+          visibility: visible;
+        }
+      }
+    }
+
   }
 }

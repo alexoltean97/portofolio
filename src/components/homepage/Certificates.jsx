@@ -6,13 +6,13 @@ const Certificates = () => {
   return (
     <div className="certificates">
       <div className="container">
-        <h2 className="h2-theme">{t("certificates")}</h2>
+        <h2 id="certificates-title" className="h2-theme">{t("certificates")}</h2>
 
         <div className="row">
           <div className="col-lg-6">
             <div className="certificates-box">
-              <h5>{t("scrum")}</h5>
-              <span>
+              <h5 id="certificates-subtitle">{t("scrum")}</h5>
+              <span id="certificate">
                 <strong>{t("scrumLk")}</strong>
               </span>
             </div>

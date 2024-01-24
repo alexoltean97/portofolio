@@ -7,8 +7,8 @@ import "./App.scss";
 const App = () => {
   useEffect(() => {
     // Select the elements description
-    const h1 = document.getElementById("main-title");
-    const p =  document.getElementById("description");
+    const h1 = document.getElementById("education-subtitle");
+    const p =  document.getElementById("education");
 
     // Get their positions
     const h1Rect = h1.getBoundingClientRect();

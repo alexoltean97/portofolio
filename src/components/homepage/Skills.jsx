@@ -6,13 +6,13 @@ const Skills = () => {
   return (
     <div className="my-skills">
       <div className="container">
-        <h2 className="h2-theme">{t('mySkills')}</h2>
+        <h2 id="skills-title" className="h2-theme">{t('mySkills')}</h2>
 
         <div className="row skill-row">
           <div className="col-lg-6 col-sm-12">
             <div className="skills-box">
-              <h5>{t('feDev')}</h5>
-              <p>
+              <h5 id="skills-heading">{t('feDev')}</h5>
+              <p id="skills-desc">
                 {t('feDevDesc')}
               </p>
             </div>

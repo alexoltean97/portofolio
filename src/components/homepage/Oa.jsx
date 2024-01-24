@@ -17,7 +17,7 @@ const Oa = () => {
               <p id="description">{t('Iam')}</p>
             </div>
 
-            <div className="company-contact">
+            <div id="company-contact" className="company-contact">
             <a href="#">{t("contactBtn")}</a>
               <Link to="/portofolio">{t('portofolioBtn')}</Link>
             </div>

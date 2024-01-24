@@ -11,10 +11,10 @@ const Oa = () => {
         <div className="row">
           <div className="col-lg-6 col-xs-12">
             <div className="company-name">
-              <h1>
+              <h1 id="main-title">
                 Oltean <span>Alexandru</span>
               </h1>
-              <p>{t('Iam')}</p>
+              <p id="description">{t('Iam')}</p>
             </div>
 
             <div className="company-contact">

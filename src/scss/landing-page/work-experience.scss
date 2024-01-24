@@ -1,15 +1,16 @@
 @import "../globals/variables";
 .work-experience {
-	padding: 150px 0;
+	padding: 100px 0 70px 0;
 	background-color: $gray;
 	h2 {
-		padding-bottom: 50px;
+		padding-bottom: 30px;
 		font-size: $h2-size;
 		font-family: $main-font;
 	}
 	.work-box {
 		padding-bottom: 30px;
 		h5 {
+			margin-bottom: 0;
 			color: $main-color;
 			font-family: $main-font;
 			font-size: $h5-size;
@@ -20,7 +21,7 @@
 			font-family: $third-font;
 		}
 		p {
-			padding: 15px 0;
+			padding: 5px 0;
 			font-family: $third-font;
 		}
 		a {

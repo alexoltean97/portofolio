@@ -1,5 +1,6 @@
 @import "../globals/variables";
 .my-skills {
+	padding: 55px 0 65px 0;
 	h2 {
 		font-family: $main-font;
 		font-size: $h2-size;
@@ -10,9 +11,14 @@
 	}
 	.skill-row {
 		margin: 50px 0 0 0;
+		.col-lg-6,
+		.col-sm-12{
+			padding: 0;
+		}
 		.skills-box {
 			margin: 0 0 40px 0;
 			h5 {
+				margin-bottom: 0;
 				font-family: $main-font;
 				font-size: $h5-size;
 				color: $main-color;

@@ -1,14 +1,15 @@
 @import "../globals/variables";
 .certificates {
-	padding: 150px 0;
+	padding: 100px 0 75px 0;
 	h2 {
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 		font-size: $h2-size;
 		font-family: $main-font;
 	}
 	.certificates-box {
 		padding-bottom: 30px;
 		h5 {
+			margin-bottom: 0;
 			color: $main-color;
 			font-family: $main-font;
 			font-size: $h5-size;

@@ -6,16 +6,16 @@ const Experience = () => {
   return (
     <div className="work-experience">
       <div className="container">
-        <h2 className="h2-theme">{t("workExperience")}</h2>
+        <h2 id="work-title" className="h2-theme">{t("workExperience")}</h2>
 
         <div className="row">
           <div className="col-lg-6">
             <div className="work-box">
-              <h5>{t("expTitlePlenty")}</h5>
-              <span>
+              <h5 id="work-subtitle">{t("expTitlePlenty")}</h5>
+              <span id="work-place">
                 <strong>{t("expDatePlenty")}</strong>
               </span>
-              <p>
+              <p id="work-description">
                 {t("expDescPlenty")} <a href="#">{t("readMore")}</a>
               </p>
             </div>

@@ -1,15 +1,16 @@
 @import "../globals/variables";
 .education {
-	padding: 150px 0;
+	padding: 100px 0 80px 0;
 	background-color: $gray;
 	h2 {
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 		font-size: $h2-size;
 		font-family: $main-font;
 	}
 	.education-box {
 		padding-bottom: 30px;
 		h5 {
+			margin-bottom: 0;
 			color: $main-color;
 			font-family: $main-font;
 			font-size: $h5-size;

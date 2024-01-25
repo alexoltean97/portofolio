@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 const WorkBox = (props) => {
   const { t } = useTranslation();
-  const [isOpen, setOpen] = useState(false);
+//  const [isOpen, setOpen] = useState(false);
   return (
     <div className="col-lg-6">
       <div className="work-box">
@@ -16,10 +16,12 @@ const WorkBox = (props) => {
         <p id="work-description">
           {props.description}{" "}
           <a
+          href="/src/assets/cv/CV_Oltean_Alexandru_en.pdf"
+          download="CV_Oltean_Alexandru_en.pdf"
             onClick={() => {
               setOpen(true);
             }}
-            href="#"
+           
           >
             {t("readMore")}
           </a>
@@ -27,7 +29,7 @@ const WorkBox = (props) => {
 
         <ReactPortal
           head={props.modalHeader}
-          isOpen={isOpen}
+        
           onClose={() => setOpen(false)}
         >
           {props.children}

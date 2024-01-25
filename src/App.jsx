@@ -21,6 +21,10 @@ const App = () => {
     // Log the distances
     console.log(`Vertical distance: ${verticalDistance}px`);
     console.log(`Horizontal distance: ${horizontalDistance}px`);
+
+
+    const work = document.getElementById("work-description").innerText.length;
+    console.log(work);
   }),
     [];
 

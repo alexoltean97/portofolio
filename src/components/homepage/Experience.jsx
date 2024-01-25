@@ -18,7 +18,11 @@ const Experience = () => {
             description={t("expDescPlenty")}
             modalHeader="PlentyMarkets"
           >
-            <p>{t("expDescPlenty")}</p>
+            <p>{t('plentyIntro')}</p>
+            <p>{t('plentyTeam')}</p>
+            <ul>
+              <li>{t('plentyListOne')}</li>
+            </ul>
           </WorkBox>
 
           <WorkBox
@@ -48,7 +52,7 @@ const Experience = () => {
 
           <WorkBox
             title={t("expTitleDigital")}
-            date={t("expDaexpTitleDigitalteBm")}
+            date={t("expTitleDigital")}
             description={t("expDescDigital")}
           >
             <p>Test</p>

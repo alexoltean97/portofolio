@@ -20,39 +20,38 @@ i18next
           mySkills: "My skills",
           feDev: "FRONT-END DEVELOPMENT",
           feDevDesc:
-            "In business and engineering, new product development covers the complete process of bringing a new product to market.",
+            "My proficiency in Front-End Development is rooted in a deep understanding and skilled application of core web technologies like HTML, CSS, and JavaScript. I am also adept in utilizing modern frameworks such as React and Vue, which enables me to create interactive and visually compelling web applications.",
           qualityAssurance: "Quality Assurance",
           qualityDescription:
-            "In business and engineering, new product development covers the complete process of bringing a new product to market.",
+            "My expertise in Quality Assurance centers on delivering impeccable product performance and reliability. Specializing in both manual and automated testing techniques, I focus on detecting and rectifying flaws swiftly.",
           productManagement: "PRODUCT MANAGEMENT",
           productDesc:
-            "In business and engineering, new product development covers the complete process of bringing a new product to market.",
-          agileWorkflow: "AGILE WORKFLOW ASSURANCE",
+            "As a freelancer, I had to learn how to adapt to my client needs, a skill that has been invaluable in my journey into Product Management. This role has honed my ability to understand and translate client requirements into viable products.",
+          agileWorkflow: "CMS & Page Builders",
           agileDesc:
             "In business and engineering, new product development covers the complete process of bringing a new product to market.",
           workExperience: "Work Experience",
           expTitlePlenty: "FRONT-END ENGINEER",
           expDatePlenty: "Plenty Markets / Feb 20 - Present",
           expDescPlenty:
-            "Product lead for the Digital New Card Application across 7 countries. Partnered with GFK Market Research to conduct international user studies to determine core MVP features, plus long-term optimizations... ",
-          readMore: "Read More",
+            "Started at Plenty Markets in 20 february 2020 as a Front-End developer. Since then I worked in multiple teams on various projects. Project team..",
+          readMore: "Download Resume",
           expTitleUpwork: "FREELANCER",
           expDateUpwork: "Upwork / Dec 2019 - Feb 2021",
           expDescUpwork:
-            "Product lead for the Digital New Card Application across 7 countries. Partnered with GFK Market Research to conduct international user studies to determine core MVP features, plus long-term optimizations..",
+            "Worked as a freelancer, focusing on web developmnet. Helped multiple clients and companies (Philotimo Media, Stoica.co) to achieve their goals...",
           expTitle123: "FRONT-END ENGINEER",
           expDate123: "123FormBuilder / Aug 2018 - Dec 2019",
           expDesc123:
-            "Product lead for the Digital New Card Application across 7 countries. Partnered with GFK Market Research to conduct international user studies to determine core MVP features, plus long-term optimizations...",
+            "Started working at 123 in August 2018. In the first 7 months I worked on theWebsite team where I had the following responsibilities...",
           expTitleBm: "FRONT-END ENGINEER",
           expDateBm: "BlueMatrix / Apr 2018 - Aug 2018",
           expDescBm:
-            "Product lead for the Digital New Card Application across 7 countries. Partnered with GFK Market Research to conduct international user studies to determine core MVP features, plus long-term optimizations...",
-          expTitleDigital: "FRONT-END ENGINEER, QA Engineer",
+            "Moved out of Arad in February 2018 and started working at BlueMatrix in February as a Template Developer. The first weeks...",
           expTitleDigital:
             "Junior Web Developer / Junior QA Engineer",
           expDescDigital:
-            "Product lead for the Digital New Card Application across 7 countries. Partnered with GFK Market Research to conduct international user studies to determine core MVP features, plus long-term optimizations...",
+            "Started as a Junior Developer and Junior QA at Digital Garage Arad, where I learned HTML5, CSS, and JavaScript....",
           certificates: "Certificates",
           scrum: "SCRUM: THE BASICS",
           scrumLk: "Scrum Basics Linkedin Certificate",

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
+import ReactPortal from "../components/utils/ReactPortal";
 import Header from "./globals/Header";
 import Footer from "../layout/globals/Footer";
 import Oa from "../components/homepage/oa";
@@ -8,20 +9,28 @@ import Experience from "../components/homepage/Experience";
 import Certificates from "../components/homepage/Certificates";
 import Education from "../components/homepage/Education";
 import ThemeMenu from "../components/Theme/ThemeMenu";
-import ReactPortal from "../components/utils/ReactPortal";
- 
+import ThemeButton from "../components/theme/ThemeButton";
 
 const HomePageLayout = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <React.Fragment>
       <Header />
-      <Oa/>
+      <Oa />
       <AboutMe />
       <Skills />
       <Experience />
       <Certificates />
       <Education />
-      <ThemeMenu />
+      <ReactPortal isOpen={isOpen} onClose={openModal}>
+       <ThemeMenu />
+      </ReactPortal>
+      <ThemeButton openModal={openModal} />
       <Footer />
     </React.Fragment>
   );

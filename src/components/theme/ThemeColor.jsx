@@ -34,10 +34,11 @@ const ThemeColor = () => {
   return (
     <div className="theme-menu">
       <div className="theme-menu-header">
-        <h5>Choose Theme</h5>
-        <p>X</p>
+       
+       
       </div>
 
+   
       <ul>
         {colors.map((color) => (
           <li key={color}>

@@ -8,7 +8,7 @@ import Skills from "../components/homepage/Skills";
 import Experience from "../components/homepage/Experience";
 import Certificates from "../components/homepage/Certificates";
 import Education from "../components/homepage/Education";
-import ThemeMenu from "../components/Theme/ThemeMenu";
+import ThemeMenu from "../components/theme/ThemeMenu";
 import ThemeButton from "../components/theme/ThemeButton";
 
 const HomePageLayout = () => {
@@ -27,7 +27,7 @@ const HomePageLayout = () => {
       <Experience />
       <Certificates />
       <Education />
-      <ReactPortal isOpen={isOpen} onClose={openModal}>
+      <ReactPortal head="Theme Settings" isOpen={isOpen} onClose={openModal}>
        <ThemeMenu />
       </ReactPortal>
       <ThemeButton openModal={openModal} />

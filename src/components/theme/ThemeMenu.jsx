@@ -1,13 +1,19 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGear } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+import ThemeColor from "./ThemeColor";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 
 const ThemeMenu = () => {
-
-
   return (
     <React.Fragment>
-        <p>Test from Menu</p>
+      <Tabs defaultActiveKey="color" id="theme-settings" className="mb-3">
+        <Tab eventKey="color" title="color">
+          <ThemeColor />
+        </Tab>
+        <Tab eventKey="cookies" title="cookies">
+          Tab content for Profile
+        </Tab>
+      </Tabs>
     </React.Fragment>
   );
 };

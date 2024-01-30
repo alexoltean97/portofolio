@@ -1,5 +1,5 @@
 import React from "react";
-import Desk from "../../assets/images/portrait.png";
+import Desk from "../../../assets/images/portrait.png";
 const TestimonialBoxDemo1 = () => {
   return (
     <React.Fragment>

@@ -1,5 +1,5 @@
 import React from "react";
-import TestimonialBoxDemo1 from "../components/portofolio/TestimonialBoxDemo1";
+import TestimonialBoxDemo1 from "../../components/portofolio/TestimonialBoxDemo1/TestimonialBoxDemo1";
 
 const TestimonialGrid1 = () => {
   const nrOfDivs = [1, 2, 3];

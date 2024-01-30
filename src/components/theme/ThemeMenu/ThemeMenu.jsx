@@ -1,5 +1,5 @@
 import React from "react";
-import ThemeColor from "./ThemeColor";
+import ThemeColor from "../ThemeColor/ThemeColor";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 

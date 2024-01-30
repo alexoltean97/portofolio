@@ -1,5 +1,5 @@
 import React from "react";
-import CardModel from "../components/portofolio/CardModel";
+import CardModel from "../../components/portofolio/CardModel/CardModel";
 
 const CardGrid = () => {
   return (

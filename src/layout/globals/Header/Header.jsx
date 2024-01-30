@@ -1,7 +1,7 @@
 import React from "react";
-import LanguagePicker from "../../components/utils/LanguagePicker";
-import DownloadResume from "../../components/utils/DownloadResume";
-import Tooltip from "../../components/portofolio/Tooltip";
+import LanguagePicker from "../../../components/utils/LanguagePicker/LanguagePicker";
+import DownloadResume from "../../../components/utils/DownloadResume/DownloadResume";
+import Tooltip from "../../../components/portofolio/Tooltip/Tooltip";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";

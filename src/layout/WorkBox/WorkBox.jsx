@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ReactPortal from "../components/utils/ReactPortal";
+import ReactPortal from "../../components/utils/ReactPortal/ReactPortal";
 import { useTranslation } from "react-i18next";
 
 const WorkBox = (props) => {

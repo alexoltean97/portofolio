@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import WorkBox from "../../layout/WorkBox";
+import WorkBox from "../../../layout/WorkBox/WorkBox";
 
 const Experience = () => {
   const { t } = useTranslation();

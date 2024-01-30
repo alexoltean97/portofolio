@@ -1,5 +1,5 @@
 import React from "react";
-import PlaceholderPortrait from "../../assets/images/placeholder-oa.png";
+import PlaceholderPortrait from "../../../assets/images/placeholder-oa.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 

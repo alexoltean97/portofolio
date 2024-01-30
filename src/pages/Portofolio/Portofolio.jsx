@@ -1,5 +1,5 @@
 import React from "react";
-import PortofolioPageLayout from "../layout/PortofolioPageLayout";
+import PortofolioPageLayout from "../../layout/PortofolioPageLayout/PortofolioPageLayout";
 
 const Portofolio = () => {
     return(

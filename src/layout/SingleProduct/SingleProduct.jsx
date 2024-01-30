@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import WhiteTshirt from "../assets/images/white-tshirt.png";
-import BlackTshirt from "../assets/images/black-tshirt.png";
-import RedTshirt from "../assets/images/red-tshirt.png";
-import GreenTshirt from "../assets/images/green-tshirt.png";
+import WhiteTshirt from "../../assets/images/white-tshirt.png";
+import BlackTshirt from "../../assets/images/black-tshirt.png";
+import RedTshirt from "../../assets/images/red-tshirt.png";
+import GreenTshirt from "../../assets/images/green-tshirt.png";
 
 const SingleProduct = () => {
   const [hoverText, setHoverText] = useState("White");

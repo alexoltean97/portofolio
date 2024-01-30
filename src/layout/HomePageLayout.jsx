@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
+import ReactPortal from "../components/utils/ReactPortal";
 import Header from "./globals/Header";
 import Footer from "../layout/globals/Footer";
 import Oa from "../components/homepage/oa";
@@ -7,26 +8,29 @@ import Skills from "../components/homepage/Skills";
 import Experience from "../components/homepage/Experience";
 import Certificates from "../components/homepage/Certificates";
 import Education from "../components/homepage/Education";
-import ThemeMenu from "../components/Theme/ThemeMenu";
-import ReactPortal from "../components/utils/ReactPortal";
- 
+import ThemeMenu from "../components/theme/ThemeMenu";
+import ThemeButton from "../components/theme/ThemeButton";
 
 const HomePageLayout = () => {
-  const [isOpen, setOpen]= useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <React.Fragment>
       <Header />
-      <Oa/>
+      <Oa />
       <AboutMe />
       <Skills />
       <Experience />
       <Certificates />
-      <button onClick={() => {setOpen(true)}}>show</button>
-      <ReactPortal isOpen={isOpen} onClose={() => setOpen(false)}>
-        <p>test</p>
-      </ReactPortal>
       <Education />
-      <ThemeMenu />
+      <ReactPortal head="Theme Settings" isOpen={isOpen} onClose={openModal}>
+       <ThemeMenu />
+      </ReactPortal>
+      <ThemeButton openModal={openModal} />
       <Footer />
     </React.Fragment>
   );

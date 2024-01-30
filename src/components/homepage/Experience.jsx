@@ -1,80 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import WorkBox from "../../layout/WorkBox";
 
 const Experience = () => {
   const { t } = useTranslation();
   return (
     <div className="work-experience">
       <div className="container">
-        <h2 id="work-title" className="h2-theme">{t("workExperience")}</h2>
+        <h2 id="work-title" className="h2-theme">
+          {t("workExperience")}
+        </h2>
 
         <div className="row">
-          <div className="col-lg-6">
-            <div className="work-box">
-              <h5 id="work-subtitle">{t("expTitlePlenty")}</h5>
-              <span id="work-place">
-                <strong>{t("expDatePlenty")}</strong>
-              </span>
-              <p id="work-description">
-                {t("expDescPlenty")} <a href="#">{t("readMore")}</a>
-              </p>
-            </div>
-          </div>
-       
+          <WorkBox
+            title={t("expTitlePlenty")}
+            date={t("expDatePlenty")}
+            description={t("expDescPlenty")}
+            modalHeader="PlentyMarkets"
+          >
+            <p>{t('plentyIntro')}</p>
+            <p>{t('plentyTeam')}</p>
+            <ul>
+              <li>{t('plentyListOne')}</li>
+            </ul>
+          </WorkBox>
 
-          <div className="col-lg-6">
-            <div className="work-box">
-              <h5>{t("expTitleUpwork")}</h5>
-              <span>
-                <strong>{t("expDateUpwork")}</strong>
-              </span>
-              <p>
-                {t("expDescUpwork")}
-                <a href="#">{t("readMore")}</a>
-              </p>
-            </div>
-          </div>
+          <WorkBox
+            title={t("expTitleUpwork")}
+            date={t("expDateUpwork")}
+            description={t("expDescUpwork")}
+            modalHeader="Upwork"
+          >
+            <p>{t("expDescUpwork")}</p>
+          </WorkBox>
 
-          
+          <WorkBox
+            title={t("expTitle123")}
+            date={t("expDate123")}
+            description={t("expDesc123")}
+          >
+            <p>Test</p>
+          </WorkBox>
 
-          <div className="col-lg-6">
-            <div className="work-box">
-              <h5>{t("expTitle123")}</h5>
-              <span>
-                <strong>{t("expDate123")}</strong>
-              </span>
-              <p>
-                {t("expDesc123")} <a href="#">{t("readMore")}</a>
-              </p>
-            </div>
-          </div>
+          <WorkBox
+            title={t("expTitleBm")}
+            date={t("expDateBm")}
+            description={t("expDescBm")}
+          >
+            <p>Test</p>
+          </WorkBox>
 
-        
-          <div className="col-lg-6">
-            <div className="work-box">
-              <h5>{t("expTitleBm")}</h5>
-              <span>
-                <strong>{t("expDateBm")}</strong>
-              </span>
-              <p>
-                {t("expDescBm")} <a href="#">{t("readMore")}</a>
-              </p>
-            </div>
-          </div>
-
-        
-
-          <div className="col-lg-6">
-            <div className="work-box">
-              <h5>{t("expTitleDigital")}</h5>
-              <span>
-                <strong>{t("expTitleDigital")}</strong>
-              </span>
-              <p>
-                {t("expDescDigital")} <a href="#">{t("readMore")}</a>
-              </p>
-            </div>
-          </div>
+          <WorkBox
+            title={t("expTitleDigital")}
+            date={t("expTitleDigital")}
+            description={t("expDescDigital")}
+          >
+            <p>Test</p>
+          </WorkBox>
         </div>
       </div>
     </div>

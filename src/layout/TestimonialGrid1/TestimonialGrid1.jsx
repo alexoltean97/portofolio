@@ -6,14 +6,17 @@ const TestimonialGrid1 = () => {
 
   return (
     <React.Fragment>
-      <div className="container">
+      <div className="test-grid-1 container">
         <h2>Testimonial Boxes</h2>
+        <p>A testimonial grid for your website</p>
         <div className="testimonial-container d-flex flex-row">
-          {nrOfDivs.map((div, index) => (
+          {nrOfDivs.map((index) => (
             <TestimonialBoxDemo1 key={index} />
           ))}
         </div>
       </div>
+
+      
     </React.Fragment>
   );
 };

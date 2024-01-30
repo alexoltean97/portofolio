@@ -7,7 +7,7 @@ import LocalImage from "../../../assets/images/placeholder-image-card.png";
 const CardModel = (props) => {
   return (
     <React.Fragment>
-      <Card style={{ width: "18rem" }} className={props.identifier}>
+      <Card style={{ width: "22rem" }} className={props.identifier}>
         <Card.Img variant="top" src={LocalImage} />
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>

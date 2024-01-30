@@ -1,4 +1,12 @@
 @import "../globals/variables";
+
+.menu-1{
+	h2{
+		font-family: $main-font;
+		font-size: $h-portofolio-size;
+	}
+}
+
 .portfolio-navbar {
 	margin-top: 10px;
 	ul {
@@ -16,7 +24,8 @@
 		display: inline-block;
 		background-color: $navbar-black;
 		color: $plain-white;
-		font-family: $roboto-font;
+		font-family: $main-font;
+		font-size: $icon-size;
 		width: 26%;
 		text-align: center;
 		overflow: hidden;

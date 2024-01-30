@@ -4,9 +4,11 @@ import CardModel from "../../components/portofolio/CardModel/CardModel";
 const CardGrid = () => {
   return (
     <React.Fragment>
-      <div className="container">
+
+      <div className="cards-grid container">
         <h2>Cards</h2>
-        <div className="d-flex flex-row justify-content-evenly">
+        <p>Some simple cards that you can use for your landing page</p>
+        <div className="card-model-1 d-flex flex-row justify-content-between">
           <CardModel
             identifier="effect scale-effect"
             title="Scale Efect"

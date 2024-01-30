@@ -44,64 +44,61 @@ const SingleProduct = () => {
 
   return (
     <React.Fragment>
+      <div className="single-product container">
+        <h2>Single Product</h2>
+        <div className="single-product-row d-flex flex-row">
+          <div className="product-image-container">
+            <img
+              src={imageSource}
+              style={{ width: "30rem" }}
+              alt="white-tshirt"
+            />
+          </div>
 
+          <div className="product-filters d-flex flex-column">
+            <h2>Plain T-shirt</h2>
+            <h3>10$</h3>
 
-      <div className="container">
-      <h2>Single Product</h2>
-      <div className="single-product-row d-flex flex-row">
-        <div className="product-image-container">
-          <img
-            src={imageSource}
-            style={{ width: "30rem" }}
-            alt="white-tshirt"
-          />
-        </div>
+            <div className="color-picker d-flex flex-column">
+              <span>Color: {hoverText}</span>
 
-        <div className="product-filters d-flex flex-column">
-          <h2>Plain T-shirt</h2>
-          <h3>10$</h3>
+              <div className="image-grid d-flex flex-row">
+                {productImages.map((image, index) => (
+                  <div key={index}>
+                    <img
+                      onMouseEnter={() => onImageHover(image.colorText)}
+                      onClick={() => imageClickLoader(image.source)}
+                      src={image.source}
+                      style={{ width: "6rem" }}
+                      alt={image.alternateText}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <span>Select size</span>
+            <select className="size-selector">
+              <option>XXL</option>
+              <option>XL</option>
+              <option>L</option>
+              <option>M</option>
+              <option>S</option>
+              <option>XS</option>
+              <option>XXS</option>
+            </select>
 
-          <div className="color-picker d-flex flex-column">
-            <span>Color: {hoverText}</span>
-
-            <div className="image-grid d-flex flex-row">
-              {productImages.map((image, index) => (
-                <div key={index}>
-                  <img
-                    onMouseEnter={() => onImageHover(image.colorText)}
-                    onClick={() => imageClickLoader(image.source)}
-                    src={image.source}
-                    style={{ width: "6rem" }}
-                    alt={image.alternateText}
-                  />
-                </div>
-              ))}
+            <div className="buttons-container d-flex flex-row">
+              <button className="btn btn-cart">
+                Add to cart
+                <FontAwesomeIcon icon={faCartShopping} />
+              </button>
+              <button className="btn btn-liked">
+                <FontAwesomeIcon icon={faHeart} />
+              </button>
             </div>
           </div>
-          <span>Select size</span>
-          <select className="size-selector">
-            <option>XXL</option>
-            <option>XL</option>
-            <option>L</option>
-            <option>M</option>
-            <option>S</option>
-            <option>XS</option>
-            <option>XXS</option>
-          </select>
-
-          <div className="buttons-container d-flex flex-row">
-            <button className="btn btn-cart">
-              Add to cart
-              <FontAwesomeIcon icon={faCartShopping} />
-            </button>
-            <button className="btn btn-liked">
-              <FontAwesomeIcon icon={faHeart} />
-            </button>
-          </div>
         </div>
       </div>
-      </div>
-
     </React.Fragment>
   );
 };

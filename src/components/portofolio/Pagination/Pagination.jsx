@@ -11,7 +11,7 @@ const Pagination = () => {
 
   return (
     <React.Fragment>
-      <div className="container">
+      <div className="pagination-1 container">
         <h2>Pagination</h2>
         <div className="pagination-grid d-flex flex-row">
           {pages.map((page, index) => (

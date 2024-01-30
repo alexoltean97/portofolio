@@ -3,7 +3,7 @@ import Desk from "../../../assets/images/portrait.png";
 const TestimonialBoxDemo1 = () => {
   return (
     <React.Fragment>
-      <div className="testimonial-box">
+      <div className="scale-effect testimonial-box">
         <div className="testimonial-text">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin

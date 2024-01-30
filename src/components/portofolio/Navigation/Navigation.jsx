@@ -24,9 +24,8 @@ const Navigation = () => {
   return (
     <React.Fragment>
 
-      <div className="container">
-      <h2>Simple navigation bar</h2>
-      <p>To return for animations</p>
+      <div className="menu-1 container">
+      <h2>Rounded navigation bar</h2>
       <nav className="portfolio-navbar">
         <ul>
           {navLinks.map((link, index) => (

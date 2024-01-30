@@ -1,4 +1,12 @@
 @import "../globals/variables";
+
+.pagination-1{
+	h2{
+		font-family: $main-font;
+		font-size: $h-portofolio-size;
+	}
+}
+
 .pagination-grid {
 	.active-page {
 		background-color: $main-color;

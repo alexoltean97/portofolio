@@ -21,22 +21,6 @@ const Modal = ({ isOpen, onClose, children, head }) => {
             </button>
           </div>
           <div className="modal-body">{children}</div>
-
-
-          {/* <div className="modal-footer">
-            <button type="button" className="btn btn-primary" onClick={onClose}>
-              Save changes
-            </button>
-            <button
-              type="button"
-              className="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-          </div> */}
-
-
         </div>
       </div>
     </div>,

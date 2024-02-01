@@ -24,6 +24,7 @@
     --roboto-font: "Roboto", sans-serif
     /** Sizes **/
     --h1-size: 88px;
+    --new-h1:88px;
     --h2-size: 68px;
     --h5-size: 30px;
     --h-portofolio-size:50px;
@@ -71,7 +72,7 @@
   $third-font: var(--third-font);
   $roboto-font: var(--roboto-font);
 
-  $h1-size: var(--h1-size);
+  $h1-size: var(--new-h1);
   $h2-size: var(--h2-size);
   $h5-size: var(--h5-size);
   $h-portofolio-size: var(--h-portofolio-size);

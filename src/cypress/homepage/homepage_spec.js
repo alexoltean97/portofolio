@@ -20,6 +20,8 @@ describe("HomePage test suite", () => {
       expect(h1).to.exist;
       expect(h1).to.have.length(1);
       expect(h1).to.contain("Oltean Alexandru");
+      const fontSize = h1.css('font-size');
+      expect(fontSize).to.equal('88px');
     });
 
     cy.get("#main-title")

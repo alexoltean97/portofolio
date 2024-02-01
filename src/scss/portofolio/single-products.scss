@@ -1,4 +1,12 @@
 @import "../globals/variables";
+
+.single-product{
+  h2{
+    font-family: $main-font;
+    font-size: $h-portofolio-size;
+  }
+}
+
 .product-filters {
     margin-left: 100px;
   }

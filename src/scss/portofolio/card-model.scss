@@ -1,4 +1,30 @@
 @import "../globals/variables";
+
+.cards-grid{
+	margin-bottom: 50px;
+	h2{
+		font-family: $main-font;
+		font-size:  $h-portofolio-size;
+	}
+
+	p{
+		font-family: $main-font;
+		font-size: $portofolio-desc-size;
+	}
+
+	.card-body{
+		font-family: $second-font;
+
+		button{
+			margin-top:10px;
+		}
+	}
+
+	.card-model-1{
+		margin-top: 20px;
+	}
+}
+
 .effect {
 	button {
 		background-color: $main-color;

@@ -26,6 +26,8 @@
     --h1-size: 88px;
     --h2-size: 68px;
     --h5-size: 30px;
+    --h-portofolio-size:50px;
+    --portofolio-desc-size:25px;
     --p-size: 22px;
     --lang-span:20px;
     --small-p-size: 16px;
@@ -72,6 +74,8 @@
   $h1-size: var(--h1-size);
   $h2-size: var(--h2-size);
   $h5-size: var(--h5-size);
+  $h-portofolio-size: var(--h-portofolio-size);
+  $portofolio-desc-size: var(----portofolio-desc-size);
   $p-size: var(--p-size);
   $lang-span: var(--lang-span);
   $small-p-size: var(--small-p-size);

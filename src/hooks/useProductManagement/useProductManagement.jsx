@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import useGetProducts from "./useGetProducts.tsx";
+import useGetProduct from "../useGetProduct/useGetProduct";
 
 const useProductManagement = (recordsPerPage) => {
-  const { products: fetchedProducts, loading } = useGetProducts();
+  const { products: fetchedProducts, loading } = useGetProduct();
 
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);

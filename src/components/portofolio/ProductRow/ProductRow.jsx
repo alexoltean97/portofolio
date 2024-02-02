@@ -1,7 +1,8 @@
-import ProductCard from "../../components/Products/ProductCard";
-import Pagination from "../../components/UI/Pagination/Pagination";
-import SearchNavigation from "../../components/SearchNavigation/SearchNavigation";
-import useProductManagement from "../../hooks/useProductManagement";
+import ProductCard from "../ProductCard/ProductCard";
+import Pagination from "../Pagination/Pagination";
+import Search from "../Search/Search";
+// import useProductManagement from '../../../../hooks/useProductManagement/useProductManagement';
+import useProductManagement from "../../../hooks/useProductManagement/useProductManagement";
 
 const ProductRow = () => {
   const {
@@ -16,7 +17,7 @@ const ProductRow = () => {
   return (
     <div className="products">
       <div className="container mt-4">
-        <SearchNavigation onSearch={handleSearch} />
+        <Search onSearch={handleSearch} />
 
         <div className="row">
           {loading && <p>Loading...</p>}

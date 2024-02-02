@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import mainUrl from "../globals/environment-vars.js";
+import mainUrl from "../../db/constants";
 
 const useGetProducts = () => {
   const [loading, setLoading] = useState(true);

@@ -1,0 +1,41 @@
+@import "../globals/variables";
+
+#theme-settings-tabpane-ecommerce
+  > div.products
+  > div
+  > div.search
+  > form
+  > button {
+  margin-left: 7px;
+  color: $plain-white;
+  border-color: $main-color;
+  background-color: $main-color;
+}
+
+#theme-settings-tabpane-ecommerce
+  > div.products
+  > div
+  > div.search
+  > form
+  > input {
+  &:focus {
+    border-color: $main-color;
+    box-shadow: $single-product-shadow;
+  }
+}
+
+#theme-settings-tabpane-ecommerce > div.products > div > div.search {
+  margin-bottom: 20px;
+}
+
+.card {
+  .card-body {
+    a {
+      color: $main-color;
+    }
+    button {
+      background-color: $main-color;
+      border-color: $main-color;
+    }
+  }
+}

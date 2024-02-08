@@ -11,10 +11,11 @@ const ProductRow = () => {
     currentPage,
     handleSearch,
     handlePageChange,
-  } = useProductManagement(6);
+  } = useProductManagement(3);
   return (
     <div className="products">
-      <div className="container mt-4">
+      <div className="search-for container mt-4"> 
+        <h2>Search for product</h2>
         <Search onSearch={handleSearch} />
 
         <div className="row">

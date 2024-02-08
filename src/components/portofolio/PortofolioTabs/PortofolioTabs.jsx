@@ -11,6 +11,11 @@ const PortofolioTabs = () => {
     <React.Fragment>
       <div className="container">
         <Tabs defaultActiveKey="landing" id="theme-settings" className="mb-3">
+          
+        <Tab eventKey="ecommerce" title="E-commerce">
+            <EcomTab />
+          </Tab>
+
           <Tab eventKey="landing" title="Landing">
             <LandingTab />
           </Tab>
@@ -21,10 +26,6 @@ const PortofolioTabs = () => {
 
           <Tab eventKey="utils" title="Utils">
            <UtilsTab />
-          </Tab>
-
-          <Tab eventKey="ecommerce" title="E-commerce">
-            <EcomTab />
           </Tab>
         </Tabs>
       </div>

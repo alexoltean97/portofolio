@@ -1,7 +1,6 @@
 import ProductCard from "../ProductCard/ProductCard";
-import Pagination from "../Pagination/Pagination";
+import PaginationRow from "../PaginatioRow/PaginationRow";
 import Search from "../Search/Search";
-// import useProductManagement from '../../../../hooks/useProductManagement/useProductManagement';
 import useProductManagement from "../../../hooks/useProductManagement/useProductManagement";
 
 const ProductRow = () => {
@@ -13,7 +12,6 @@ const ProductRow = () => {
     handleSearch,
     handlePageChange,
   } = useProductManagement(6);
-
   return (
     <div className="products">
       <div className="container mt-4">
@@ -28,13 +26,14 @@ const ProductRow = () => {
                 key={product.id}
                 name={product.name}
                 description={product.description}
+                imagePath={product.path}
                 price={product.price}
                 link={product.id}
               />
             ))}
         </div>
 
-        <Pagination
+        <PaginationRow
           totalPages={totalPages}
           currentPage={currentPage}
           onPageChange={handlePageChange}

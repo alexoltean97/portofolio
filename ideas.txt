@@ -12,16 +12,57 @@ Create some components with plain js
 
 Tabs for Basic Web Components and E-commerce:
 
-Db backup
 
-{
-  "rules": {
-    ".read": "now < 1700085600000",  // 2023-11-16
-    ".write": "now < 1700085600000",  // 2023-11-16
-  }
-}
+FINAL MVP ==========================================================================
+
+MVP General Business side 
+
+- About me Text something cool.
+
+- Text for my skills. 
+
+- Maybe something less try hard.
+
+ - Grammar check Work Experience. 
+ 
+ - Grammar check everything. 
+
+ - Language check everything 
 
 
-https://www.hostinger.com/website-templates/15?ppc_campaign=google_search_generic_hosting_all&bidkw=defaultkeyword&lo=1011806&gad_source=1&gclid=Cj0KCQiAnfmsBhDfARIsAM7MKi2PC4OA5OCGru2TtrnNPPYS0b-ZAjhtXy0BkQhx1rX9oQKFRgP_37EaAt0bEALw_wcB
+MVP General Code side 
 
-https://www.hostinger.com/website-templates/preview/laurent?returnPath=%2Fwebsite-templates%2F15&defaultTemplateId=laurent
+-  Make Cookies for Language and Color Work! 
+ 
+-  Websites Meta 
+
+- Compilation 
+
+- Launch
+
+MVP Portofolio --------------
+
+- Appropiate styling for Tabs
+
+- Add Web Components Title above the Tabs "React Web Components Portofolio" 
+
+Tabs:
+
+- Remove all tabs except E-commerce and menus
+
+- Menu tab: 
+
+- One more menu: maybe side menu
+
+E-commerce tab: 
+
+- Search for Product with - search, pagination filter  
+
+- Single Product to look nice 
+
+- Add to cart feature working (Can copy from previous projects)
+
+- On Click add to cart buttons icon pops on the bottom right corner above the settings 
+
+- On click open the modal with the cart 
+

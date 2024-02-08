@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import mainUrl from "../globals/environment-vars.js";
+import mainUrl from "../../db/constants";
 
 const useGetProducts = () => {
   const [loading, setLoading] = useState(true);
@@ -21,6 +21,7 @@ const useGetProducts = () => {
             id: key,
             name: response.data[key].name,
             description: response.data[key].description,
+            path: response.data[key].imagePath, 
             quantity: response.data[key].quantity,
             category: response.data[key].category,
             price: response.data[key].price,

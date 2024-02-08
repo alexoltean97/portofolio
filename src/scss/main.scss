@@ -4,3 +4,23 @@
 @import "globals/theme";
 @import "globals/header";
 @import "globals/responsive";
+
+
+.search-for {
+    h2{
+        font-family: var(--main-font);
+        font-size: var(--h-portofolio-size);
+    }
+
+    .working-pagination{
+        
+        .page-link{
+            color: $main-color;
+        }
+      .active>.page-link{
+        background-color: var(--main-color);
+        border-color: var(--main-color);
+        color: $plain-white;
+      }
+    }
+}

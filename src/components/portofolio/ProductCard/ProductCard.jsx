@@ -5,7 +5,7 @@ const ProductCard = (props) => {
     <div className="col-md-4 mb-4">
       <div className="card">
         <img
-          src="https://placehold.co/500x500"
+          src={props.imagePath}
           alt="Product Image 1"
           className="card-img-top"
         />
@@ -18,7 +18,7 @@ const ProductCard = (props) => {
             <Link to={`/products/${props.link}`}>See more.</Link>
           </p>
           <div className="input-group mb-3"></div>
-          <button className="btn btn-primary">Add to Cart</button>
+          <button className="btn btn-primary shadow-effect">Add to Cart</button>
         </div>
       </div>
     </div>

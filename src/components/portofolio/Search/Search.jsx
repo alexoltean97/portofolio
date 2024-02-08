@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Search = ({ onSearch }) => {
-  const [inputValue, setInputValue] = useState < string > "";
+  const [inputValue, setInputValue] = useState("");
 
   const handleInputChange = () => {
     setInputValue(event.target.value);
@@ -15,7 +15,7 @@ const Search = ({ onSearch }) => {
   return (
     <div className="search">
       <form
-        className="form-inline"
+        className="form-inline d-flex"
         style={{ flexDirection: "row" }}
         onSubmit={handleFormSubmit}
       >
@@ -24,10 +24,15 @@ const Search = ({ onSearch }) => {
           type="search"
           placeholder="Search"
           aria-label="Search"
+          style={{ width: "25%" }}
           value={inputValue}
           onChange={handleInputChange}
         />
-        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
+        <button
+          className="btn btn-outline-success my-2 my-sm-0 shadow-effect"
+          style={{ width: "10%" }}
+          type="submit"
+        >
           Search
         </button>
       </form>

@@ -19,18 +19,15 @@ Before installing, ensure you have Node.js installed on your system.
 To set up the project for development, follow these steps:
 
 Clone the repository:
-bash
-Copy code
+
 git clone <repository-url>
 
 Navigate to the project directory:
-bash
-Copy code
+
 cd presentation-app
 
 Install dependencies:
-bash
-Copy code
+
 npm install
 
 Available Scripts

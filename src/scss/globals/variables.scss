@@ -21,7 +21,8 @@
     --main-font: "Teko", sans-serif;
     --second-font: "Titillium", sans-serif;
     --third-font: "Titillium Web", sans-serif;
-    --roboto-font: "Roboto", sans-serif
+    --roboto-font: "Roboto", sans-serif;
+    --arimo-font: "Arimo", sans-serif;
     /** Sizes **/
     --h1-size: 88px;
     --new-h1:88px;
@@ -71,6 +72,7 @@
   $second-font: var(--second-font);
   $third-font: var(--third-font);
   $roboto-font: var(--roboto-font);
+  $arimo: var(--arimo-font);
 
   $h1-size: var(--new-h1);
   $h2-size: var(--h2-size);

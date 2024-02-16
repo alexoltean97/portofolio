@@ -1,51 +1,29 @@
 import React from "react";
+import useMenuLogic from "../../../hooks/useMenuLogic/useMenuLogic";
+import useMenuData from "../../../hooks/useMenuData/useMenuData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
-import { faChartSimple } from "@fortawesome/free-solid-svg-icons";
-import { faBell } from "@fortawesome/free-solid-svg-icons";
-import { faChartPie } from "@fortawesome/free-solid-svg-icons";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { faWallet } from "@fortawesome/free-solid-svg-icons";
+
+
 const AsideMenuList = () => {
+  const { activeLink, handleLinkClick } = useMenuLogic("Revenue");
+  const navLinks = useMenuData("asideMenuList");
+
   return (
     <div className="menu-list">
       <ul>
-        <li>
-          <a href="#">
-            <FontAwesomeIcon icon={faHouse} />
-            Dashboard
-          </a>
-        </li>
-        <li>
-          <a className="active" href="#">
-            <FontAwesomeIcon icon={faChartSimple} />
-            Revenue
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <FontAwesomeIcon icon={faBell} />
-            Notifications
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <FontAwesomeIcon icon={faChartPie} />
-            Analytics
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <FontAwesomeIcon icon={faHeart} />
-            Likes
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <FontAwesomeIcon icon={faWallet} />
-            Wallets
-          </a>
-        </li>
+        {navLinks.map((link, index) => (
+          <React.Fragment key={index}>
+            <li className={link.title === activeLink ? "active-parent" : ""}>
+              <a
+                className={link.title === activeLink ? "active" : ""}
+                onClick={() => handleLinkClick(link.title)}
+              >
+                <FontAwesomeIcon icon={link.icon} />
+                {link.title}
+              </a>
+            </li>
+          </React.Fragment>
+        ))}
       </ul>
     </div>
   );

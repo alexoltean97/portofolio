@@ -211,6 +211,10 @@
   background-color: #f6f4ff ;
 }
 
+.aside-menu .search input[type=text]{
+  padding: 10px 0 10px 30px;
+}
+
 .aside-menu .aside-footer svg{
   padding-right: 10px;
 }
@@ -221,3 +225,19 @@
   top: 1px;
 }
 
+.aside-menu .search{
+  position: relative;
+}
+
+.aside-menu .search::before {
+  content: "\f002";
+  color: #777777;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; 
+  position: absolute;
+  left: 10px;
+  top: 35%;
+  transform: translateY(-50%);
+  pointer-events: none; 
+  font-size: 16px; 
+}

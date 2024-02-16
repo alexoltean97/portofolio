@@ -1,5 +1,4 @@
 import React from "react";
-import useThemeSwitch from "../../../hooks/useThemeSwitch/useThemeSwitch";
 import { useTheme } from "../../../context/ThemeContext";
 import AsideMenuUser from "../AsideMenuUser/AsideMenuUser";
 import AsideMenuSearch from "../AsideMenuSearch/AsideMenuSearch";

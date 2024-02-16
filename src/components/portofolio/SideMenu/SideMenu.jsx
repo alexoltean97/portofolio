@@ -1,13 +1,19 @@
 import React from "react";
+import useThemeSwitch from "../../../hooks/useThemeSwitch/useThemeSwitch";
+import { useTheme } from "../../../context/ThemeContext";
 import AsideMenuUser from "../AsideMenuUser/AsideMenuUser";
 import AsideMenuSearch from "../AsideMenuSearch/AsideMenuSearch";
 import AsideMenuList from "../AsideMenuList/AsideMenuList";
 import AsideMenuFooter from "../AsideMenuFooter/AsideMenuFooter";
 
 const SideMenu = () => {
+  const { currentTheme } = useTheme();
+
   return (
     <React.Fragment>
-      <aside className="aside-menu">
+      <aside
+        className={`aside-menu ${currentTheme === "Dark" ? "dark-theme" : ""}`}
+      >
         <AsideMenuUser />
         <AsideMenuSearch />
         <AsideMenuList />

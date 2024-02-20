@@ -39,6 +39,33 @@
   font-size: $h-portofolio-size;
 }
 
-// $main-color: #6200ea; // Example definition, adjust as needed
+.cart {
+  cursor: pointer;
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: var(--main-color);
+  color: var(--plain-white);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s ease-in-out;
+  animation-duration: 4s;
+  &:hover{
+    transform: scale(1.1);
+  }
 
-
+  .product-count{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 9px;
+  }
+}

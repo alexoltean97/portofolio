@@ -5,7 +5,7 @@ import ReactPortal from "../../components/utils/ReactPortal/ReactPortal";
 import PortofolioTabs from "../../components/portofolio/PortofolioTabs/PortofolioTabs";
 import ThemeMenu from "../../components/theme/ThemeMenu/ThemeMenu";
 import ThemeButton from "../../components/theme/ThemeButton/ThemeButton";
-
+import CartButton from "../../components/theme/CartButton/CartButton";
 
 const PortofolioPageLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +22,7 @@ const PortofolioPageLayout = () => {
       <ReactPortal head="Theme Settings" isOpen={isOpen} onClose={openModal}>
        <ThemeMenu />
       </ReactPortal>
+      <CartButton />
       <ThemeButton openModal={openModal} />
       </div>
       <Footer />

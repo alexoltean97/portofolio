@@ -16,12 +16,16 @@
     --strong-gray: #f0f0f0;
     --light-blue: #007bff;
     --navbar-black: #384a4f;
+    --theme-dark: #242527;
+    --theme-dark-active: #3a3b3d;
+    --theme-dark-color: #c2c3c4;
   
     /** Fonts **/
     --main-font: "Teko", sans-serif;
     --second-font: "Titillium", sans-serif;
     --third-font: "Titillium Web", sans-serif;
-    --roboto-font: "Roboto", sans-serif
+    --roboto-font: "Roboto", sans-serif;
+    --arimo-font: "Arimo", sans-serif;
     /** Sizes **/
     --h1-size: 88px;
     --new-h1:88px;
@@ -65,12 +69,16 @@
   $strong-gray: var(--strong-gray);
   $light-blue: var(---light-blue);
   $navbar-black: var(--navbar-black);
+  $theme-dark: var(--theme-dark);
+  $theme-dark-active: var(--theme-dark-active);
+  $theme-dark-color: var(--theme-dark-color);
 
 
   $main-font: var(--main-font);
   $second-font: var(--second-font);
   $third-font: var(--third-font);
   $roboto-font: var(--roboto-font);
+  $arimo: var(--arimo-font);
 
   $h1-size: var(--new-h1);
   $h2-size: var(--h2-size);

@@ -16,11 +16,14 @@ const PortofolioPageLayout = () => {
   return (
     <React.Fragment>
       <Header />
+      <div className="container">
+      <h2 className="main-portofolio-title">React Web Components Portofolio</h2>
       <PortofolioTabs />
       <ReactPortal head="Theme Settings" isOpen={isOpen} onClose={openModal}>
        <ThemeMenu />
       </ReactPortal>
       <ThemeButton openModal={openModal} />
+      </div>
       <Footer />
     </React.Fragment>
   );

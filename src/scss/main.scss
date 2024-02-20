@@ -5,22 +5,40 @@
 @import "globals/header";
 @import "globals/responsive";
 
+// *:not(input):not(textarea):not(select) {
+//   transition: background-color 0.3s ease, color 0.3s ease;
+// }
 
 .search-for {
-    h2{
-        font-family: var(--main-font);
-        font-size: var(--h-portofolio-size);
-    }
+  h2 {
+    font-family: var(--main-font);
+    font-size: var(--h-portofolio-size);
+  }
 
-    .working-pagination{
-        
-        .page-link{
-            color: $main-color;
-        }
-      .active>.page-link{
-        background-color: var(--main-color);
-        border-color: var(--main-color);
-        color: $plain-white;
-      }
+  .working-pagination {
+    .page-link {
+      color: $main-color;
     }
+    .active > .page-link {
+      background-color: var(--main-color);
+      border-color: var(--main-color);
+      color: $plain-white;
+    }
+  }
 }
+
+.portofolio-tabs {
+  .nav-tabs .nav-link {
+    color: var(--main-color);
+    font-family: var(--main-font);
+  }
+}
+
+.main-portofolio-title {
+  font-family: $main-font;
+  font-size: $h-portofolio-size;
+}
+
+// $main-color: #6200ea; // Example definition, adjust as needed
+
+

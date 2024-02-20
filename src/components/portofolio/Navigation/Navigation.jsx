@@ -9,7 +9,7 @@ const Navigation = () => {
 
   return (
     <React.Fragment>
-      <div className="menu-1 container">
+      <div className="menu-1">
         <h2>Rounded navigation bar</h2>
         <nav className="portfolio-navbar">
           <ul>

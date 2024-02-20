@@ -10,6 +10,7 @@ const SideMenu = () => {
 
   return (
     <React.Fragment>
+      <h2 className="aside-navigation">Rounded navigation bar</h2>
       <aside
         className={`aside-menu ${currentTheme === "Dark" ? "dark-theme" : ""}`}
       >

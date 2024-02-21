@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import AppRoutes from "./routes/AppRoutes";
 import { ThemeProvider } from "./context/ThemeContext";
@@ -30,9 +30,9 @@ const App = () => {
 
   return (
     <ThemeProvider>
-      <Router>
-        <AppRoutes />
-      </Router>
+        <Router>
+          <AppRoutes />
+        </Router>
     </ThemeProvider>
   );
 };

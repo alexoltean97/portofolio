@@ -1,12 +1,12 @@
 import React from "react";
 import { createPortal } from "react-dom";
 
-const Modal = ({ isOpen, onClose, children, head }) => {
+const Modal = ({ isOpen, onClose, children, head, mainClass }) => {
   if (!isOpen) return null;
 
   return createPortal(
     <div className="modal" tabindex="-1" role="dialog">
-      <div className="modal-dialog" role="document">
+      <div className={`modal-dialog ${mainClass}`} role="document">
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title">{head}</h5>

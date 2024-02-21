@@ -69,3 +69,18 @@
     font-size: 9px;
   }
 }
+
+
+.main-cart {
+  .cart-product{
+    .single-product-descriptions{
+      padding: 0 35px;
+    }
+    .single-product-image{
+      img{
+        width: 140px;
+        height: 100px;
+      }
+    }
+  }
+}

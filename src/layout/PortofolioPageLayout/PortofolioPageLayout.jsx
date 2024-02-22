@@ -38,7 +38,7 @@ const PortofolioPageLayout = () => {
         <PortofolioTabs />
         <ReactPortal
           head={modalContent === "theme" ? "Theme Settings" : "Shopping Cart"}
-          mainClass={modalContent === "theme" ? "main-settings" : "main-cart"}
+          mainClass={modalContent === "theme" ? "main-set" : "main-cart"}
           isOpen={isOpen}
           onClose={() => openModal(null)}
         >

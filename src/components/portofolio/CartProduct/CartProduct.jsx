@@ -17,6 +17,8 @@ const CartProduct = () => {
         <span className="remove-label"><FontAwesomeIcon icon={faTrash} />Remove</span>
       </div>
 
+      
+
       <div className="single-product-price">
         <span>$1,199</span>
       </div>

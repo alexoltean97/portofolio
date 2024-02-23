@@ -1,6 +1,15 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import CartContext from "../../../context/CartContext";
 
 const ProductCard = (props) => {
+
+  const cartCtx = useContext(CartContext);
+
+  const addProductToCart = () => {
+    cartCtx.addItem(props.product)
+  };
+
   return (
     <div className="col-md-4 mb-4">
       <div className="card">
@@ -18,7 +27,12 @@ const ProductCard = (props) => {
             <Link to={`/products/${props.link}`}>See more.</Link>
           </p>
           <div className="input-group mb-3"></div>
-          <button className="btn btn-primary shadow-effect">Add to Cart</button>
+          <button
+            onClick={addProductToCart}
+            className="btn btn-primary shadow-effect"
+          >
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>

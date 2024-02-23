@@ -24,6 +24,7 @@ const ProductRow = () => {
           {!loading &&
             currentProducts.map((product) => (
               <ProductCard
+                product={product}
                 key={product.id}
                 name={product.name}
                 description={product.description}

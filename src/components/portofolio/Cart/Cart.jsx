@@ -5,23 +5,15 @@ import CartTotal from "../CartTotal/CartTotal";
 import CartContext from "../../../context/CartContext";
 
 const Cart = () => {
-  // const [cartItems, setCartItems] = useState([{}, {}]);
-
-  // const cartClass =
-  //   cartItems.length > 2 ? "cart-products overflow" : "cart-products";
-
+ 
   const cartCtx = useContext(CartContext);
+  const cartClass =
+  cartCtx.items.length > 2 ? "cart-products overflow" : "cart-products";
 
   return (
     <React.Fragment>
       <div className="cart-contents">
-        {/* <div className={cartClass}>
-          {cartItems.map((item, index) => (
-            <CartProduct key={index} {...item} />
-          ))}
-        </div> */}
-
-        <div className="cart-products">
+        <div className={cartClass}>
           {cartCtx.items.map((item) => (
             <CartProduct
               key={item.id}

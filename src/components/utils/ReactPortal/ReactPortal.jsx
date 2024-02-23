@@ -1,5 +1,7 @@
 import React from "react";
 import { createPortal } from "react-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX } from "@fortawesome/free-solid-svg-icons";
 
 const Modal = ({ isOpen, onClose, children, head, mainClass }) => {
   if (!isOpen) return null;
@@ -17,7 +19,7 @@ const Modal = ({ isOpen, onClose, children, head, mainClass }) => {
               aria-label="Close"
               onClick={onClose}
             >
-              <span aria-hidden="true">&times;</span>
+              <FontAwesomeIcon icon={faX} />
             </button>
           </div>
           <div className="modal-body">{children}</div>

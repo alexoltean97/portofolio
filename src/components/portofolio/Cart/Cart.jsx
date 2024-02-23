@@ -4,7 +4,7 @@ import CartTable from "../CartTable/CartTable";
 import CartTotal from "../CartTotal/CartTotal";
 
 const Cart = () => {
-  const [cartItems, setCartItems] = useState([{}, {}, {}]);
+  const [cartItems, setCartItems] = useState([{}, {}]);
 
   const cartClass =
     cartItems.length > 2 ? "cart-products overflow" : "cart-products";

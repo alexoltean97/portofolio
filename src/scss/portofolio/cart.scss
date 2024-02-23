@@ -51,7 +51,7 @@
       margin-bottom: 10px;
       padding-bottom: 20px;
       border-bottom: 1px solid #eef0f4;
-
+      position: relative;
       .single-product-descriptions {
         padding: 0 35px;
         font-family: $arimo;
@@ -87,6 +87,32 @@
         }
       }
     }
+
+    .cart-qty{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      span {
+        margin-left: 10px;
+      }
+
+      button{
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        border-radius: 50%;
+        border:none;
+        background: #f5f5f5;
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      button:last-child{
+        margin-left: 10px;
+      }
+    }
   }
 
   .cart-table {
@@ -108,26 +134,3 @@
     color: #212529;
   }
 }
-
-
-// /* Styles the scrollbar track (background) */
-// .cart-products::-webkit-scrollbar-track {
-//     background-color: #f0f0f0; /* Light grey background */
-//     border-radius: 10px; /* Optional: adds rounded corners to the track */
-//     height: 12px;
-//   }
-  
-//   /* Styles the scrollbar thumb (the part that can be dragged) */
-//   .cart-products::-webkit-scrollbar-thumb {
-//     background-color: #888; /* Darker grey thumb */
-//     border-radius: 10px; /* Rounded corners on the thumb */
-//     border: 3px solid #f0f0f0; /* Optional: adds a border between the thumb and the track */
-//     height: 12px;
-//   }
-  
-//   /* Styles the scrollbar itself (width and height) */
-//   .cart-products::-webkit-scrollbar {
-//     width: 12px; /* Width of the vertical scrollbar */
-//     height: 12px; /* Height of the horizontal scrollbar */
-//   }
-  

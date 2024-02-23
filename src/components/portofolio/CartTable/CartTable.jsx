@@ -1,36 +1,41 @@
-import React from "react";
+import React, { useContext } from "react";
+import CartContext from "../../../context/CartContext";
 
 const CartTable = () => {
+
   return (
-    <div className="cart-table">
-      <div className="cart-row d-flex justify-content-between">
-        <div className="sub-total">
-          <span>SubTotal</span>
-        </div>
-        <div className="sub-total-price">
-          <span>$1233</span>
-        </div>
-      </div>
+    <React.Fragment>
+    
+        <div className="cart-table">
+          <div className="cart-row d-flex justify-content-between">
+            <div className="sub-total">
+              <span>SubTotal</span>
+            </div>
+            <div className="sub-total-price">
+              <span>$test</span>
+            </div>
+          </div>
 
-      <div className="cart-row d-flex justify-content-between">
-        <div>
-          <span>Shipping</span>
-        </div>
-        <div>
-          <span>$15</span>
-        </div>
-      </div>
+          <div className="cart-row d-flex justify-content-between">
+            <div>
+              <span>Shipping</span>
+            </div>
+            <div>
+              <span>15</span>
+            </div>
+          </div>
 
-      <div className="cart-row d-flex justify-content-between">
-        <div>
-          <span>VAT(20%)</span>
+          <div className="cart-row d-flex justify-content-between">
+            <div>
+              <span>VAT</span>
+            </div>
+            <div>
+              <span>$20</span>
+            </div>
+          </div>
         </div>
-        <div>
-          <span>$31312</span>
-        </div>
-      </div>
-
-    </div>
+    
+    </React.Fragment>
   );
 };
 

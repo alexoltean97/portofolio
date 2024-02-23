@@ -19,6 +19,8 @@
     --theme-dark: #242527;
     --theme-dark-active: #3a3b3d;
     --theme-dark-color: #c2c3c4;
+    --bg-green: #e6f2eb;
+    --green: #007d2c;
   
     /** Fonts **/
     --main-font: "Teko", sans-serif;
@@ -72,7 +74,9 @@
   $theme-dark: var(--theme-dark);
   $theme-dark-active: var(--theme-dark-active);
   $theme-dark-color: var(--theme-dark-color);
-
+  $bg-green: var(--bg-green);
+  $green: var(--green);
+  
 
   $main-font: var(--main-font);
   $second-font: var(--second-font);

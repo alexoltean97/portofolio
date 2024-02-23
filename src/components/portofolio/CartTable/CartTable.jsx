@@ -2,7 +2,12 @@ import React, { useContext } from "react";
 import CartContext from "../../../context/CartContext";
 
 const CartTable = () => {
+  const cartCtx = useContext(CartContext);
 
+  const cartTotal = cartCtx.items.reduce(
+    (totalPrice, item) => totalPrice + item.quantity * item.price,
+    0
+  );
   return (
     <React.Fragment>
     
@@ -12,7 +17,7 @@ const CartTable = () => {
               <span>SubTotal</span>
             </div>
             <div className="sub-total-price">
-              <span>$test</span>
+              <span>${cartTotal}</span>
             </div>
           </div>
 

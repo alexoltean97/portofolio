@@ -53,7 +53,10 @@ const SingleProduct = () => {
 
             <SizeSelector />
             <div className="buttons-container">
-              <button onClick={addProductToCart} className="btn btn-cart">
+              <button
+                onClick={addProductToCart}
+                className="btn btn-cart shadow-effect"
+              >
                 <FontAwesomeIcon icon={faCartShopping} />
                 Add to cart
               </button>

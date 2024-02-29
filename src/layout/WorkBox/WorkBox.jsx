@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactPortal from "../../components/utils/ReactPortal/ReactPortal";
 import { useTranslation } from "react-i18next";
 
 const WorkBox = (props) => {
   const { t } = useTranslation();
-  //  const [isOpen, setOpen] = useState(false);
+ 
   return (
     <div className="col-lg-6">
       <div className="work-box">

@@ -3,7 +3,6 @@ import React from "react";
 const SizeSelector = () => {
   return (
     <React.Fragment>
-      <span className="size-select">Select size</span>
       <select className="size-selector">
         <option>XXL</option>
         <option>XL</option>

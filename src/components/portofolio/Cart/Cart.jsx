@@ -3,6 +3,7 @@ import CartProduct from "../CartProduct/CartProduct";
 import CartTable from "../CartTable/CartTable";
 import CartTotal from "../CartTotal/CartTotal";
 import CartContext from "../../../context/CartContext";
+import EmptyCart from "../EmptyCart/EmptyCart";
 
 const Cart = () => {
   const cartCtx = useContext(CartContext);
@@ -13,7 +14,7 @@ const Cart = () => {
     <React.Fragment>
       <div className="cart-contents">
         {cartCtx.items.length < 1 ? (
-          <p>You have no products in your cart</p>
+            <EmptyCart />
         ) : (
           <React.Fragment>
             <div className={cartClass}>

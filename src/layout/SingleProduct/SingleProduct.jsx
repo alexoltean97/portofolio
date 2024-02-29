@@ -1,6 +1,5 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import WhiteTshirt from "../../assets/images/white-tshirt.png";
@@ -76,7 +75,7 @@ const SingleProduct = () => {
                 ))}
               </div>
             </div>
-            <span>Select size</span>
+            <span className="size-select">Select size</span>
             <select className="size-selector">
               <option>XXL</option>
               <option>XL</option>
@@ -87,14 +86,12 @@ const SingleProduct = () => {
               <option>XXS</option>
             </select>
 
-            <div className="buttons-container d-flex flex-row">
+            <div className="buttons-container">
               <button className="btn btn-cart">
+              <FontAwesomeIcon icon={faCartShopping} />
                 Add to cart
-                <FontAwesomeIcon icon={faCartShopping} />
               </button>
-              <button className="btn btn-liked">
-                <FontAwesomeIcon icon={faHeart} />
-              </button>
+
             </div>
           </div>
         </div>

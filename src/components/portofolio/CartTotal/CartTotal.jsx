@@ -16,7 +16,7 @@ const CartTotal = () => {
         <span>Total</span>
       </div>
       <div className="total-price">
-        <span>{totalSum}</span>
+        <span>${totalSum.toFixed(2)}</span>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
@@ -17,10 +17,8 @@ const CartProduct = (props) => {
       </div>
 
       <div className="single-product-price">
-        <span>${props.price}</span>
-      </div>
-
-      <div className="cart-qty">
+        <span className="price-single">${props.price}</span>
+        <div className="cart-qty">
         <button onClick={props.onDecrease}>
           <FontAwesomeIcon icon={faMinus} />
         </button>
@@ -29,7 +27,10 @@ const CartProduct = (props) => {
           <FontAwesomeIcon icon={faPlus} />
         </button>
       </div>
+      </div>
     </div>
+
+
   );
 };
 

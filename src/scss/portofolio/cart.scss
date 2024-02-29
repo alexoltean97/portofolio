@@ -41,16 +41,18 @@
   }
 
   .overflow{
+    height: 262px;
     overflow-y: auto!important;
+    overflow-x: unset!important;
   }
 
   .cart-products {
-    overflow-y: hidden;
     .cart-product {
       margin-bottom: 10px;
       padding-bottom: 20px;
-      border-bottom: 1px solid #eef0f4;
       position: relative;
+      border-bottom: 1px solid #eef0f4;
+      width: 450px;
       .single-product-descriptions {
         padding: 0 35px;
         font-family: $arimo;
@@ -68,6 +70,10 @@
       .single-product-price {
         font-family: $arimo;
         font-size: $h5-mobile;
+        .price-single{
+          position: absolute;
+          right: 10px;
+        }
       }
 
       .single-product-image {

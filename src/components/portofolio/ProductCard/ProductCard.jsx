@@ -4,11 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 const ProductCard = (props) => {
-
   const cartCtx = useContext(CartContext);
 
   const addProductToCart = () => {
-    cartCtx.addItem(props.product)
+    cartCtx.addItem(props.product);
   };
 
   return (
@@ -24,7 +23,7 @@ const ProductCard = (props) => {
           <p className="card-text">{props.description}</p>
           <p className="price">${props.price}</p>
           <p>{props.id}</p>
-  
+
           <div className="input-group mb-3"></div>
           <button
             onClick={addProductToCart}

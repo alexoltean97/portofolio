@@ -18,10 +18,10 @@ const Experience = () => {
             description={t("expDescPlenty")}
             modalHeader="PlentyMarkets"
           >
-            <p>{t('plentyIntro')}</p>
-            <p>{t('plentyTeam')}</p>
+            <p>{t("plentyIntro")}</p>
+            <p>{t("plentyTeam")}</p>
             <ul>
-              <li>{t('plentyListOne')}</li>
+              <li>{t("plentyListOne")}</li>
             </ul>
           </WorkBox>
 

@@ -28,7 +28,7 @@ const HomePageLayout = () => {
       <Certificates />
       <Education />
       <ReactPortal head="Theme Settings" isOpen={isOpen} onClose={openModal}>
-       <ThemeMenu />
+        <ThemeMenu />
       </ReactPortal>
       <ThemeButton openModal={openModal} />
       <Footer />

@@ -9,8 +9,7 @@ const PortofolioTabs = () => {
     <React.Fragment>
       <div className="portofolio-tabs">
         <Tabs defaultActiveKey="ecommerce" id="theme-settings" className="mb-3">
-          
-        <Tab eventKey="ecommerce" title="E-commerce">
+          <Tab eventKey="ecommerce" title="E-commerce">
             <EcomTab />
           </Tab>
 

@@ -5,12 +5,10 @@ import cvPath from "../../../assets/cv/CV_Oltean_Alexandru_en.pdf";
 
 const DownloadResume = (props) => {
   return (
-   
-      <a className="resume" href={cvPath} download="CV_Oltean_Alexandru_en.pdf">
-        <FontAwesomeIcon icon={faDownload} />
-          {props.children}
-      </a>
- 
+    <a className="resume" href={cvPath} download="CV_Oltean_Alexandru_en.pdf">
+      <FontAwesomeIcon icon={faDownload} />
+      {props.children}
+    </a>
   );
 };
 

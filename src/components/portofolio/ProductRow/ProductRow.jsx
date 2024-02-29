@@ -14,7 +14,7 @@ const ProductRow = () => {
   } = useProductManagement(3);
   return (
     <div className="products">
-      <div className="search-for mt-4"> 
+      <div className="search-for mt-4">
         <h2>Search for product</h2>
         <Search onSearch={handleSearch} />
 

@@ -4,7 +4,6 @@ import CardModel from "../../components/portofolio/CardModel/CardModel";
 const CardGrid = () => {
   return (
     <React.Fragment>
-
       <div className="cards-grid container">
         <h2>Cards</h2>
         <p>Some simple cards that you can use for your landing page</p>

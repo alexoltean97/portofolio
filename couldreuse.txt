@@ -19,3 +19,12 @@
   //   console.log(work);
   // }),
   //   [];
+
+
+    <option>XXL</option>
+              <option>XL</option>
+              <option>L</option>
+              <option>M</option>
+              <option>S</option>
+              <option>XS</option>
+              <option>XXS</option>

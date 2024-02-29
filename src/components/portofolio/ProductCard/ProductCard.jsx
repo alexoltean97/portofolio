@@ -1,6 +1,16 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import CartContext from "../../../context/CartContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 const ProductCard = (props) => {
+
+  const cartCtx = useContext(CartContext);
+
+  const addProductToCart = () => {
+    cartCtx.addItem(props.product)
+  };
+
   return (
     <div className="col-md-4 mb-4">
       <div className="card">
@@ -12,13 +22,17 @@ const ProductCard = (props) => {
         <div key={props.id} className="card-body">
           <h5 className="card-title">{props.name}</h5>
           <p className="card-text">{props.description}</p>
-          <p className="price">{props.price}</p>
+          <p className="price">${props.price}</p>
           <p>{props.id}</p>
-          <p>
-            <Link to={`/products/${props.link}`}>See more.</Link>
-          </p>
+  
           <div className="input-group mb-3"></div>
-          <button className="btn btn-primary shadow-effect">Add to Cart</button>
+          <button
+            onClick={addProductToCart}
+            className="btn btn-primary shadow-effect"
+          >
+            <FontAwesomeIcon icon={faCartShopping} />
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>

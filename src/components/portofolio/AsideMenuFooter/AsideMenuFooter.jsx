@@ -19,9 +19,9 @@ const AsideMenuFooter = () => {
           <a className="position-relative" href="#">
             <FontAwesomeIcon icon={faMoon} />
             {currentTheme === "Light" ? "Dark Mode" : "Light Mode"}
-            <label class="switch">
+            <label className="switch">
             <input type="checkbox" checked={currentTheme === "Dark"} onChange={toggleTheme} />
-              <span class="slider round"></span>
+              <span className="slider round"></span>
             </label>
           </a>
         </li>

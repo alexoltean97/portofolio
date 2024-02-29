@@ -8,7 +8,6 @@ const ColorPicker = ({
 }) => {
   return (
     <div className="color-picker d-flex flex-column">
-      <span>Color: {hoverText}</span>
       <div className="image-grid d-flex flex-row">
         {productImages.map((image, index) => (
           <div

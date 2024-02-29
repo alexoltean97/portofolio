@@ -3,7 +3,6 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import LocalImage from "../../../assets/images/placeholder-image-card.png";
 
-
 const CardModel = (props) => {
   return (
     <React.Fragment>

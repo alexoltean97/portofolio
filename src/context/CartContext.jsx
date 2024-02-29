@@ -37,7 +37,6 @@ const cartReducer = (state, action) => {
 
     const updatedItems = [...state.items];
     if (existingCartItem.quantity === 1) {
-      
       updatedItems.splice(existingCartItemIndex, 1);
     } else {
       const updatedItem = {
@@ -56,27 +55,30 @@ const cartReducer = (state, action) => {
 export const CartContextProvider = ({ children }) => {
   const [cart, dispatchCartAction] = useReducer(cartReducer, { items: [] });
 
-
   const addItem = (item) => {
     dispatchCartAction({
-        type: 'ADD_ITEM', item: item
-    })
-  }
+      type: "ADD_ITEM",
+      item: item,
+    });
+  };
   const removeItem = (id) => {
     dispatchCartAction({
-        type: 'REMOVE_ITEM', id
-    })
-  }
+      type: "REMOVE_ITEM",
+      id,
+    });
+  };
 
   const cartContext = {
     items: cart.items,
     addItem,
-    removeItem
-  }
+    removeItem,
+  };
 
-  console.log(cartContext)
+  console.log(cartContext);
 
-  return <CartContext.Provider value={cartContext}>{children}</CartContext.Provider>;
+  return (
+    <CartContext.Provider value={cartContext}>{children}</CartContext.Provider>
+  );
 };
 
 export default CartContext;

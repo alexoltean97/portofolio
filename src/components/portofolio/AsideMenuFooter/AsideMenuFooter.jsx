@@ -20,7 +20,11 @@ const AsideMenuFooter = () => {
             <FontAwesomeIcon icon={faMoon} />
             {currentTheme === "Light" ? "Dark Mode" : "Light Mode"}
             <label className="switch">
-            <input type="checkbox" checked={currentTheme === "Dark"} onChange={toggleTheme} />
+              <input
+                type="checkbox"
+                checked={currentTheme === "Dark"}
+                onChange={toggleTheme}
+              />
               <span className="slider round"></span>
             </label>
           </a>

@@ -1,12 +1,9 @@
 import React from "react";
-import {createPortal} from 'react-dom';
+import { createPortal } from "react-dom";
 
-const FormModal = ({isOpen, onClose}) => {
-    if(!isOpen) return null;
-    return(
-
-        <p>mata</p>
-    );
-}
+const FormModal = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
+  return <p>test</p>;
+};
 
 export default FormModal;

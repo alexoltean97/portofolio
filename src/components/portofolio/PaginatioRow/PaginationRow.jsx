@@ -1,10 +1,8 @@
 import React from "react";
 
-const PaginationRow = ({totalPages, currentPage, onPageChange}) => {
+const PaginationRow = ({ totalPages, currentPage, onPageChange }) => {
+  const pages = [...Array(totalPages).keys()].map((num) => num + 1);
 
-    const pages = [...Array(totalPages).keys()].map(num => num + 1);
-
-    
   return (
     <nav className="working-pagination">
       <ul className="pagination">

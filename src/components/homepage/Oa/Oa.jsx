@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Oa = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <div className="oa">
       <div className="container">
@@ -14,12 +14,12 @@ const Oa = () => {
               <h1 id="main-title">
                 Oltean <span>Alexandru</span>
               </h1>
-              <p id="description">{t('Iam')}</p>
+              <p id="description">{t("Iam")}</p>
             </div>
 
             <div id="company-contact" className="company-contact">
-            <a href="#">{t("contactBtn")}</a>
-              <Link to="/portofolio">{t('portofolioBtn')}</Link>
+              <a href="#">{t("contactBtn")}</a>
+              <Link to="/portofolio">{t("portofolioBtn")}</Link>
             </div>
           </div>
 

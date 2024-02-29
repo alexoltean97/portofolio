@@ -1,8 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useMenuLogic from "../../../hooks/useMenuLogic/useMenuLogic";
 import useMenuData from "../../../hooks/useMenuData/useMenuData";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 
 const AsideMenuList = () => {
   const { activeLink, handleLinkClick } = useMenuLogic("Revenue");

@@ -84,6 +84,7 @@ i18next
           roundedNavigation: "Rounded navigation bar",
           sideMenu: "Side Navigation",
           cookiesConsent: "Cookies Consent",
+          cookiesPolicy: "Cookies Policy",
           cookiesThisWebsite: "This website use cookeis to ensure you get the best experience on our website.",
           understand: "I understand"
         },
@@ -165,6 +166,7 @@ i18next
           roundedNavigation: "Abgerundete Navigationsleiste",
           sideMenu: "Seitennavigation",
           cookiesConsent: "Einwilligung zu Cookies",
+          cookiesPolicy: "Cookie-Richtlinie",
           cookiesThisWebsite: "Diese Website verwendet Cookies, um sicherzustellen, dass Sie auf unserer Website das bestmögliche Erlebnis haben.",
           understand: "Ich verstehe" 
         },

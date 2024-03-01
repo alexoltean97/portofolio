@@ -28,7 +28,9 @@ Maybe hire a padawan.
 
 Start landing clients.
 
+Refactor home page - omg 
 
+Layouts inside Layouts
 
 FINAL MVP ==========================================================================
 

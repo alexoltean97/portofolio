@@ -12,6 +12,23 @@ Create some components with plain js
 
 Tabs for Basic Web Components and E-commerce:
 
+App settings. 
+
+Ideeas ===================
+
+The settings icon bg transparent of some gray of the main color div 
+
+Gray bg on portofolio page 
+
+Maybe max-width, min width for bug in cart 
+
+Maybe launch front page and land some jobs. 
+
+Maybe hire a padawan. 
+
+Start landing clients.
+
+
 
 FINAL MVP ==========================================================================
 
@@ -66,3 +83,4 @@ E-commerce tab:
 
 - On click open the modal with the cart 
 
+Full Mobile optimization

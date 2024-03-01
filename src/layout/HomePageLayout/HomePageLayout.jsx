@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ReactPortal from "../../components/utils/ReactPortal/ReactPortal";
 import Header from "../globals/Header/Header";
 import Footer from "../globals/Footer/Footer";
@@ -10,12 +10,32 @@ import Certificates from "../../components/homepage/Certificates/Certificates";
 import Education from "../../components/homepage/Education/Education";
 import ThemeMenu from "../../components/theme/ThemeMenu/ThemeMenu";
 import ThemeButton from "../../components/theme/ThemeButton/ThemeButton";
+import CookiesModal from "../../components/portofolio/CookiesModal/CookiesModal";
 
 const HomePageLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [modalContent, setModalContent] = useState(null);
 
-  const openModal = () => {
+  const openModal = (contentType) => {
     setIsOpen(!isOpen);
+    setModalContent(contentType);
+  };
+
+  useEffect(() => {
+    openModal("cookie");
+  }, []);
+
+  const renderModalContent = () => {
+    switch (modalContent) {
+      case "theme":
+        return <ThemeMenu />;
+      case "cookie":
+        return (
+          <CookiesModal />
+        );
+      default:
+        return null;
+    }
   };
 
   return (
@@ -27,10 +47,16 @@ const HomePageLayout = () => {
       <Experience />
       <Certificates />
       <Education />
-      <ReactPortal head="Theme Settings" isOpen={isOpen} onClose={openModal}>
-        <ThemeMenu />
+      <ReactPortal
+        head={modalContent === "theme" ? "Theme Settings" : "Cookies Policy"}
+        mainClass={modalContent === "theme" ? "main-set" : "cookie-modal"}
+        isOpen={isOpen}
+        onClose={() => openModal(null)}
+      >
+        {renderModalContent()}
       </ReactPortal>
-      <ThemeButton openModal={openModal} />
+
+      <ThemeButton openModal={() => openModal("theme")} />
       <Footer />
     </React.Fragment>
   );

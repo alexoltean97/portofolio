@@ -7,7 +7,7 @@ const Modal = ({ isOpen, onClose, children, head, mainClass }) => {
   if (!isOpen) return null;
 
   return createPortal(
-    <div className="modal" tabindex="-1" role="dialog">
+    <div className="modal" tabIndex="-1" role="dialog">
       <div className={`modal-dialog ${mainClass}`} role="document">
         <div className="modal-content">
           <div className="modal-header">

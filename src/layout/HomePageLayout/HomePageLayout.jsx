@@ -25,8 +25,8 @@ const HomePageLayout = () => {
   };
 
   const closeModal = () => {
-    setIsOpen(false); // Ensure the modal is closed
-    setModalContent(null); // Optionally clear the modal content
+    setIsOpen(false); 
+    setModalContent(null); 
   };
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const HomePageLayout = () => {
       case "theme":
         return <ThemeMenu />;
       case "cookie":
-        return <CookiesModal onClose={closeModal} />; // Pass closeModal as the onClose prop
+        return <CookiesModal onClose={closeModal} />; 
       default:
         return null;
     }

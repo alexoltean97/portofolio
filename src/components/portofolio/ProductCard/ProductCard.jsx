@@ -2,8 +2,10 @@ import { useContext } from "react";
 import CartContext from "../../../context/CartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 const ProductCard = (props) => {
+  const { t } = useTranslation();
   const cartCtx = useContext(CartContext);
 
   const addProductToCart = () => {
@@ -30,7 +32,7 @@ const ProductCard = (props) => {
             className="btn btn-primary shadow-effect"
           >
             <FontAwesomeIcon icon={faCartShopping} />
-            Add to Cart
+            {t("addTo")}
           </button>
         </div>
       </div>

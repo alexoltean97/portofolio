@@ -6,7 +6,10 @@ import useProductImageList from "../../hooks/useProductImageList/useProductImage
 import useProductImages from "../../hooks/useProductImages/useProductImages";
 import SizeSelector from "../../components/portofolio/SizeSelector/SizeSelector";
 import ColorPicker from "../../components/portofolio/ColorPicker/ColorPicker";
+import { useTranslation } from "react-i18next";
+
 const SingleProduct = () => {
+  const { t } = useTranslation();
   const productImages = useProductImageList();
 
   const { currentImage, hoverText, onImageHover, onImageClick } =
@@ -34,7 +37,7 @@ const SingleProduct = () => {
   return (
     <React.Fragment>
       <div className="single-product container">
-        <h2>Single Product</h2>
+        <h2>{t("singleProduct")}</h2>
         <div className="single-product-row d-flex flex-row">
           <div className="product-image-container">
             <img src={currentImage} style={{ width: "30rem" }} alt="Product" />
@@ -58,7 +61,7 @@ const SingleProduct = () => {
                 className="btn btn-cart shadow-effect"
               >
                 <FontAwesomeIcon icon={faCartShopping} />
-                Add to cart
+               {t("addTo")}
               </button>
             </div>
           </div>

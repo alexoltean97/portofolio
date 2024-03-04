@@ -2,8 +2,10 @@ import ProductCard from "../ProductCard/ProductCard";
 import PaginationRow from "../PaginatioRow/PaginationRow";
 import Search from "../Search/Search";
 import useProductManagement from "../../../hooks/useProductManagement/useProductManagement";
-
+import { useTranslation } from "react-i18next";
 const ProductRow = () => {
+  const { t } = useTranslation();
+
   const {
     loading,
     currentProducts,
@@ -15,7 +17,7 @@ const ProductRow = () => {
   return (
     <div className="products">
       <div className="search-for mt-4">
-        <h2>Search for product</h2>
+        <h2>{t("searchFor")}</h2>
         <Search onSearch={handleSearch} />
 
         <div className="row">

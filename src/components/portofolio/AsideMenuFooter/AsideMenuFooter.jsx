@@ -3,7 +3,10 @@ import { useTheme } from "../../../context/ThemeContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { faMoon } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
+
 const AsideMenuFooter = () => {
+  const { t } = useTranslation();
   const { currentTheme, toggleTheme } = useTheme();
 
   return (
@@ -12,13 +15,13 @@ const AsideMenuFooter = () => {
         <li>
           <a href="#">
             <FontAwesomeIcon icon={faRightFromBracket} />
-            Logout
+            {t("logout")}
           </a>
         </li>
         <li>
           <a className="position-relative" href="#">
             <FontAwesomeIcon icon={faMoon} />
-            {currentTheme === "Light" ? "Dark Mode" : "Light Mode"}
+            {currentTheme === "Light" ? t("dark") : t("light")}
             <label className="switch">
               <input
                 type="checkbox"

@@ -2,15 +2,16 @@ import React from "react";
 import useMenuLogic from "../../../hooks/useMenuLogic/useMenuLogic";
 import useMenuData from "../../../hooks/useMenuData/useMenuData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { useTranslation } from "react-i18next";
 const Navigation = () => {
-  const { activeLink, handleLinkClick } = useMenuLogic("Home");
+  const { t } = useTranslation();
+  const { activeLink, handleLinkClick } = useMenuLogic(t("homeComponentLi"));
   const navLinks = useMenuData("navigation");
 
   return (
     <React.Fragment>
       <div className="menu-1">
-        <h2>Rounded navigation bar</h2>
+        <h2>{t("roundedNavigation")}</h2>
         <nav className="portfolio-navbar">
           <ul>
             {navLinks.map((link, index) => (

@@ -9,22 +9,24 @@ import {
   faHeart,
   faWallet,
 } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 const useMenuData = (menu) => {
+  const { t } = useTranslation();
   const data = {
     navigation: [
-      { title: "Home", icon: faHouse },
-      { title: "About", icon: faCircleInfo },
-      { title: "Contact", icon: faAddressBook },
-      { title: "Cookies", icon: faCookie },
+      { title: t("homeComponentLi"), icon: faHouse },
+      { title: t("about"), icon: faCircleInfo },
+      { title: t("contact"), icon: faAddressBook },
+      { title: t("cookies"), icon: faCookie },
     ],
     asideMenuList: [
-      { title: "Dashboard", icon: faHouse },
-      { title: "Revenue", icon: faChartSimple },
-      { title: "Notifications", icon: faBell },
-      { title: "Analytics", icon: faChartPie },
-      { title: "Likes", icon: faHeart },
-      { title: "Wallets", icon: faWallet },
+      { title: t("dashboard"), icon: faHouse },
+      { title: t("revenue"), icon: faChartSimple },
+      { title: t("notifications"), icon: faBell },
+      { title: t("analytics"), icon: faChartPie },
+      { title: t("likes"), icon: faHeart },
+      { title: t("wallets"), icon: faWallet },
     ],
   };
 

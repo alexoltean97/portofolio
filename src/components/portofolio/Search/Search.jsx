@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Search = ({ onSearch }) => {
+  const { t } = useTranslation();
   const [inputValue, setInputValue] = useState("");
 
   const handleInputChange = () => {
@@ -22,7 +24,7 @@ const Search = ({ onSearch }) => {
         <input
           className="form-control mr-sm-2"
           type="search"
-          placeholder="Search"
+          placeholder={t("inputSearch")}
           aria-label="Search"
           style={{ width: "25%" }}
           value={inputValue}
@@ -33,7 +35,7 @@ const Search = ({ onSearch }) => {
           style={{ width: "10%" }}
           type="submit"
         >
-          Search
+          {t("inputSearch")}
         </button>
       </form>
     </div>

@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const PaginationRow = ({ totalPages, currentPage, onPageChange }) => {
+  const { t } = useTranslation();
+
   const pages = [...Array(totalPages).keys()].map((num) => num + 1);
 
   return (
@@ -11,7 +14,7 @@ const PaginationRow = ({ totalPages, currentPage, onPageChange }) => {
             className="page-link"
             onClick={() => onPageChange(currentPage - 1)}
           >
-            &laquo; Previous
+            &laquo; {t("previous")}
           </a>
         </li>
         {pages.map((page) => (
@@ -29,7 +32,7 @@ const PaginationRow = ({ totalPages, currentPage, onPageChange }) => {
             className="page-link"
             onClick={() => onPageChange(currentPage + 1)}
           >
-            Next &raquo;
+            {t("next")} &raquo;
           </a>
         </li>
       </ul>

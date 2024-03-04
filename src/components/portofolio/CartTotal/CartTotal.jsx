@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import CartContext from "../../../context/CartContext";
-
+import { useTranslation } from "react-i18next";
 const CartTotal = () => {
+  const { t } = useTranslation();
+
   const cartCtx = useContext(CartContext);
 
   const cartTotal = cartCtx.items.reduce(
@@ -13,7 +15,7 @@ const CartTotal = () => {
   return (
     <div className="cart-total d-flex justify-content-between">
       <div className="total">
-        <span>Total</span>
+        <span>{t("total")}</span>
       </div>
       <div className="total-price">
         <span>${totalSum.toFixed(2)}</span>

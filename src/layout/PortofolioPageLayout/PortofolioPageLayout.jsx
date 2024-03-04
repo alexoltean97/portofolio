@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Header from "../globals/Header/Header";
 import Footer from "../globals/Footer/Footer";
 import ReactPortal from "../../components/utils/ReactPortal/ReactPortal";
@@ -8,7 +9,9 @@ import ThemeButton from "../../components/theme/ThemeButton/ThemeButton";
 import CartButton from "../../components/theme/CartButton/CartButton";
 import Cart from "../../components/portofolio/Cart/Cart";
 
+
 const PortofolioPageLayout = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
 
@@ -33,7 +36,7 @@ const PortofolioPageLayout = () => {
       <Header />
       <div className="container">
         <h2 className="main-portofolio-title">
-          React Web Components Portofolio
+          {t("webComponentsPortofolio")}
         </h2>
         <PortofolioTabs />
         <ReactPortal

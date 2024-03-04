@@ -2,9 +2,11 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useMenuLogic from "../../../hooks/useMenuLogic/useMenuLogic";
 import useMenuData from "../../../hooks/useMenuData/useMenuData";
+import { useTranslation } from "react-i18next";
 
 const AsideMenuList = () => {
-  const { activeLink, handleLinkClick } = useMenuLogic("Revenue");
+  const { t } = useTranslation();
+  const { activeLink, handleLinkClick } = useMenuLogic(t("revenue"));
   const navLinks = useMenuData("asideMenuList");
 
   return (

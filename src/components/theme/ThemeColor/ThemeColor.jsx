@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from 'react';
+import useThemeColor from "../../../hooks/useThemeColor/useThemeColor";
 
 const ThemeColor = () => {
-  const [activeColor, setActiveColor] = useState("main-color");
-
   const colorHexValues = {
     "main-color": "#940642",
     "secondary-color": "#6a5acd",
@@ -23,26 +22,17 @@ const ThemeColor = () => {
     "seventh-color",
   ];
 
-  const handleColorClick = (color) => {
-    setActiveColor(color);
-    document.documentElement.style.setProperty(
-      "--main-color",
-      colorHexValues[color]
-    );
-  };
+  const [activeColor, updateThemeColor] = useThemeColor(colorHexValues);
 
   return (
     <div className="theme-menu">
       <div className="theme-menu-header"></div>
-
       <ul>
         {colors.map((color) => (
           <li key={color}>
             <div
-              className={`${color} ${
-                activeColor === color ? "active-color" : ""
-              }`}
-              onClick={() => handleColorClick(color)}
+              className={`${color} ${activeColor === color ? "active-color" : ""}`}
+              onClick={() => updateThemeColor(color)}
             ></div>
           </li>
         ))}

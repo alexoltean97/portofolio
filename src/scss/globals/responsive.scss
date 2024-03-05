@@ -15,6 +15,26 @@
   }
 }
 
+@media screen and (max-width: 970px) {
+  #theme-settings-tabpane-ecommerce
+    > div.products
+    > div
+    > div.search
+    > form
+    > input {
+    width: 100% !important;
+  }
+
+  #theme-settings-tabpane-ecommerce
+    > div.products
+    > div
+    > div.search
+    > form
+    > button {
+    width: 25% !important;
+  }
+}
+
 @media screen and (max-width: 821px) {
   .company-name {
     margin-top: 0;
@@ -22,6 +42,59 @@
 
   .image {
     margin-top: 60px;
+  }
+
+  .single-product {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  #theme-settings-tabpane-ecommerce
+    > div.products
+    > div
+    > div.search
+    > form
+    > input {
+    width: 100% !important;
+    text-align: center;
+    flex-direction: column !important;
+  }
+
+  #theme-settings-tabpane-ecommerce > div.products > div > div.search > form {
+    flex-direction: column !important;
+  }
+
+  #theme-settings-tabpane-ecommerce
+    > div.products
+    > div
+    > div.search
+    > form
+    > button {
+    width: 100% !important;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #theme-settings-tabpane-ecommerce
+    > div.products
+    > div
+    > div.search
+    > form
+    > input {
+    margin-bottom: 5px;
+  }
+
+  .portfolio-navbar {
+    display: none;
+  }
+
+  .menu-1 h2 {
+    display: none;
+  }
+
+  .cart {
+    display: none;
   }
 }
 
@@ -36,6 +109,52 @@
 
   .about-me {
     padding: 50px 0 0 0;
+  }
+
+  .main-portofolio-title {
+    font-size: $h2-mobile !important;
+  }
+
+  .search-for h2 {
+    font-size: $h2-mobile !important;
+  }
+
+  .aside-navigation {
+    font-size: $h2-mobile;
+  }
+
+  .aside-menu {
+    font-size: 14px;
+  }
+
+  .card-title {
+    font-size: 19px;
+  }
+
+  #theme-settings-tabpane-ecommerce
+    > div.products
+    > div
+    > div.search
+    > form
+    > input {
+    font-size: $p-mobile !important;
+  }
+
+  #theme-settings-tabpane-ecommerce
+    > div.products
+    > div
+    > div.search
+    > form
+    > button {
+    font-size: $p-mobile !important;
+  }
+
+  .card .card-body p {
+    font-size: $p-mobile;
+  }
+
+  #theme-settings-tabpane-ecommerce > div.products > div > div.search > form {
+    flex-direction: column !important;
   }
 
   .oa {
@@ -177,8 +296,8 @@
   }
 }
 
-@media screen and (max-width:853px) {
-  #company-contact{
+@media screen and (max-width: 853px) {
+  #company-contact {
     margin-bottom: 30px;
   }
 }
@@ -188,7 +307,7 @@
     width: 200px;
   }
 
-  .company-contact a{
+  .company-contact a {
     padding: 5px 0 5px 0;
   }
 }

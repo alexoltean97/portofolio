@@ -9,7 +9,6 @@ import ThemeButton from "../../components/theme/ThemeButton/ThemeButton";
 import CartButton from "../../components/theme/CartButton/CartButton";
 import Cart from "../../components/portofolio/Cart/Cart";
 
-
 const PortofolioPageLayout = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);

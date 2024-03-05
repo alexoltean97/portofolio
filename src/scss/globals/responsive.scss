@@ -15,14 +15,87 @@
   }
 }
 
-@media screen and (max-width:821px) {
-    .company-name{
-        margin-top: 0;
-    }
+@media screen and (max-width: 970px) {
+  #theme-settings-tabpane-ecommerce
+    > div.products
+    > div
+    > div.search
+    > form
+    > input {
+    width: 100% !important;
+  }
 
-    .image{
-        margin-top: 60px;
-    }
+  #theme-settings-tabpane-ecommerce
+    > div.products
+    > div
+    > div.search
+    > form
+    > button {
+    width: 25% !important;
+  }
+}
+
+@media screen and (max-width: 821px) {
+  .company-name {
+    margin-top: 0;
+  }
+
+  .image {
+    margin-top: 60px;
+  }
+
+  .single-product {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  #theme-settings-tabpane-ecommerce
+    > div.products
+    > div
+    > div.search
+    > form
+    > input {
+    width: 100% !important;
+    text-align: center;
+    flex-direction: column !important;
+  }
+
+  #theme-settings-tabpane-ecommerce > div.products > div > div.search > form {
+    flex-direction: column !important;
+  }
+
+  #theme-settings-tabpane-ecommerce
+    > div.products
+    > div
+    > div.search
+    > form
+    > button {
+    width: 100% !important;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #theme-settings-tabpane-ecommerce
+    > div.products
+    > div
+    > div.search
+    > form
+    > input {
+    margin-bottom: 5px;
+  }
+
+  .portfolio-navbar {
+    display: none;
+  }
+
+  .menu-1 h2 {
+    display: none;
+  }
+
+  .cart {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -30,8 +103,58 @@
     margin-bottom: 40px;
   }
 
+  #root > div.oa > div > div > div:nth-child(2) > div {
+    margin-top: 20px;
+  }
+
   .about-me {
-    padding: 50px 0 50px 0;
+    padding: 50px 0 0 0;
+  }
+
+  .main-portofolio-title {
+    font-size: $h2-mobile !important;
+  }
+
+  .search-for h2 {
+    font-size: $h2-mobile !important;
+  }
+
+  .aside-navigation {
+    font-size: $h2-mobile;
+  }
+
+  .aside-menu {
+    font-size: 14px;
+  }
+
+  .card-title {
+    font-size: 19px;
+  }
+
+  #theme-settings-tabpane-ecommerce
+    > div.products
+    > div
+    > div.search
+    > form
+    > input {
+    font-size: $p-mobile !important;
+  }
+
+  #theme-settings-tabpane-ecommerce
+    > div.products
+    > div
+    > div.search
+    > form
+    > button {
+    font-size: $p-mobile !important;
+  }
+
+  .card .card-body p {
+    font-size: $p-mobile;
+  }
+
+  #theme-settings-tabpane-ecommerce > div.products > div > div.search > form {
+    flex-direction: column !important;
   }
 
   .oa {
@@ -43,7 +166,8 @@
       }
 
       p {
-        padding: 5px 0;
+        margin: 1px 0 15px 0;
+        padding: 0 0 0 0;
         @include mobileTextSize($p-mobile);
       }
     }
@@ -70,11 +194,13 @@
     .p-holder {
       padding: 10px 0 10px 0;
       p {
+        margin-bottom: 20px;
         @include mobileTextSize($p-mobile);
       }
     }
 
     .btn-holder {
+      padding: 0 0 50px 0;
       text-align: center;
       a {
         @include mobileTextSize($a-mobile);
@@ -167,5 +293,21 @@
         @include mobileTextSize($p-mobile);
       }
     }
+  }
+}
+
+@media screen and (max-width: 853px) {
+  #company-contact {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .oa .image img {
+    width: 200px;
+  }
+
+  .company-contact a {
+    padding: 5px 0 5px 0;
   }
 }

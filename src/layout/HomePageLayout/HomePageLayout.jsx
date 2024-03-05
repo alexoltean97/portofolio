@@ -12,7 +12,7 @@ import Education from "../../components/homepage/Education/Education";
 import ThemeMenu from "../../components/theme/ThemeMenu/ThemeMenu";
 import ThemeButton from "../../components/theme/ThemeButton/ThemeButton";
 import CookiesModal from "../../components/portofolio/CookiesModal/CookiesModal";
-import Cookies from "js-cookie"; 
+import Cookies from "js-cookie";
 
 const HomePageLayout = () => {
   const { t } = useTranslation();
@@ -25,14 +25,14 @@ const HomePageLayout = () => {
   };
 
   const closeModal = () => {
-    setIsOpen(false); 
-    setModalContent(null); 
+    setIsOpen(false);
+    setModalContent(null);
   };
 
   useEffect(() => {
-    const consent = Cookies.get('cookiesAccept');
+    const consent = Cookies.get("cookiesAccept");
     if (consent !== "true") {
-      openModal("cookie"); 
+      openModal("cookie");
     }
   }, []);
   const renderModalContent = () => {
@@ -40,7 +40,7 @@ const HomePageLayout = () => {
       case "theme":
         return <ThemeMenu />;
       case "cookie":
-        return <CookiesModal onClose={closeModal} />; 
+        return <CookiesModal onClose={closeModal} />;
       default:
         return null;
     }

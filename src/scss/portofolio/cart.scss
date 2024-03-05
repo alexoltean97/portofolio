@@ -48,7 +48,7 @@
 
   .cart-products {
     .cart-product {
-      margin-bottom: 10px;
+      margin: 10px 0 10px 0;
       padding-bottom: 20px;
       position: relative;
       border-bottom: 1px solid #eef0f4;
@@ -133,13 +133,13 @@
 
 .empty-cart {
   padding: 20px 50px 20px 50px;
-  color:$main-color;
+  color: $main-color;
   text-align: center;
-  h2{
+  h2 {
     font-family: $second-font;
   }
 
-  svg{
+  svg {
     font-size: 250px;
   }
 }

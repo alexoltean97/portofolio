@@ -16,3 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log('Browser language:', userLang);
 });
+
+
+const handleResize = () => {
+  const width = window.innerWidth;
+  if (width === 766) {
+    alert('Window width is exactly 766 pixels!');
+  }
+};
+
+window.addEventListener('resize', handleResize);

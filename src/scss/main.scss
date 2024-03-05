@@ -35,4 +35,12 @@
   font-size: $h-portofolio-size;
 }
 
+.modal-header button{
+  color: var(--main-color);
+  font-family: var(--main-font);
+}
 
+#theme-settings-tab-color{
+  color: var(--main-color);
+  font-family: var(--main-font);
+}

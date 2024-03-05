@@ -7,11 +7,8 @@ const ThemeMenu = () => {
   return (
     <React.Fragment>
       <Tabs defaultActiveKey="color" id="theme-settings" className="mb-3">
-        <Tab eventKey="color" title="color">
+        <Tab eventKey="color" title="Color">
           <ThemeColor />
-        </Tab>
-        <Tab eventKey="cookies" title="cookies">
-          Tab content for Profile
         </Tab>
       </Tabs>
     </React.Fragment>

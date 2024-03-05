@@ -15,14 +15,14 @@
   }
 }
 
-@media screen and (max-width:821px) {
-    .company-name{
-        margin-top: 0;
-    }
+@media screen and (max-width: 821px) {
+  .company-name {
+    margin-top: 0;
+  }
 
-    .image{
-        margin-top: 60px;
-    }
+  .image {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -30,8 +30,12 @@
     margin-bottom: 40px;
   }
 
+  #root > div.oa > div > div > div:nth-child(2) > div {
+    margin-top: 20px;
+  }
+
   .about-me {
-    padding: 50px 0 50px 0;
+    padding: 50px 0 0 0;
   }
 
   .oa {
@@ -43,7 +47,8 @@
       }
 
       p {
-        padding: 5px 0;
+        margin: 1px 0 15px 0;
+        padding: 0 0 0 0;
         @include mobileTextSize($p-mobile);
       }
     }
@@ -70,11 +75,13 @@
     .p-holder {
       padding: 10px 0 10px 0;
       p {
+        margin-bottom: 20px;
         @include mobileTextSize($p-mobile);
       }
     }
 
     .btn-holder {
+      padding: 0 0 50px 0;
       text-align: center;
       a {
         @include mobileTextSize($a-mobile);
@@ -167,5 +174,21 @@
         @include mobileTextSize($p-mobile);
       }
     }
+  }
+}
+
+@media screen and (max-width:853px) {
+  #company-contact{
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .oa .image img {
+    width: 200px;
+  }
+
+  .company-contact a{
+    padding: 5px 0 5px 0;
   }
 }

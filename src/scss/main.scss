@@ -44,3 +44,11 @@
   color: var(--main-color);
   font-family: var(--main-font);
 }
+
+
+.spinner-border {
+  position: absolute;
+  right: 50%;
+  top:50%;
+  color: $main-color;
+}

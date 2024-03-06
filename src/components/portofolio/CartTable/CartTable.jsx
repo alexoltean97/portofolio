@@ -17,7 +17,7 @@ const CartTable = () => {
             <span>{t("subTotal")}</span>
           </div>
           <div className="sub-total-price">
-            <span>${cartTotal}</span>
+            <span>${cartTotal.toFixed(2)}</span>
           </div>
         </div>
 

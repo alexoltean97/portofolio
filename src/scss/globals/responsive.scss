@@ -15,6 +15,12 @@
   }
 }
 
+@media screen and (max-width:990px) {
+  #company-contact{
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 970px) {
   #theme-settings-tabpane-ecommerce
     > div.products
@@ -298,7 +304,7 @@
 
 @media screen and (max-width: 853px) {
   #company-contact {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -309,5 +315,9 @@
 
   .company-contact a {
     padding: 5px 0 5px 0;
+  }
+
+  .working-pagination{
+    display: none;
   }
 }

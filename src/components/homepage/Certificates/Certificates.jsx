@@ -23,9 +23,9 @@ const Certificates = () => {
 
           <div className="col-lg-6">
             <div className="certificates-box">
-              <h5>Agile Product Owner Role:Foundations</h5>
+              <h5>{t("agileLkTitle")}</h5>
               <span>
-                <strong>Agile LinkedIn Certificate</strong>
+                <strong>{t("agileLk")}</strong>
               </span>
             </div>
           </div>
@@ -34,12 +34,9 @@ const Certificates = () => {
 
           <div className="col-lg-6">
             <div className="certificates-box">
-              <h5>ETC Training Center Agile Methodologies</h5>
+              <h5>{t("agileMeth")}</h5>
               <span>
-                <strong>
-                  Certified in Agile Methodologies after finishing the training
-                  at ETC Timisoara underthe trainer Daniel Bako.
-                </strong>
+                <strong>{t("agileMethDesc")}</strong>
               </span>
             </div>
           </div>
@@ -47,9 +44,9 @@ const Certificates = () => {
           <div className="col-lg-6">&nbsp;</div>
           <div className="col-lg-6">
             <div className="certificates-box">
-              <h5>IT School PHP&MYSQL Course</h5>
+              <h5>{t("itSchoolTitle")}</h5>
               <span>
-                <strong>PHP and MySql at IT SCHOOL TIMISOARA</strong>
+                <strong>{t("itSchoolDesc")}</strong>
               </span>
             </div>
           </div>
@@ -58,11 +55,8 @@ const Certificates = () => {
 
           <div className="col-lg-6">
             <div className="certificates-box">
-              <h5>Cambridge FCE</h5>
-              <strong>
-                Took my Cambridge FCE diploma in high school. I was awarded
-                level B at the FCE exam
-              </strong>
+              <h5>{t("cambridge")}</h5>
+              <strong>{t("cambridgeDesc")}</strong>
             </div>
           </div>
         </div>

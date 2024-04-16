@@ -28,3 +28,50 @@
               <option>S</option>
               <option>XS</option>
               <option>XXS</option>
+
+
+
+                  <div>
+              <h4>Why Choose This Gig?</h4>
+              <ul>
+                <li>
+                  <strong>Expertise:</strong> With years of experience in
+                  front-end development, I specialize in creating beautiful and
+                  responsive websites that cater specifically to small
+                  businesses. Whether you're in retail, services, or any other
+                  industry, I can tailor a solution that fits your needs and
+                  budget
+                </li>
+
+                <li>
+                  <strong>Project Management:</strong> From gathering your
+                  project's requirements to bringing it live, I handle
+                  everything. We'll start from sketch, move to design, and then
+                  development, ensuring your vision is realized every step of
+                  the way.
+                </li>
+                <li>
+                  <strong>Quality Assurance:</strong> Quality is non-negotiable.
+                  I ensure your website is not only visually appealing but also
+                  highly functional, providing your visitors with seamless
+                  navigation and interaction.
+                </li>
+                <li>
+                  <strong>Affordable Rate:</strong> At just $40 per hour, you're
+                  investing in top-notch quality that won't break the bank. This
+                  package is designed to deliver maximum value for small
+                  businesses.
+                </li>
+                <li>
+                  <strong>Responsive Design:</strong> With the majority of
+                  internet traffic coming from mobile devices, having a
+                  responsive design is crucial. I guarantee your site will look
+                  great and function perfectly on all devices and browsers
+                </li>
+                <li>
+                  SEO-Friendly: What's a great website if it's not seen? I build
+                  websites with SEO in mind to help you rank better on Google
+                  and drive more organic traffic.
+                </li>
+              </ul>
+            </div>

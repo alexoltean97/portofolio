@@ -20,6 +20,10 @@
         cursor: pointer;
         transform: rotate(180deg);
     }
+
+    svg{
+        color: $plain-white!important;
+    }
 }
 
 .theme-menu { 

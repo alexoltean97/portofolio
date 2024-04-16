@@ -23,17 +23,46 @@
       }
     }
 
-    .accordion-body{
-        padding: 20px 20px 20px 20px;
-        font-family: $third-font;
-        font-size: 17px;
-        .table {
-            font-family: $main-font;
-        }
+    .accordion-body {
+      padding: 20px 20px 20px 20px;
+      font-family: $third-font;
+      font-size: 17px;
 
-        div{
-            padding: 5px 20px 5px 20px;;
+      ul{
+        li{
+          list-style-type: none;
         }
+      }
+      .table {
+        font-family: $main-font;
+        svg{
+          color: green;
+        }
+      }
+
+      div {
+        padding: 5px 20px 5px 20px;
+      }
     }
   }
+}
+
+.btn-fiver {
+  margin-right: 10px;
+
+}
+
+.btn-email {
+}
+
+.btn-gigs {
+  border-radius: 3px;
+  padding: 5px 20px;
+  font-family: $third-font;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid $main-color;
+  color: $main-color;
+  text-transform: capitalize;
+
 }

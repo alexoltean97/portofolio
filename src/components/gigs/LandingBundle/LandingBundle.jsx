@@ -5,8 +5,8 @@ import WhyChoseGig from "../WhyChoseGig/WhyChoseGig.jsx";
 import FeaturesTable from "../FeaturesTable/FeaturesTable.jsx";
 import HowItWorks from "../HowItWorks/HowItWorks.jsx";
 import Book from "../Book/Book.jsx";
-import { useTranslation } from "react-i18next"; 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
+import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import {
   landingBundle,
@@ -26,9 +26,25 @@ const LandingBundle = () => {
         </Accordion.Header>
         <Accordion.Body>
           <GigDescription description="🚀 Supercharge Your Business with a Bundle of Professionally Coded Landing Pages! Need multiple landing pages? Take advantage of this exclusive offer where you get each page at a reduced rate of $30, provided you need at least 10 pages. Perfect for campaigns, product launches, or a complete site overhaul!"></GigDescription>
-          <WhyChoseGig features={landingBundle} />
-          <FeaturesTable items={bundleTableItems.map(item => ({ feature: t(item.feature), mark: item.mark ? <FontAwesomeIcon icon={faCheck} /> : null }))} />
-          <HowItWorks steps={bundleSteps} />
+          <WhyChoseGig
+            features={landingBundle.map((item) => ({
+              title: t(item.title),
+              description: t(item.description),
+            }))}
+          />
+          <FeaturesTable
+            items={bundleTableItems.map((item) => ({
+              feature: t(item.feature),
+              mark: item.mark ? <FontAwesomeIcon icon={faCheck} /> : null,
+            }))}
+          />
+          <HowItWorks
+            steps={bundleSteps.map((step) => ({
+              title: t(step.title),
+              description: t(step.description),
+            }))}
+          />
+
           <Book />
 
           <div>

@@ -1,71 +1,52 @@
-
-
 export const landingBundle = [
   {
-    title: "Bundle Discount",
-    description:
-      "Get each landing page for just $30 when you commit to 10 or more. This is an incredible opportunity to save while scaling up your digital presence.",
+    title: "bundleDiscount",
+    description: "bundleDiscountDesc",
   },
   {
-    title: "Direct Implementation:",
-    description:
-      "You provide the designs, and I convert them into fully functional, responsive landing pages. Just hand over your design files, and I will take care of the coding.",
+    title: "directImplementation",
+    description: "directImplementationDesc",
   },
   {
-    title: "Optimized for All Devices",
-    description:
-      "Every landing page will be responsive, ensuring optimal performance on desktop, tablet, and mobile devices. Speed optimization is also included to enhance user experience and retention.",
+    title: "optimizedForAllDevices",
+    description: "optimizedForAllDevicesDesc",
   },
   {
-    title: "Conversion Focused",
-    description:
-      "With your designs and my technical expertise, each page will be fine-tuned for user engagement and conversions. I ensure interactive elements are perfectly implemented for maximum impact.",
+    title: "conversionFocused",
+    description: "conversionFocusedDesc",
   },
   {
-    title: "SEO-Friendly",
-    description:
-      "Your landing page will be developed with SEO best practices in mind, ensuring it’s ready to perform in search engines and attract organic traffic.",
+    title: "seoFriendly",
+    description: "seoFriendlyDesc",
   },
 ];
 
 export const bundleTableItems = [
-  { feature: "Professional Coding of Your Provided Designs", mark: true },
-  { feature: "Full Responsiveness for All Device", mark: true },
-  {
-    feature: "Quick Load Times and Performance Optimization",
-    mark: true,
-  },
-  { feature: "Basic SEO Setup", mark: true },
-  { feature: "Cross-Browser Compatibility.", mark: true },
-  {
-    feature: "Seamless Integration with Your Marketing Tools and Social Media ",
-    mark: true,
-  },
-  {
-    feature: "Integration with Existing Systems and Social Media",
-    mark: true,
-  },
-  { feature: "Develop in page builders", mark: true },
+  { feature: "professionalCoding", mark: true },
+  { feature: "fullResponsiveness", mark: true },
+  { feature: "quickLoadTimes", mark: true },
+  { feature: "basicSEOSetup", mark: true },
+  { feature: "crossBrowserCompatibility", mark: true },
+  { feature: "integrationWithMarketingTools", mark: true },
+  { feature: "integrationWithSystems", mark: true },
+  { feature: "developInPageBuilders", mark: true },
 ];
 
 export const bundleSteps = [
   {
-    title: "Design Submission",
-    description:
-      "Send over your designs in any popular format (PSD, Figma, etc.).",
+    title: "designSubmission",
+    description: "designSubmissionDesc",
   },
   {
-    title: "Efficient Development",
-    description:
-      "I’ll systematically convert your designs into live, high-performing landing pages.",
+    title: "efficientDevelopment",
+    description: "efficientDevelopmentDesc",
   },
   {
-    title: "Review Process:",
-    description:
-      "We’ll go through each page together to ensure everything is up to your standards.",
+    title: "reviewProcess",
+    description: "reviewProcessDesc",
   },
   {
-    title: "Launch",
-    description: "Once fully approved, your landing pages will go live.",
+    title: "launch",
+    description: "launchDesc",
   },
 ];

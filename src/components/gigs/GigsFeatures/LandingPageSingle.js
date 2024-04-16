@@ -1,63 +1,59 @@
 export const landingPageSimple = [
   {
-    title: "Direct Implementation",
-    description:
-      "Provide your own design, and I will transform it into a fully functional and responsive landing page. Just hand over the design files, and I'll handle the rest.",
+    title: "directImplementation",
+    description: "directDescription",
   },
   {
-    title: "Fixed Affordable Rate",
-    description:
-      "For only $40 per landing page, you get a professionally coded page without hidden costs or surprises.",
+    title: "affordableRate",
+    description: "affordableRateDesc",
   },
   {
-    title: "Responsive and Fast",
-    description:
-      " I ensure your landing page is optimized for both desktop and mobile devices, providing a seamless experience for all users. Plus, speed optimization is a standard, so your page loads quickly.",
+    title: "responsiveFast",
+    description: "responsiveFastDesc",
   },
   {
-    title: "Conversion Optimized",
+    title: "conversionFocused",
     description:
-      "Even though you supply the design, I’ll make sure the technical implementation focuses on maximizing conversions. Elements like buttons, forms, and navigation will be optimized for user engagement.",
+      "conversionFocusedDesc",
   },
   {
-    title: "SEO-Friendly",
+    title: "seoFriendly",
     description:
-      "Your landing page will be developed with SEO best practices in mind, ensuring it’s ready to perform in search engines and attract organic traffic.",
+      "seoFriendlyDesc.",
   },
 ];
 
 export const landingtableItems = [
-  { feature: "Implementation of Your Provided Design", mark: "Included" },
-  { feature: "Mobile and Desktop Responsiveness", mark: "Included" },
-  { feature: "Speed Optimization for Enhanced Performance", mark: "Included" },
-  { feature: "Basic SEO Setup", mark: "Included" },
-  { feature: "Cross-Browser Compatibility.", mark: "Included" },
+  { feature: "Implementation of Your Provided Design", mark: true },
+  { feature: "Mobile and Desktop Responsiveness", mark: true },
+  { feature: "Speed Optimization for Enhanced Performance", mark: true },
+  { feature: "Basic SEO Setup", mark: true },
+  { feature: "Cross-Browser Compatibility.", mark: true },
   {
     feature: "Integration with Existing Systems and Social Media",
-    mark: "Included",
+    mark: true,
   },
-  { feature: "Develop in page builders", mark: "Included" },
+  { feature: "Develop in page builders", mark: true },
 ];
 
 export const landingprocessSteps = [
   {
-    title: "Design Submission",
+    title: "designSubmission",
     description:
-      " Start by sending me your design file in PSD, Figma, or any other popular format.",
+      "designSubmissionDesc",
   },
   {
-    title: "Development",
+    title: "efficientDevelopment",
     description:
       "From gathering your project's requirements to bringing it live, I handle everything. We'll start from sketch, move to design, and then development, ensuring your vision is realized every step of the way.",
   },
   {
-    title: "Review & Adjustments",
+    title: "reviewTitle",
     description:
-      "Review the implemented page. I'll make any necessary adjustments to ensure it meets your expectations.",
+      "reviewDesc",
   },
   {
-    title: "Launch",
-    description:
-      "Once you approve, your new landing page goes live.",
+    title: "launch",
+    description: "launchDesc",
   },
 ];

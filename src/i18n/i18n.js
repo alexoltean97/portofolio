@@ -140,9 +140,16 @@ i18next
           reviewProcess: "Review Process:",
           reviewProcessDesc: "We’ll go through each page together to ensure everything is up to your standards.",
           launch: "Launch",
-          launchDesc: "Once fully approved, your landing pages will go live."
-
-
+          launchDesc: "Once fully approved, your landing pages will go live.",
+          directImplementation: "Direct Implementation",
+          directDescription: "Provide your own design, and I will transform it into a fully functional and responsive landing page. Just hand over the design files, and I'll handle the rest.",
+          affordableRate: "Fixed Affordable Rate",
+          affordableRateDesc: "For only $40 per landing page, you get a professionally coded page without hidden costs or surprise",
+          responsiveFast: "Responsive and Fast",
+          responsiveFastDesc: "I ensure your landing page is optimized for both desktop and mobile devices, providing a seamless experience for all users. Plus, speed optimization is a standard, so your page loads quickly.",
+          devDesc: "From gathering your project's requirements to bringing it live, I handle everything. We'll start from sketch, move to design, and then development, ensuring your vision is realized every step of the way.",
+          reviewTitle: "Review & Adjustments",
+          reviewDesc: "Review the implemented page. I'll make any necessary adjustments to ensure it meets your expectations."
         },
       },
 
@@ -278,7 +285,16 @@ i18next
           reviewProcess: "Review Process:",
           reviewProcessDesc: "We’ll go through each page together to ensure everything is up to your standards.",
           launch: "Launch",
-          launchDesc: "Once fully approved, your landing pages will go live."
+          launchDesc: "Once fully approved, your landing pages will go live.",
+          directImplementation: "Direct Implementation",
+          directDescription: "Provide your own design, and I will transform it into a fully functional and responsive landing page. Just hand over the design files, and I'll handle the rest.",
+          affordableRate: "Fixed Affordable Rate",
+          affordableRateDesc: "For only $40 per landing page, you get a professionally coded page without hidden costs or surprise",
+          responsiveFast: "Responsive and Fast",
+          responsiveFastDesc: "I ensure your landing page is optimized for both desktop and mobile devices, providing a seamless experience for all users. Plus, speed optimization is a standard, so your page loads quickly.",
+          devDesc: "From gathering your project's requirements to bringing it live, I handle everything. We'll start from sketch, move to design, and then development, ensuring your vision is realized every step of the way.",
+          reviewTitle: "Review & Adjustments",
+          reviewDesc: "Review the implemented page. I'll make any necessary adjustments to ensure it meets your expectations."
         },
       },
     },

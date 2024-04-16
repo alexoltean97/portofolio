@@ -1,3 +1,5 @@
+
+
 export const landingBundle = [
   {
     title: "Bundle Discount",
@@ -12,7 +14,7 @@ export const landingBundle = [
   {
     title: "Optimized for All Devices",
     description:
-      " Every landing page will be responsive, ensuring optimal performance on desktop, tablet, and mobile devices. Speed optimization is also included to enhance user experience and retention.",
+      "Every landing page will be responsive, ensuring optimal performance on desktop, tablet, and mobile devices. Speed optimization is also included to enhance user experience and retention.",
   },
   {
     title: "Conversion Focused",
@@ -27,23 +29,23 @@ export const landingBundle = [
 ];
 
 export const bundleTableItems = [
-  { feature: "Professional Coding of Your Provided Designs", mark: "Included" },
-  { feature: "Full Responsiveness for All Device", mark: "Included" },
+  { feature: "Professional Coding of Your Provided Designs", mark: true },
+  { feature: "Full Responsiveness for All Device", mark: true },
   {
     feature: "Quick Load Times and Performance Optimization",
-    mark: "Included",
+    mark: true,
   },
-  { feature: "Basic SEO Setup", mark: "Included" },
-  { feature: "Cross-Browser Compatibility.", mark: "Included" },
+  { feature: "Basic SEO Setup", mark: true },
+  { feature: "Cross-Browser Compatibility.", mark: true },
   {
     feature: "Seamless Integration with Your Marketing Tools and Social Media ",
-    mark: "Included",
+    mark: true,
   },
   {
     feature: "Integration with Existing Systems and Social Media",
-    mark: "Included",
+    mark: true,
   },
-  { feature: "Develop in page builders", mark: "Included" },
+  { feature: "Develop in page builders", mark: true },
 ];
 
 export const bundleSteps = [
@@ -64,6 +66,6 @@ export const bundleSteps = [
   },
   {
     title: "Launch",
-    description: " Once fully approved, your landing pages will go live.",
+    description: "Once fully approved, your landing pages will go live.",
   },
 ];

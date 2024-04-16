@@ -4,7 +4,7 @@ import Table from 'react-bootstrap/Table'; // Ensure you have react-bootstrap in
 const FeaturesTable = ({ items }) => {
   return (
     <div>
-      <p>What’s Included?</p>
+      <h4>What’s Included?</h4>
       <Table striped bordered hover>
         <tbody>
           {items.map((item, index) => (

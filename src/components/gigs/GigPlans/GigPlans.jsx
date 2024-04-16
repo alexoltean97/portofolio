@@ -5,9 +5,11 @@ import LandingBundle from "../LandingBundle/LandingBundle.jsx";
 const GigPlans = () => {
   return (
     <React.Fragment>
-      <SmallBusiness />
-      <LandingPage />
-      <LandingBundle />
+      <div className="gigs">
+        <SmallBusiness />
+        <LandingPage />
+        <LandingBundle />
+      </div>
     </React.Fragment>
   );
 };

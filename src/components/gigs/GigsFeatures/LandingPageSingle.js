@@ -19,7 +19,7 @@ export const landingPageSimple = [
   {
     title: "seoFriendly",
     description:
-      "seoFriendlyDesc.",
+      "seoFriendlyDesc",
   },
 ];
 

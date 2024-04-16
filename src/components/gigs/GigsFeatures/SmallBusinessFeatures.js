@@ -1,53 +1,53 @@
 export const featuresSmallBusiness = [
   {
-    title: "Expertise",
+    title: "expertiseTitle",
     description:
-      "With years of experience in front-end development, I specialize in creating beautiful and responsive websites that cater specifically to small businesses. Whether you're in retail, services, or any other industry, I can tailor a solution that fits your needs and budget.",
+      "expertiseDesc",
   },
   {
-    title: "Quality Assurance",
+    title: "qualityAssurance",
     description:
-      "Quality is non-negotiable. I ensure your website is not only visually appealing but also highly functional, providing your visitors with seamless navigation and interaction.",
+      "qualityDescription",
   },
   {
-    title: "Affordable Rate",
+    title: "affordaRate2",
     description:
-      "At just $40 per hour, you're investing in top-notch quality that won't break the bank. This package is designed to deliver maximum value for small businesses.",
+      "affordRateDesc",
   },
   {
-    title: "Responsive Design",
+    title: "responsiveDesignTitle",
     description:
-      "With the majority of internet traffic coming from mobile devices, having a responsive design is crucial. I guarantee your site will look great and function perfectly on all devices and browsers.",
+      "responsiveDesignDesc",
   },
   {
-    title: "SEO-Friendly",
+    title: "seoFriendly",
     description:
-      "What's a great website if it's not seen? I build websites with SEO in mind to help you rank better on Google and drive more organic traffic.",
+      "seoFriendlyDesc",
   },
 ];
 
 export const tableItems = [
-  { feature: "Custom UI/UX Design.", mark: "Included" },
-  { feature: "Mobile and Tablet Optimization.", mark: "Included" },
-  { feature: "Basic SEO Setup.", mark: "Included" },
-  { feature: "Performance Optimization.", mark: "Included" },
-  { feature: "Cross-Browser Compatibility.", mark: "Included" },
+  { feature: "customUI", mark: true },
+  { feature: "mobileAndTablet", mark: true },
+  { feature: "basicSEOSetup", mark: true },
+  { feature: "perfromanceOptimizationTitle", mark: true },
+  { feature: "crossBrowserCompatibility", mark: true },
 ];
 
 export const processSteps  = [
   {
-    title: "Consultation",
+    title: "consultationTitle",
     description:
-      "We start with a brief consultation to understand your vision and requirements.",
+      "consultationDescription",
   },
   {
-    title: "Project Management",
+    title: "projectManagementTitle",
     description:
-      "From gathering your project's requirements to bringing it live, I handle everything. We'll start from sketch, move to design, and then development, ensuring your vision is realized every step of the way.",
+      "projectManagementDesc",
   },
   {
-    title: "Ready to get started?",
+    title: "getStartedTitle",
     description:
-      " Place your order now or send a message for any inquiries. Let’s build a website that not only looks great but also performs excellently and grows your business.",
+      "getStartedDesc",
   },
 ];

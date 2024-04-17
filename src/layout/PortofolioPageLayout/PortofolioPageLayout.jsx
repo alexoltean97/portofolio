@@ -8,12 +8,13 @@ import ThemeMenu from "../../components/theme/ThemeMenu/ThemeMenu";
 import ThemeButton from "../../components/theme/ThemeButton/ThemeButton";
 import CartButton from "../../components/theme/CartButton/CartButton";
 import Cart from "../../components/portofolio/Cart/Cart";
-
+import { motion } from "framer-motion";
+import { useScrollAnimation } from "../../hooks/useScrollAnimation/useScrollAnimation";
 const PortofolioPageLayout = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
-
+  const { ref, controls, variants } = useScrollAnimation();
   const openModal = (contentType) => {
     setIsOpen(!isOpen);
     setModalContent(contentType);
@@ -33,7 +34,14 @@ const PortofolioPageLayout = () => {
   return (
     <React.Fragment>
       <Header />
-      <div className="container">
+
+      <motion.div
+        className="container"
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={variants}
+      >
         <h2 className="main-portofolio-title">
           {t("webComponentsPortofolio")}
         </h2>
@@ -48,7 +56,8 @@ const PortofolioPageLayout = () => {
         </ReactPortal>
         <CartButton openModal={() => openModal("cart")} />
         <ThemeButton openModal={() => openModal("theme")} />
-      </div>
+      </motion.div>
+
       <Footer />
     </React.Fragment>
   );

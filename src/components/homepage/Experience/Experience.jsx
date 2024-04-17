@@ -1,64 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
+import WorkSection from "../../company/WorkSection/WorkSection";
 import { useTranslation } from "react-i18next";
-import WorkBox from "../../../layout/WorkBox/WorkBox";
+import { motion } from "framer-motion";
+import { useScrollAnimation } from "../../../hooks/useScrollAnimation/useScrollAnimation";
 
 const Experience = () => {
   const { t } = useTranslation();
+  const { ref, controls, variants } = useScrollAnimation();
+
   return (
     <div className="work-experience">
-      <div className="container">
+          <motion.div
+        className="container"
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={variants}
+      >
         <h2 id="work-title" className="h2-theme">
           {t("workExperience")}
         </h2>
 
-        <div className="row">
-          <WorkBox
-            title={t("expTitlePlenty")}
-            date={t("expDatePlenty")}
-            description={t("expDescPlenty")}
-            modalHeader="PlentyMarkets"
-          >
-            <p>{t("plentyIntro")}</p>
-            <p>{t("plentyTeam")}</p>
-            <ul>
-              <li>{t("plentyListOne")}</li>
-            </ul>
-          </WorkBox>
+        <WorkSection />
 
-          <WorkBox
-            title={t("expTitleUpwork")}
-            date={t("expDateUpwork")}
-            description={t("expDescUpwork")}
-            modalHeader="Upwork"
-          >
-            <p>{t("expDescUpwork")}</p>
-          </WorkBox>
-
-          <WorkBox
-            title={t("expTitle123")}
-            date={t("expDate123")}
-            description={t("expDesc123")}
-          >
-            <p>Test</p>
-          </WorkBox>
-
-          <WorkBox
-            title={t("expTitleBm")}
-            date={t("expDateBm")}
-            description={t("expDescBm")}
-          >
-            <p>Test</p>
-          </WorkBox>
-
-          <WorkBox
-            title={t("expTitleDigital")}
-            date={t("expTitleDigital")}
-            description={t("expDescDigital")}
-          >
-            <p>Test</p>
-          </WorkBox>
-        </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

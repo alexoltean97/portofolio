@@ -13,7 +13,6 @@ import ThemeMenu from "../../components/theme/ThemeMenu/ThemeMenu";
 import ThemeButton from "../../components/theme/ThemeButton/ThemeButton";
 import CookiesModal from "../../components/portofolio/CookiesModal/CookiesModal";
 import Cookies from "js-cookie";
-import Loader from "../../components/utils/Loader/Loader";
 
 const HomePageLayout = () => {
   const { t } = useTranslation();
@@ -50,7 +49,6 @@ const HomePageLayout = () => {
   return (
     <React.Fragment>
       <Header />
-      {/* <Loader /> */}
       <Oa />
       <AboutMe />
       <Skills />

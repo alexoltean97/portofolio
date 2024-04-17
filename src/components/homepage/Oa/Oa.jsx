@@ -1,35 +1,32 @@
 import React from "react";
-import PlaceholderPortrait from "../../../assets/images/placeholder-oa.png";
-import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-
+import Name from "../../company/Name/Name";
+import Contact from "../../company/Contact/Contact";
+import Portrait from "../../company/Portrait/Portrait";
+import { motion } from "framer-motion";
+import { useScrollAnimation } from "../../../hooks/useScrollAnimation/useScrollAnimation";
 const Oa = () => {
-  const { t } = useTranslation();
+  const { ref, controls, variants } = useScrollAnimation();
+
   return (
     <div className="oa">
-      <div className="container">
+      <motion.div
+        className="container"
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={variants}
+      >
         <div className="row">
           <div className="col-lg-6 col-xs-12">
-            <div className="company-name">
-              <h1 id="main-title">
-                Oltean <span>Alexandru</span>
-              </h1>
-              <p id="description">{t("Iam")}</p>
-            </div>
-
-            <div id="company-contact" className="company-contact">
-              <Link to="/gigs">Hire me</Link>
-              <Link to="/portofolio">{t("portofolioBtn")}</Link>
-            </div>
+            <Name />
+            <Contact />
           </div>
 
           <div className="col-lg-6 col-xs-12">
-            <div className="image">
-              <img src={PlaceholderPortrait} alt="Placeholder Portrat" />
-            </div>
+            <Portrait />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -28,6 +28,10 @@
       font-family: $third-font;
       font-size: $p-size;
 
+      svg {
+        margin-right: 5px;
+      }
+
       &:focus {
         border-color: none;
         outline: none;
@@ -49,6 +53,7 @@
 
       ul {
         li {
+          padding-bottom: 5px;
           list-style-type: none;
         }
       }
@@ -62,6 +67,15 @@
       div {
         padding: 5px 20px 5px 20px;
       }
+
+      h4{
+        color: $main-color;
+        font-weight: bold;
+      }
+
+      strong{
+        color: $main-color;
+      }
     }
   }
 }
@@ -69,9 +83,6 @@
 .btn-fiver {
   margin-right: 10px;
 }
-
-// .btn-email {
-// }
 
 .btn-gigs {
   border-radius: 3px;
@@ -82,4 +93,13 @@
   border: 1px solid $main-color;
   color: $main-color;
   text-transform: capitalize;
+  transition: 0.25s ease-in-out;
+  &:hover{
+    background-color: $main-color;
+    color:$plain-white
+  }
+}
+
+.bookmark {
+  margin-right: 10px;
 }

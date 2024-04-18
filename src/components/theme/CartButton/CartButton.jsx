@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
@@ -10,12 +10,6 @@ const CartButton = (props) => {
   const cartCtx = useContext(CartContext);
   const totalCartItems = cartCtx.items.reduce((total, item) => total + item.quantity, 0);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setInitialLoad(false);
-    }, 500); 
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <motion.div

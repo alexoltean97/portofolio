@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Header from "../globals/Header/Header";
 import Footer from "../globals/Footer/Footer";
-import ReactPortal from "../../components/utils/ReactPortal/ReactPortal";
 import PortofolioTabs from "../../components/portofolio/PortofolioTabs/PortofolioTabs";
+import ReactPortal from "../../components/utils/ReactPortal/ReactPortal";
 import ThemeMenu from "../../components/theme/ThemeMenu/ThemeMenu";
 import ThemeButton from "../../components/theme/ThemeButton/ThemeButton";
 import CartButton from "../../components/theme/CartButton/CartButton";
@@ -54,10 +54,9 @@ const PortofolioPageLayout = () => {
         >
           {renderModalContent()}
         </ReactPortal>
-        <CartButton openModal={() => openModal("cart")} />
-        <ThemeButton openModal={() => openModal("theme")} />
       </motion.div>
-
+      <CartButton openModal={() => openModal("cart")} />
+      <ThemeButton openModal={() => openModal("theme")} />
       <Footer />
     </React.Fragment>
   );

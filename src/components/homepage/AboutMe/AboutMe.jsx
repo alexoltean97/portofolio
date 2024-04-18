@@ -1,28 +1,23 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
-
+import Linkedin from "../../company/Linkedin/Linkedin";
+import AboutTexts from "../../company/AboutTexts/AboutTexts";
+import { motion } from "framer-motion";
+import { useScrollAnimation } from "../../../hooks/useScrollAnimation/useScrollAnimation";
 const AboutMe = () => {
-  const { t } = useTranslation();
+  const { ref, controls, variants } = useScrollAnimation();
+
   return (
     <div className="about-me">
-      <div className="container">
-        <h2 id="aboutme-title" className="h2-theme">
-          {t("aboutMe")}
-        </h2>
-
-        <div className="p-holder">
-          <p id="aboutme-desc">{t("aboutText")}</p>
-        </div>
-
-        <div id="btn-holder" className="btn-holder">
-          <a
-            id="btn-linkedin"
-            href="https://www.linkedin.com/in/alexandru-oltean-96aba7159/"
-          >
-            {t("linkedinBtn")}
-          </a>
-        </div>
-      </div>
+      <motion.div
+        className="container"
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={variants}
+      >
+        <AboutTexts />
+        <Linkedin />
+      </motion.div>
     </div>
   );
 };

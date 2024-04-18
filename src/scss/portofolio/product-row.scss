@@ -39,25 +39,27 @@
       background-color: $main-color;
       border-color: $main-color;
       width: 100%;
-      border:none;
-      svg{
+      border: none;
+      transition: 0.25s ease-in-out;
+      text-transform: capitalize;
+      svg {
         padding: 10px 10px;
         background-color: $plain-white;
         color: $main-color;
         border-top-right-radius: 0% 0%;
         border-bottom-right-radius: 37% 100%;
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
       }
-      &:active{
+      &:active {
         background-color: $main-color;
         border-color: $main-color;
       }
     }
 
-    .price{
-      color:$green;
+    .price {
+      color: $green;
     }
   }
 }

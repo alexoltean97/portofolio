@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import React, { useContext, useState } from "react";
 import CartContext from "../../../context/CartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
@@ -7,9 +7,12 @@ import { useTranslation } from "react-i18next";
 const ProductCard = (props) => {
   const { t } = useTranslation();
   const cartCtx = useContext(CartContext);
+  const [isAdded, setIsAdded] = useState(false);
 
   const addProductToCart = () => {
     cartCtx.addItem(props.product);
+    setIsAdded(true);
+    setTimeout(() => setIsAdded(false), 1000); 
   };
 
   return (
@@ -17,7 +20,7 @@ const ProductCard = (props) => {
       <div className="card">
         <img
           src={props.imagePath}
-          alt="Product Image 1"
+          alt={`Product Image of ${props.name}`}
           className="card-img-top"
         />
         <div key={props.id} className="card-body">
@@ -25,14 +28,13 @@ const ProductCard = (props) => {
           <p className="card-text">{props.description}</p>
           <p className="price">${props.price}</p>
           <p>{props.id}</p>
-
           <div className="input-group mb-3"></div>
           <button
             onClick={addProductToCart}
             className="btn btn-primary shadow-effect"
           >
             <FontAwesomeIcon icon={faCartShopping} />
-            {t("addTo")}
+            {isAdded ? t("Added") : t("addTo")}
           </button>
         </div>
       </div>

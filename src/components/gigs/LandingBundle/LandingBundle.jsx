@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Accordion from "react-bootstrap/Accordion";
 import GigDescription from "../GigDescription/GigDescription.jsx";
 import WhyChoseGig from "../WhyChoseGig/WhyChoseGig.jsx";
@@ -16,8 +17,15 @@ import {
 
 const LandingBundle = () => {
   const { t } = useTranslation();
-
+  const variants = {
+    hidden: { x: "-100vw" },
+    visible: {
+      x: 0,
+      transition: { type: "spring", stiffness: 30, damping: 10 },
+    },
+  };
   return (
+    <motion.div initial="hidden" animate="visible" variants={variants}>
     <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>
@@ -55,6 +63,7 @@ const LandingBundle = () => {
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
+    </motion.div>
   );
 };
 

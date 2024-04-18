@@ -13,12 +13,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: $settings-shadow;
-    transition: 0.25s ease-in-out;
-    animation-duration: 4s;
     &:hover{
         cursor: pointer;
-        transform: rotate(180deg);
     }
 
     svg{

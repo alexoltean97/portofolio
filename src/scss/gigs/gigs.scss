@@ -1,5 +1,24 @@
 @import "../globals/variables";
 
+.check-gig {
+  margin-top: -100px;
+  margin-bottom: 50px;
+  padding: 40px;
+  background-color: $main-color;
+  color: $plain-white;
+  text-align: center;
+
+  h2 {
+    font-family: $main-font;
+    font-size: $h2-size;
+  }
+
+  p {
+    font-family: $main-font;
+    font-size: $h5-size;
+  }
+}
+
 .gigs {
   .accordion {
     margin-bottom: 15px;
@@ -28,14 +47,14 @@
       font-family: $third-font;
       font-size: 17px;
 
-      ul{
-        li{
+      ul {
+        li {
           list-style-type: none;
         }
       }
       .table {
         font-family: $main-font;
-        svg{
+        svg {
           color: green;
         }
       }
@@ -49,11 +68,10 @@
 
 .btn-fiver {
   margin-right: 10px;
-
 }
 
-.btn-email {
-}
+// .btn-email {
+// }
 
 .btn-gigs {
   border-radius: 3px;
@@ -64,5 +82,4 @@
   border: 1px solid $main-color;
   color: $main-color;
   text-transform: capitalize;
-
 }

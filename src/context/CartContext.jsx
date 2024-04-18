@@ -4,6 +4,7 @@ const CartContext = createContext({
   items: [],
   addItem: (item) => {},
   removeItem: (id) => {},
+  triggerAnimation: () => {},
 });
 
 const cartReducer = (state, action) => {
@@ -49,6 +50,11 @@ const cartReducer = (state, action) => {
     return { ...state, items: updatedItems };
   }
 
+  if(action.type === "TRIGGER_ANIMATION") {
+    return { ...state, animationTriggered: action.payload };
+
+  }
+
   return state;
 };
 
@@ -56,14 +62,18 @@ export const CartContextProvider = ({ children }) => {
 
  const [cart, dispatchCartAction] = useReducer(cartReducer, {
   items: JSON.parse(localStorage.getItem('cartItems')) || [],
+  animationTriggered: false,
+
 });
 
-  const addItem = (item) => {
-    dispatchCartAction({
-      type: "ADD_ITEM",
-      item: item,
-    });
-  };
+const addItem = (item) => {
+  dispatchCartAction({ type: "ADD_ITEM", item: item });
+  dispatchCartAction({ type: "TRIGGER_ANIMATION", payload: true });
+  setTimeout(() => {
+    dispatchCartAction({ type: "TRIGGER_ANIMATION", payload: false });
+  }, 500);  
+};
+
   const removeItem = (id) => {
     dispatchCartAction({
       type: "REMOVE_ITEM",
@@ -71,17 +81,25 @@ export const CartContextProvider = ({ children }) => {
     });
   };
 
+  const triggerAnimation = () => {
+    dispatchCartAction({ type: "TRIGGER_ANIMATION", payload: true });
+    setTimeout(() => {
+      dispatchCartAction({ type: "TRIGGER_ANIMATION", payload: false });
+    }, 2000); 
+  };
+
   const cartContext = {
     items: cart.items,
     addItem,
     removeItem,
+    triggerAnimation,
+    animationTriggered: cart.animationTriggered,
+
   };
 
   useEffect(() => {
     localStorage.setItem('cartItems', JSON.stringify(cart.items));
   }, [cart.items]);
-
-  console.log(cartContext);
 
   return (
     <CartContext.Provider value={cartContext}>{children}</CartContext.Provider>

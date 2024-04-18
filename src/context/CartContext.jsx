@@ -1,10 +1,10 @@
-import { createContext, useReducer,useEffect } from "react";
+import { createContext, useReducer, useEffect } from "react";
 
 const CartContext = createContext({
   items: [],
   addItem: (item) => {},
   removeItem: (id) => {},
-  triggerAnimation: () => {},
+  // triggerAnimation: () => {},
 });
 
 const cartReducer = (state, action) => {
@@ -50,29 +50,26 @@ const cartReducer = (state, action) => {
     return { ...state, items: updatedItems };
   }
 
-  if(action.type === "TRIGGER_ANIMATION") {
-    return { ...state, animationTriggered: action.payload };
-
-  }
+  // if (action.type === "TRIGGER_ANIMATION") {
+  //   return { ...state, animationTriggered: action.payload };
+  // }
 
   return state;
 };
 
 export const CartContextProvider = ({ children }) => {
+  const [cart, dispatchCartAction] = useReducer(cartReducer, {
+    items: JSON.parse(localStorage.getItem("cartItems")) || [],
+   // animationTriggered: false,
+  });
 
- const [cart, dispatchCartAction] = useReducer(cartReducer, {
-  items: JSON.parse(localStorage.getItem('cartItems')) || [],
-  animationTriggered: false,
-
-});
-
-const addItem = (item) => {
-  dispatchCartAction({ type: "ADD_ITEM", item: item });
-  dispatchCartAction({ type: "TRIGGER_ANIMATION", payload: true });
-  setTimeout(() => {
-    dispatchCartAction({ type: "TRIGGER_ANIMATION", payload: false });
-  }, 500);  
-};
+  const addItem = (item) => {
+    dispatchCartAction({ type: "ADD_ITEM", item: item });
+    dispatchCartAction({ type: "TRIGGER_ANIMATION", payload: true });
+    setTimeout(() => {
+      dispatchCartAction({ type: "TRIGGER_ANIMATION", payload: false });
+    }, 500);
+  };
 
   const removeItem = (id) => {
     dispatchCartAction({
@@ -81,24 +78,23 @@ const addItem = (item) => {
     });
   };
 
-  const triggerAnimation = () => {
-    dispatchCartAction({ type: "TRIGGER_ANIMATION", payload: true });
-    setTimeout(() => {
-      dispatchCartAction({ type: "TRIGGER_ANIMATION", payload: false });
-    }, 2000); 
-  };
+  // const triggerAnimation = () => {
+  //   dispatchCartAction({ type: "TRIGGER_ANIMATION", payload: true });
+  //   setTimeout(() => {
+  //     dispatchCartAction({ type: "TRIGGER_ANIMATION", payload: false });
+  //   }, 2000);
+  // };
 
   const cartContext = {
     items: cart.items,
     addItem,
     removeItem,
-    triggerAnimation,
-    animationTriggered: cart.animationTriggered,
-
+    // triggerAnimation,
+    // animationTriggered: cart.animationTriggered,
   };
 
   useEffect(() => {
-    localStorage.setItem('cartItems', JSON.stringify(cart.items));
+    localStorage.setItem("cartItems", JSON.stringify(cart.items));
   }, [cart.items]);
 
   return (

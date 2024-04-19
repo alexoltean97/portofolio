@@ -24,16 +24,13 @@ export const landingPageSimple = [
 ];
 
 export const landingtableItems = [
-  { feature: "Implementation of Your Provided Design", mark: true },
-  { feature: "Mobile and Desktop Responsiveness", mark: true },
-  { feature: "Speed Optimization for Enhanced Performance", mark: true },
-  { feature: "Basic SEO Setup", mark: true },
-  { feature: "Cross-Browser Compatibility.", mark: true },
-  {
-    feature: "Integration with Existing Systems and Social Media",
-    mark: true,
-  },
-  { feature: "Develop in page builders", mark: true },
+  { feature: "providedDesign", mark: true },
+  { feature: "integration", mark: true },
+  { feature: "develop", mark: true },
+  { feature: "mobileAndTablet", mark: true },
+  { feature: "crossBrowserCompatibility", mark: true },
+  { feature: "perfromanceOptimizationTitle", mark: true },
+  { feature: "basicSEOSetup", mark: true },
 ];
 
 export const landingprocessSteps = [
@@ -42,11 +39,7 @@ export const landingprocessSteps = [
     description:
       "designSubmissionDesc",
   },
-  {
-    title: "efficientDevelopment",
-    description:
-      "From gathering your project's requirements to bringing it live, I handle everything. We'll start from sketch, move to design, and then development, ensuring your vision is realized every step of the way.",
-  },
+
   {
     title: "reviewTitle",
     description:

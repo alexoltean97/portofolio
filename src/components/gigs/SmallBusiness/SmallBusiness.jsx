@@ -18,30 +18,21 @@ import {
 const SmallBusiness = () => {
   const { t } = useTranslation();
   const variants = {
-    hidden: { x: '-100vw' }, 
+    hidden: { x: "-100vw" },
     visible: {
       x: 0,
-      transition: { type: 'spring', stiffness: 30, damping: 10 }
-    }
+      transition: { type: "spring", stiffness: 30, damping: 10 },
+    },
   };
 
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      variants={variants}
-    >
+    <motion.div initial="hidden" animate="visible" variants={variants}>
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
-          <Accordion.Header>
-            Front End - Small Business Package - 40$ per hour
-          </Accordion.Header>
+          <Accordion.Header>{t("smallTitle")}</Accordion.Header>
           <Accordion.Body>
             <GigDescription
-              description="🚀 Boost Your Business with Professional Front-End Development! Welcome
-              to the Front End - Small Business Package. Are you ready to take your
-              business to the next level with a stunning, user-friendly website? Look
-              no further!"
+              description={t("smallBusinessIntro")}
             ></GigDescription>
             <WhyChoseGig
               features={featuresSmallBusiness.map((item) => ({

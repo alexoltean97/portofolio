@@ -29,11 +29,10 @@ const LandingBundle = () => {
     <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>
-          Front End: Small Business Landing Page Package - 30$ per Landing Page
-          (Minimun 10 pages)
+          {t("bundleTitle")}
         </Accordion.Header>
         <Accordion.Body>
-          <GigDescription description="🚀 Supercharge Your Business with a Bundle of Professionally Coded Landing Pages! Need multiple landing pages? Take advantage of this exclusive offer where you get each page at a reduced rate of $30, provided you need at least 10 pages. Perfect for campaigns, product launches, or a complete site overhaul!"></GigDescription>
+          <GigDescription description={t("bundleDescription")}></GigDescription>
           <WhyChoseGig
             features={landingBundle.map((item) => ({
               title: t(item.title),
@@ -55,11 +54,6 @@ const LandingBundle = () => {
 
           <Book />
 
-          <div>
-            Ready to Convert Your Design into Reality? Place your order now or
-            send a message if you have any questions. Let’s turn your vision
-            into a functional landing page that engages and converts!
-          </div>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

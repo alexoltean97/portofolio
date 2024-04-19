@@ -1,9 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const HowItWorks = ({ steps }) => {
+  const { t } = useTranslation();
   return (
     <div>
-      <h4>How It Works:</h4>
+      <h4>{t("howWorks")}:</h4>
       <ul>
         {steps.map((step, index) => (
           <li key={index}>

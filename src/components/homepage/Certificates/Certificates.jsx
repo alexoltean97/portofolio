@@ -20,17 +20,23 @@ const Certificates = () => {
     { key: "cambridge", titleKey: "cambridge", descKey: "cambridgeDesc" },
   ];
 
+  // THIS NEEDS IMMEDIATE REFACTORING + IN SCSS
+
   return (
     <div className="container certificates">
-      {certificates.map(({ key, subtitleId, titleKey, descKey }) => (
+      {certificates.map(({ key, subtitleId, titleKey, descKey }, index) => (
         <motion.div
           ref={ref}
           initial="hidden"
           animate={controls}
           variants={variants}
           key={key}
-          className=""
         >
+          <h2
+            className={`education-title h2-theme ${index !== 0 ? "hide" : ""}`}
+          >
+            {t("certificates")}
+          </h2>
           <CertificateBox
             subtitleId={subtitleId}
             title={t(titleKey)}

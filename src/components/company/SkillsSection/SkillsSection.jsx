@@ -7,7 +7,7 @@ const SkillsSection = () => {
     { titleKey: "feDev", descriptionKey: "feDevDesc" },
     { titleKey: "qualityAssurance", descriptionKey: "qualityDescription" },
     { titleKey: "productManagement", descriptionKey: "productDesc" },
-    { titleKey: "agileWorkflow", descriptionKey: "agileDesc" },
+    { titleKey: "cms", descriptionKey: "cmsDesc" },
   ];
   return (
     <div className="row skill-row">

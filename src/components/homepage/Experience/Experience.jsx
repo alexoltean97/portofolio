@@ -10,7 +10,7 @@ const Experience = () => {
 
   return (
     <div className="work-experience">
-          <motion.div
+      <motion.div
         className="container"
         ref={ref}
         initial="hidden"
@@ -22,7 +22,6 @@ const Experience = () => {
         </h2>
 
         <WorkSection />
-
       </motion.div>
     </div>
   );

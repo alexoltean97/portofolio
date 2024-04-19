@@ -15,21 +15,21 @@ i18next
           portofolioBtn: "Portofolio",
           aboutMe: "About me",
           aboutText:
-            "I’m a digital product leader with over 8 years of experience, driven by real world challenges, working in a fast-paced, digitally-oriented environment related to consumer services. Operating in an environment driven by KPIs where I have the accountability to determine the best course of action to meet goals.",
+            "I’m a digital product leader with over 8 years of experience, driven by real world challenges, working in a fast-paced, digitally-oriented environment related to consumer services.",
           linkedinBtn: "Linkedin Profile",
           mySkills: "My skills",
           feDev: "FRONT-END DEVELOPMENT",
           feDevDesc:
-            "My proficiency in Front-End Development is rooted in a deep understanding and skilled application of core web technologies like HTML, CSS, and JavaScript. I am also adept in utilizing modern frameworks such as React and Vue, which enables me to create interactive and visually compelling web applications.",
+            "My proficiency in Front-End Development is rooted in a deep understanding and skilled application of core web technologies like HTML, CSS, and JavaScript. I am also adept in utilizing modern frameworks such as React, Vue and Angular, which enables me to create interactive and visually compelling web applications.",
           qualityAssurance: "Quality Assurance",
           qualityDescription:
             "My expertise in Quality Assurance centers on delivering impeccable product performance and reliability. Specializing in both manual and automated testing techniques, I focus on detecting and rectifying flaws swiftly.",
           productManagement: "PRODUCT MANAGEMENT",
           productDesc:
-            "As a freelancer, I had to learn how to adapt to my client needs, a skill that has been invaluable in my journey into Product Management. This role has honed my ability to understand and translate client requirements into viable products.",
-          agileWorkflow: "CMS & Page Builders",
-          agileDesc:
-            "In business and engineering, new product development covers the complete process of bringing a new product to market.",
+            "As a freelancer, I had to learn how to adapt to my client needs, a skill that has been invaluable in my carrer working in software. The ability to understand and translate client requirements into viable products.",
+          cms: "CMS & Page Builders",
+          cmsDesc:
+            "Proficient in working with various page builder like Divi, Elementor or Wix. I preffer working with Wordpress but can addapt to any Content manangement system.",
           workExperience: "Work Experience",
           expTitlePlenty: "FRONT-END ENGINEER",
           expDatePlenty: "Plenty Markets / Feb 20 - Present",
@@ -43,14 +43,14 @@ i18next
           expTitle123: "FRONT-END ENGINEER",
           expDate123: "123FormBuilder / Aug 2018 - Dec 2019",
           expDesc123:
-            "Started working at 123 in August 2018. In the first 7 months I worked on theWebsite team where I had the following responsibilities...",
+            "Begann im August 2018 bei 123 zu arbeiten. In den ersten 7 Monaten arbeitete ich im Website-Team, wo ich die folgenden Aufgaben hatte...",
           expTitleBm: "FRONT-END ENGINEER",
           expDateBm: "BlueMatrix / Apr 2018 - Aug 2018",
           expDescBm:
             "Moved out of Arad in February 2018 and started working at BlueMatrix in February as a Template Developer. The first weeks...",
           expTitleDigital: "Junior Web Developer / Junior QA Engineer",
           expDescDigital:
-            "Started as a Junior Developer and Junior QA at Digital Garage Arad, where I learned HTML5, CSS, and JavaScript....",
+            "Started as a Junior Developer and Junior QA at Digital Garage Arad, where I learned HTML5, CSS, and JavaScript...",
           certificates: "Certificates",
           scrum: "SCRUM: THE BASICS",
           scrumLk: "Scrum Basics Linkedin Certificate",
@@ -233,21 +233,21 @@ i18next
           portofolioBtn: "meine Arbeit",
           aboutMe: "Über mich",
           aboutText:
-            "Ich bin ein Leiter digitaler Produkte mit über 8 Jahren Erfahrung, angetrieben von realen Herausforderungen und arbeite in einem schnelllebigen, digital orientierten Umfeld im Zusammenhang mit Verbraucherdienstleistungen. Ich arbeite in einem von KPIs gesteuerten Umfeld, in dem ich die Verantwortung habe, die beste Vorgehensweise zur Erreichung der Ziele festzulegen.",
+            "Ich bin ein Leiter digitaler Produkte mit über 8 Jahren Erfahrung, angetrieben von realen Herausforderungen und arbeite in einem schnelllebigen, digital orientierten Umfeld im Zusammenhang mit Verbraucherdienstleistungen.",
           linkedinBtn: "LinkedIn Profil",
           mySkills: "Meine Fähigkeiten",
           feDev: "FRONT-END-ENTWICKLUNG",
           feDevDesc:
-            "In der Wirtschaft und im Ingenieurwesen umfasst die Entwicklung neuer Produkte den gesamten Prozess der Markteinführung eines neuen Produkts.",
+            "Meine Kompetenz in der Front-End-Entwicklung basiert auf einem tiefen Verständnis und der geschickten Anwendung zentraler Webtechnologien wie HTML, CSS und JavaScript. Darüber hinaus beherrsche ich den Umgang mit modernen Frameworks wie React, Vue und Angular, wodurch ich interaktive und visuell ansprechende Webanwendungen erstellen kann.",
           qualityAssurance: "Qualitätskontrolle",
           qualityDescription:
             "In der Wirtschaft und im Ingenieurwesen umfasst die Entwicklung neuer Produkte den gesamten Prozess der Markteinführung eines neuen Produkts.",
           productManagement: "PRODUKT MANAGEMENT",
           productDesc:
-            "In der Wirtschaft und im Ingenieurwesen umfasst die Entwicklung neuer Produkte den gesamten Prozess der Markteinführung eines neuen Produkts.",
-          agileWorkflow: "AGILE WORKFLOW-SICHERUNG",
-          agileDesc:
-            "In der Wirtschaft und im Ingenieurwesen umfasst die Entwicklung neuer Produkte den gesamten Prozess der Markteinführung eines neuen Produkts.",
+            "Als Freiberufler musste ich lernen, mich an die Bedürfnisse meiner Kunden anzupassen, eine Fähigkeit, die in meiner Karriere im Softwarebereich von unschätzbarem Wert war. Die Fähigkeit, Kundenanforderungen zu verstehen und in realisierbare Produkte umzusetzen.",
+          cms: "CMS & Page Builders",
+          cmsDesc:
+            "Beherrscht die Arbeit mit verschiedenen Seitenerstellern wie Divi, Elementor oder Wix. Ich bevorzuge die Arbeit mit Wordpress, kann es aber an jedes Content-Management-System anpassen.",
           workExperience: "Arbeitserfahrung",
           expTitlePlenty: "FRONT-END-INGENIEUR",
           expDatePlenty: "Plenty Markets / 20. Februar – Heute",
@@ -257,7 +257,7 @@ i18next
           expTitleUpwork: "FREIBERUFLERIN",
           expDateUpwork: "Upwork / Dec 2019 - Feb 2021",
           expDescUpwork:
-            "Produktleiter für die digitale neue Kartenanwendung in 7 Ländern. Partnerschaft mit GFK Market Research zur Durchführung internationaler Benutzerstudien zur Ermittlung der wichtigsten MVP-Funktionen sowie langfristiger Optimierungen...",
+            "Arbeitete als Freiberufler mit Schwerpunkt auf Webentwicklung. Hat mehreren Kunden und Unternehmen (Philotimo Media, Stoica.co) dabei geholfen, ihre Ziele zu erreichen ...",
           expTitle123: "FRONT-END-INGENIEUR",
           expDate123: "123FormBuilder / Aug 2018 - Dec 2019",
           expDesc123:
@@ -265,11 +265,11 @@ i18next
           expTitleBm: "FRONT-END ENGINEER",
           expDateBm: "BlueMatrix / Apr 2018 - Aug 2018",
           expDescBm:
-            "Produktleiter für die digitale neue Kartenanwendung in 7 Ländern. Partnerschaft mit GFK Market Research zur Durchführung internationaler Benutzerstudien zur Ermittlung der wichtigsten MVP-Funktionen sowie langfristiger Optimierungen...",
+            "Bin im Februar 2018 aus Arad ausgezogen und begann im Februar bei BlueMatrix als Template-Entwickler zu arbeiten. Die ersten Wochen...",
           expTitleDigital: "FRONT-END-INGENIEUR, QA-Ingenieur",
           expTitleDigital: "Junior Front-End-Entwickler / Junior QA-Ingenieur",
           expDescDigital:
-            "Produktleiter für die digitale neue Kartenanwendung in 7 Ländern. Partnerschaft mit GFK Market Research zur Durchführung internationaler Benutzerstudien zur Ermittlung der wichtigsten MVP-Funktionen sowie langfristiger Optimierungen",
+            "Begann als Junior Developer und Junior QA bei Digital Garage Arad, wo ich HTML5, CSS und JavaScript lernte...",
           certificates: "Zertifikate",
           scrum: "SCRUM: THE BASICS",
           scrumLk: "Scrum Basics LinkedIn-Zertifikat",
@@ -279,7 +279,7 @@ i18next
           agileMethDesc:
             "Zertifiziert in agilen Methoden nach Abschluss der Ausbildung am ETC Timisoara unter Trainer Daniel Bako",
           itSchoolTitle: "IT School PHP&MYSQL Course",
-          itSchoolDesc: "PHP and MySql at IT SCHOOL TIMISOARA",
+          itSchoolDesc: "PHP und MySql an der IT SCHOOL TIMISOARA",
           cambridge: "Cambridge FCE",
           cambridgeDesc:
             "Habe mein Cambridge FCE-Diplom in der High School gemacht. Bei der FCE-Prüfung habe ich die Stufe B erhalten",

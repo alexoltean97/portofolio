@@ -1,10 +1,12 @@
 import React from 'react';
-import Table from 'react-bootstrap/Table'; // Ensure you have react-bootstrap installed
-
+import Table from 'react-bootstrap/Table'; 
+import { useTranslation } from 'react-i18next';
 const FeaturesTable = ({ items }) => {
+  const { t } = useTranslation();
+
   return (
     <div>
-      <h4>What’s Included?</h4>
+      <h4>{t("whatsIncluded")}</h4>
       <Table striped bordered hover>
         <tbody>
           {items.map((item, index) => (

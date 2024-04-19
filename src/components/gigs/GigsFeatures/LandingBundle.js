@@ -8,8 +8,8 @@ export const landingBundle = [
     description: "directImplementationDesc",
   },
   {
-    title: "optimizedForAllDevices",
-    description: "optimizedForAllDevicesDesc",
+    title: "responsiveFast",
+    description: "responsiveFastDesc",
   },
   {
     title: "conversionFocused",
@@ -22,28 +22,26 @@ export const landingBundle = [
 ];
 
 export const bundleTableItems = [
-  { feature: "professionalCoding", mark: true },
-  { feature: "fullResponsiveness", mark: true },
-  { feature: "quickLoadTimes", mark: true },
-  { feature: "basicSEOSetup", mark: true },
+  { feature: "providedDesign", mark: true },
+  { feature: "integration", mark: true },
+  { feature: "develop", mark: true },
+  { feature: "mobileAndTablet", mark: true },
   { feature: "crossBrowserCompatibility", mark: true },
-  { feature: "integrationWithMarketingTools", mark: true },
-  { feature: "integrationWithSystems", mark: true },
-  { feature: "developInPageBuilders", mark: true },
+  { feature: "perfromanceOptimizationTitle", mark: true },
+  { feature: "basicSEOSetup", mark: true },
 ];
 
 export const bundleSteps = [
   {
     title: "designSubmission",
-    description: "designSubmissionDesc",
+    description:
+      "designSubmissionDesc",
   },
+
   {
-    title: "efficientDevelopment",
-    description: "efficientDevelopmentDesc",
-  },
-  {
-    title: "reviewProcess",
-    description: "reviewProcessDesc",
+    title: "reviewTitle",
+    description:
+      "reviewDesc",
   },
   {
     title: "launch",

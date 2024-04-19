@@ -1,9 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const WhyChooseGig = ({ features }) => {
+  const { t } = useTranslation();
+
   return (
     <div>
-      <h4>Why Choose This Gig?</h4>
+      <h4>{t("whyGig")}</h4>
       <ul>
         {features.map((feature, index) => (
           <li key={index}>

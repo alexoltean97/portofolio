@@ -28,12 +28,9 @@ const LandingPage = () => {
     <motion.div initial="hidden" animate="visible" variants={variants}>
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
-          <Accordion.Header>
-            Front End: Small Business Landing Page Package - 40$ per Landing
-            Page
-          </Accordion.Header>
+          <Accordion.Header>{t("landingPageTitle")}</Accordion.Header>
           <Accordion.Body>
-            <GigDescription description="🚀 Transform Your Design into a Functional Small Business Landing Page! Welcome to the Front End: Small Business Landing Page Package. Have a design ready for your landing page? Let me bring it to life with high-quality front-end development that converts!" />
+            <GigDescription description={t("landingPagePackage")} />
             <WhyChoseGig
               features={landingPageSimple.map((item) => ({
                 title: t(item.title),
@@ -53,12 +50,6 @@ const LandingPage = () => {
               }))}
             />
             <Book />
-
-            <div>
-              Ready to Convert Your Design into Reality? Place your order now or
-              send a message if you have any questions. Let’s turn your vision
-              into a functional landing page that engages and converts!
-            </div>
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>

@@ -1,28 +1,28 @@
 export const featuresSmallBusiness = [
   {
-    title: "expertiseTitle",
+    title: "expertise",
     description:
-      "expertiseDesc",
+      "expertiseText",
   },
   {
-    title: "qualityAssurance",
+    title: "assurance",
     description:
-      "qualityDescription",
+      "assuranceText",
   },
   {
-    title: "affordaRate2",
+    title: "budgetFriendly",
     description:
-      "affordRateDesc",
+      "budgetText",
   },
   {
-    title: "responsiveDesignTitle",
+    title: "responsive",
     description:
-      "responsiveDesignDesc",
+      "responsiveDesc",
   },
   {
-    title: "seoFriendly",
+    title: "seo",
     description:
-      "seoFriendlyDesc",
+      "seoDesc",
   },
 ];
 
@@ -38,7 +38,7 @@ export const processSteps  = [
   {
     title: "consultationTitle",
     description:
-      "consultationDescription",
+      "consultationDesc",
   },
   {
     title: "projectManagementTitle",
@@ -46,8 +46,8 @@ export const processSteps  = [
       "projectManagementDesc",
   },
   {
-    title: "getStartedTitle",
+    title: "ready",
     description:
-      "getStartedDesc",
+      "readyDesc",
   },
 ];

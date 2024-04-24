@@ -3,8 +3,12 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import MenuTab from "../MenuTab/MenuTab";
 import EcomTab from "../EcomTab/EcomTab";
+import { useTranslation } from "react-i18next";
+
 
 const PortofolioTabs = () => {
+  const { t } = useTranslation();
+
   return (
     <React.Fragment>
       <div className="portofolio-tabs">
@@ -13,7 +17,7 @@ const PortofolioTabs = () => {
             <EcomTab />
           </Tab>
 
-          <Tab eventKey="menus" title="Menus">
+          <Tab eventKey="menus" title={t("menus")}>
             <MenuTab />
           </Tab>
         </Tabs>

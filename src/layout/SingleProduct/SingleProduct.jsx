@@ -25,7 +25,7 @@ const SingleProduct = () => {
 
   const product = {
     id: uniqueProductId,
-    name: `Plain T-shirt - ${productVariationId}`,
+    name: ` ${t('plainTshirt')} - ${productVariationId}`,
     price: 10,
     path: currentImage,
     quantity: 1,

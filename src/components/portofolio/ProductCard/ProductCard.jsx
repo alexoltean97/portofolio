@@ -3,7 +3,7 @@ import CartContext from "../../../context/CartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
-
+import placeHoldImg from "../../../assets/images/single-product.png";
 const ProductCard = (props) => {
   const { t } = useTranslation();
   const cartCtx = useContext(CartContext);
@@ -19,7 +19,7 @@ const ProductCard = (props) => {
     <div className="col-md-4 mb-4">
       <div className="card">
         <img
-          src={props.imagePath}
+          src={placeHoldImg}
           alt={`Product Image of ${props.name}`}
           className="card-img-top"
         />

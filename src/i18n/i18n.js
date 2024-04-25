@@ -230,6 +230,7 @@ i18next
            black: "Black",
            plainTshirt: "Plain T-Shirt",
            menus: "Menus",
+           inStock: "In Stock"
         },
       },
 
@@ -456,6 +457,7 @@ i18next
              black: "Schwarz",
              plainTshirt: "Einfaches T-Shirt",
              menus: "Menüs",
+             inStock: "Auf Lager"
         },
       },
     },

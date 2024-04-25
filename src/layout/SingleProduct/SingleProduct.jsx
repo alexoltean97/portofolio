@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,useState } from "react";
 import CartContext from "../../context/CartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
@@ -16,6 +16,7 @@ const SingleProduct = () => {
     useProductImages(productImages, productImages[0].source);
 
   const cartCtx = useContext(CartContext);
+  const [isAdded, setIsAdded] = useState(false);
 
   const productBaseId = "p1";
   const productVariationId =
@@ -25,7 +26,7 @@ const SingleProduct = () => {
 
   const product = {
     id: uniqueProductId,
-    name: ` ${t('plainTshirt')} - ${productVariationId}`,
+    name: ` ${t("plainTshirt")} - ${productVariationId}`,
     price: 10,
     path: currentImage,
     quantity: 1,
@@ -33,6 +34,8 @@ const SingleProduct = () => {
 
   const addProductToCart = () => {
     cartCtx.addItem(product);
+    setIsAdded(true);
+    setTimeout(() => setIsAdded(false), 1000); 
   };
   return (
     <React.Fragment>
@@ -61,7 +64,7 @@ const SingleProduct = () => {
                 className="btn btn-cart shadow-effect"
               >
                 <FontAwesomeIcon icon={faCartShopping} />
-               {t("addTo")}
+                {isAdded ? t("Added") : t("addTo")}
               </button>
             </div>
           </div>

@@ -2,15 +2,13 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
-import placeHoldImg from "../../../assets/images/single-product.png";
 import { useTranslation } from "react-i18next";
 const CartProduct = (props) => {
-  const {t} = useTranslation();
-
+  const { t } = useTranslation();
   return (
     <div className="cart-product d-flex">
       <div className="single-product-image">
-        <img src={placeHoldImg} alt="#" />
+        <img src={props.path} alt="#" />
       </div>
 
       <div className="single-product-descriptions">

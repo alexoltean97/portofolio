@@ -3,6 +3,8 @@ import PaginationRow from "../PaginatioRow/PaginationRow";
 import Search from "../Search/Search";
 import useProductManagement from "../../../hooks/useProductManagement/useProductManagement";
 import { useTranslation } from "react-i18next";
+import placeHoldImg from "../../../assets/images/single-product.png";
+
 const ProductRow = () => {
   const { t } = useTranslation();
 

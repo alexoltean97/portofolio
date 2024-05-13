@@ -12,7 +12,7 @@ i18next
         translation: {
           Iam: "Proficient web developer for your projects.",
           contactBtn: "Contact me",
-          portofolioBtn: "Portofolio",
+          portofolioBtn: "Portfolio",
           aboutMe: "About me",
           aboutText:
             "I’m a digital product leader with over 8 years of experience, driven by real world challenges, working in a fast-paced, digitally-oriented environment related to consumer services.",
@@ -85,7 +85,7 @@ i18next
           addTo: "Add to cart",
           testimonialBoxes: "Testimonial Boxes",
           changeColors: "Change Colors",
-          webComponentsPortofolio: "React Web Components Portofolio",
+          webComponentsPortofolio: "React Web Components Portfolio",
           searchFor: "Search for product",
           inputSearch: "Search",
           inputSearchDot: "Search...",
@@ -312,7 +312,7 @@ i18next
           addTo: "In den Warenkorb legen",
           testimonialBoxes: "Testimonial-Boxen",
           changeColors: "Farben ändern",
-          webComponentsPortofolio: "React Web Components Portofolio",
+          webComponentsPortofolio: "React Web Components Portfolio",
           searchFor: "Nach Produkt suchen",
           inputSearch: "Suchen",
           singleProduct: "Einzelnes Produkt",

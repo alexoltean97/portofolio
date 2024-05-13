@@ -32,7 +32,7 @@ const ProductRow = () => {
                 key={product.id}
                 name={product.name}
                 description={product.description}
-                imagePath={product.path}
+                imagePath={placeHoldImg}
                 price={product.price}
                 link={product.id}
               />

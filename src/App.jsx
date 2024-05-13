@@ -1,5 +1,5 @@
-import React,{useState,useEffect} from "react";
-import { BrowserRouter as Router, useLocation  } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, useLocation } from "react-router-dom";
 import AppRoutes from "./routes/AppRoutes";
 import { ThemeProvider } from "./context/ThemeContext";
 import { CartContextProvider } from "./context/CartContext";

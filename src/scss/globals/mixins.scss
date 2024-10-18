@@ -30,6 +30,7 @@
   margin-bottom: 100px;
   backdrop-filter: blur(10px);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: $main-color;
 }
 
 @mixin mobileTextSize($fontSize) {

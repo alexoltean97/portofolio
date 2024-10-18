@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 const WorkBox = (props) => {
   const { t } = useTranslation();
- 
+
   return (
     <div className="col-lg-6">
       <div className="work-box">
@@ -13,22 +13,7 @@ const WorkBox = (props) => {
           <strong>{props.date}</strong>
         </span>
 
-        <p id="work-description">
-          {props.description}{" "}
-          <a
-            href="/src/assets/cv/CV_Oltean_Alexandru_en.pdf"
-            download="CV_Oltean_Alexandru_en.pdf"
-            onClick={() => {
-              setOpen(true);
-            }}
-          >
-            {t("readMore")}
-          </a>
-        </p>
-
-        <ReactPortal head={props.modalHeader} onClose={() => setOpen(false)}>
-          {props.children}
-        </ReactPortal>
+        <p id="work-description">{props.description} </p>
       </div>
     </div>
   );

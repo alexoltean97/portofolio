@@ -13,7 +13,7 @@ const Header = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="left-side-content d-flex flex-row">
-              <Link to="/">
+              {/* <Link to="/">
                 <FontAwesomeIcon icon={faHouse} />
               </Link>
               <DownloadResume>
@@ -27,7 +27,15 @@ const Header = () => {
                   title="Choose Language"
                   arrow="tooltip-arrow-left-total"
                 />
-              </LanguagePicker>
+              </LanguagePicker> */}
+
+              <nav className="main-nav">
+                <ul>
+                  <li><Link to="/">Home</Link></li>
+                  <li className="px-md-3"><Link to="/portofolio">Portofolio</Link></li>
+                  <li className="pl-md-3"><Link to="/gigs">Packages</Link></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>

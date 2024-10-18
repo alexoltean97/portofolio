@@ -3,6 +3,7 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import MenuTab from "../MenuTab/MenuTab";
 import EcomTab from "../EcomTab/EcomTab";
+import LiveTab from "../LiveTab/LiveTab";
 import { useTranslation } from "react-i18next";
 
 
@@ -12,7 +13,12 @@ const PortofolioTabs = () => {
   return (
     <React.Fragment>
       <div className="portofolio-tabs">
-        <Tabs defaultActiveKey="ecommerce" id="theme-settings" className="mb-3">
+        <Tabs defaultActiveKey="live" id="theme-settings" className="mb-3">
+
+          <Tab eventKey="live" title="Live">
+          <LiveTab />
+          </Tab>
+
           <Tab eventKey="ecommerce" title="E-commerce">
             <EcomTab />
           </Tab>

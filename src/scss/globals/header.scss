@@ -13,6 +13,19 @@ p {
 
 .main-header {
   @include header();
+
+
+  .main-nav {
+   li{
+    list-style: none;
+    display: inline;
+    font-size: 25px;
+    a{
+      color: $plain-white;
+      text-decoration: none;
+    }
+   } 
+  }
   .language-parent {
     position: static;
     font-family: $main-font;

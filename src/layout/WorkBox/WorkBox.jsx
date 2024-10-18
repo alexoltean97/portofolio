@@ -1,10 +1,6 @@
 import React from "react";
-import ReactPortal from "../../components/utils/ReactPortal/ReactPortal";
-import { useTranslation } from "react-i18next";
 
 const WorkBox = (props) => {
-  const { t } = useTranslation();
-
   return (
     <div className="col-lg-6">
       <div className="work-box">

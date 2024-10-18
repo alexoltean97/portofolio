@@ -60,7 +60,9 @@ const LanguagePicker = (props) => {
   return (
     <React.Fragment>
       <div className="language-parent dropdown">
+    
         <a className="dropdown-toggle" onClick={openLangMenu}>
+      
           <span>{i18n.resolvedLanguage.toUpperCase()}</span>
           {props.children}
         </a>

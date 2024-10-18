@@ -14,17 +14,26 @@ p {
 .main-header {
   @include header();
 
-
+  .resume {
+    padding: 7px 14px;
+    background-color: var(--plain-white);
+    color: var(--main-color);
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid var(--plain-white);
+    position: relative;
+    right: 10px;
+  }
   .main-nav {
-   li{
-    list-style: none;
-    display: inline;
-    font-size: 25px;
-    a{
-      color: $plain-white;
-      text-decoration: none;
+    li {
+      list-style: none;
+      display: inline;
+      font-size: 21px;
+      a {
+        color: $plain-white;
+        text-decoration: none;
+      }
     }
-   } 
   }
   .language-parent {
     position: static;
@@ -32,7 +41,7 @@ p {
 
     .dropdown-toggle {
       text-decoration: none;
-      color: $main-color;
+      color: $plain-white;
       transition: 0.25s ease-in-out;
 
       &::after {
@@ -48,9 +57,9 @@ p {
 
       span {
         position: relative;
-        top: 2px;
+        top: 5px;
         padding-left: 4px;
-        font-size: $lang-span;
+        font-size: 27px;
       }
 
       svg {
@@ -109,13 +118,12 @@ p {
       }
     }
 
-    .resume{
-      &:hover{
-        .tooltip-arrow-left-top{
+    .resume {
+      &:hover {
+        .tooltip-arrow-left-top {
           visibility: visible;
         }
       }
     }
-
   }
 }
